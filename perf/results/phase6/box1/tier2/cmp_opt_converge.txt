@@ -1,0 +1,2 @@
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+converge_1080                48  1.34e-04  6.07e-02  1.81e-03  6.07e-02  7.21e-04  1.29e-04  44,47,43,42,39

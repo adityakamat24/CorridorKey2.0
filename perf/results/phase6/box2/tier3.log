@@ -1,0 +1,24 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[20:10:26] setup: setup done
+[20:12:35] tos frames: 120
+[20:13:32] ckd:  1 computed checksum did NOT match
+[20:14:17] ckd trt:[20:14:17] ckd trt: ckd trt r[20:14:20] jer: 39cc942 feat(bench): stock is upstream at 485f5e9; rows are stock, Python with our kernels, and c[20:18:28] tr[20:18:28] trt build tos12 rc=1 in 248 s: {"wall_s": 250.1, "ok": false[20:21:59] tr[20:21:59] trt build tos16 rc=1 in 211 s: {"wall_s": 211.1, "ok": false[20:28:14] ckd_cuda12_tos rc=0 {"tag": "ckd_cuda12_tos", "rc": 0, "wall_s": 372.5, "nvidia_smi_max_mib": 15360} | hann_chunk=4, hann_stride=2
+[20:32:50] ck[20:32:52] ckd_trt12_tos rc=0 {"tag": "ckd_trt12_tos", "rc": 0, "wall_s": 278.4, "nvidia_smi_max_mib": 12650} | hann_chunk=4, h[20:45:04] opt42_tos rc=0 {"tag": "opt42_tos", "rc": 0, "wall_s": 733.7, "nvidia_smi_max_mib": 10800} | Hann stage1: chunk=4, stride=2
+[20:45:04] jer42_tos rc=2 {"tag": "jer42_tos", "rc": 2, "wall_s": 0.0, "nvidia_smi_max_mib": 0} | 
+[20:50:49] ckd_cuda16_tos rc=0 {"tag": "ckd_cuda16_tos", "rc": 0, "wall_s": 345.1, "nvidia_smi_max_mib": 11702} | hann_chunk=2, hann_stride=1
+[20:53:47] ckd_trt16_tos rc=1 {"tag": "ckd_trt16_tos", "rc": 1, "wall_s": 177.6, "nvidia_smi_max_mib": 8348} | hann_chunk=2, hann_stride=1
+[21:01:51] opt84_tos rc=0 {"tag": "opt84_tos", "rc": 0, "wall_s": 484.7, "nvidia_smi_max_mib": 8190} | Hann stage1: chunk=8, stride=4
+[21:01:51] jer84_tos rc=2 {"tag": "jer84_tos", "rc": 2, "wall_s": 0.0, "nvidia_smi_max_mib": 0} | 
+[21:07:40] ckd_trt12b_tos rc=0 {"tag": "ckd_trt12b_tos", "rc": 0, "wall_s": 348.4, "nvidia_smi_max_mib": 11212} | hann_chunk=2, hann_stride=1
+[21:14:34] opt42b_tos rc=0 {"tag": "opt42b_tos", "rc": 0, "wall_s": 414.1, "nvidia_smi_max_mib": 6528} | Hann stage1: chunk=4, stride=2
+[21:17:54] trt build hair_detail rc=1 in 200 s: {"wall_s": 273.8, "ok": false, "exit": 0}
+[21:18:46] ckd_cuda_hair_detail rc=0 {"tag": "ckd_cuda_hair_detail", "rc": 0, "wall_s": 50.0, "nvidia_smi_max_mib": 15096} | hann_chunk=48, hann_stride=24
+[21:19:08] ckd_trt_hair_detail rc=1 {"tag": "ckd_trt_hair_detail", "rc": 1, "wall_s": 21.9, "nvidia_smi_max_mib": 13460} | hann_chunk=2, hann_stride=1
+[21:19:22] opt_hair_detail rc=1 {"tag": "opt_hair_detail", "rc": 1, "wall_s": 13.5, "nvidia_smi_max_mib": 4974} | hann_chunk=80, hann_stride=40
+[21:19:22] jer_hair_detail rc=2 {"tag": "jer_hair_detail", "rc": 2, "wall_s": 0.0, "nvidia_smi_max_mib": 0} | 
+[21:19:22] jer4824_hair_detail rc=2 {"tag": "jer4824_hair_detail", "rc": 2, "wall_s": 0.0, "nvidia_smi_max_mib": 0} | 
+[21:20:13] opt4824_hair_detail rc=0 {"tag": "opt4824_hair_detail", "rc": 0, "wall_s": 50.9, "nvidia_smi_max_mib": 9470} | Hann stage1: chunk=48, stride=24
+[21:20:39] ckd_trt2_hair_detail rc=1 {"tag": "ckd_trt2_hair_detail", "rc": 1, "wall_s": 26.9, "nvidia_smi_max_mib": 15142} | hann_chunk=48, hann_stride=24
+[21:20:40] trt build motion_blur rc=1 in 0 s: {"wall_s": 0.3, "ok": false, "exit": 0}
+ "rc": 1, "wall_s": 12.3, "nvidia_smi_max_mib": 13096} | hann_chunk=48, hann_stride=24
+[21:20:22] trt build motion_blur rc=1 in 0 s: {"wall_s": 0.2, "ok": false, "exit": 0}

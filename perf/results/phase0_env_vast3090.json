@@ -1,0 +1,269 @@
+{
+  "nvidia_smi_before_cuda_init": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "driver_version": "580.173.02",
+    "memory.total": "24576",
+    "memory.used": "1",
+    "memory.free": "24124",
+    "clocks.sm": "210",
+    "clocks.max.sm": "2115",
+    "clocks.mem": "405",
+    "clocks.max.mem": "9751",
+    "temperature.gpu": "48",
+    "power.draw": "22.07",
+    "pstate": "P8",
+    "pcie.link.gen.current": "1",
+    "pcie.link.width.current": "8"
+  },
+  "platform": {
+    "os": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "torch_cuda": "12.8",
+    "cudnn": 91002
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "capability": "sm_86",
+    "sm_count": 82,
+    "total_memory_gib": 23.559
+  },
+  "vram_after_cuda_init": {
+    "free_gib": 23.3,
+    "total_gib": 23.559,
+    "nvidia_smi": {
+      "memory.used": "266",
+      "memory.free": "23860"
+    }
+  },
+  "sdpa_flags": {
+    "flash": true,
+    "mem_efficient": true,
+    "cudnn": true,
+    "math": true
+  },
+  "sdpa_backends": {
+    "swin3d_16_T8_hd64": {
+      "flash": "ok",
+      "efficient": "ok (max|diff| vs first ok = 1.95e-03)",
+      "cudnn": "ok (max|diff| vs first ok = 1.95e-03)",
+      "math": "ok (max|diff| vs first ok = 1.95e-03)",
+      "default_dispatch_kernels": [
+        "void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 128, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, true, true, false, false>(pytorch_flash::Flash_fwd_params)"
+      ]
+    },
+    "fullspatial_16_1080p_hd64": {
+      "flash": "ok",
+      "efficient": "ok (max|diff| vs first ok = 9.77e-04)",
+      "cudnn": "ok (max|diff| vs first ok = 9.77e-04)",
+      "math": "ok (max|diff| vs first ok = 4.88e-04)",
+      "default_dispatch_kernels": [
+        "void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 128, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, false, true, false, false>(pytorch_flash::Flash_fwd_params)"
+      ]
+    },
+    "full3d_64_1080p_T8_hd96": {
+      "flash": "ok",
+      "efficient": "ok (max|diff| vs first ok = 9.77e-04)",
+      "cudnn": "ok (max|diff| vs first ok = 9.77e-04)",
+      "math": "ok (max|diff| vs first ok = 9.77e-04)",
+      "default_dispatch_kernels": [
+        "void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<96, 128, 64, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<96, 128, 64, 4, cutlass::bfloat16_t> >, false, false, false, false, false, true, false, false>(pytorch_flash::Flash_fwd_params)"
+      ]
+    }
+  },
+  "stored": {
+    "checkpoint:stage1": {
+      "tensors": 512,
+      "elements": 463607816,
+      "bytes": 1854431264,
+      "dtypes": {
+        "F32": 463607816
+      }
+    },
+    "checkpoint:stage2": {
+      "tensors": 226,
+      "elements": 201796420,
+      "bytes": 807185680,
+      "dtypes": {
+        "F32": 201796420
+      }
+    },
+    "vfms:cradio(model.safetensors)": {
+      "tensors": 330,
+      "elements": 431237240,
+      "bytes": 1724948968,
+      "dtypes": {
+        "I64": 2,
+        "F32": 431237238
+      }
+    },
+    "vfms:moge(model.pt)": {
+      "tensors": 337,
+      "elements": 104743598,
+      "bytes": 418974392,
+      "dtypes": {
+        "float32": 104743598
+      }
+    },
+    "vfms:rvm(npz)": {
+      "tensors": 525,
+      "elements": 67480448,
+      "bytes": 269921792,
+      "dtypes": {
+        "float32": 67480448
+      }
+    }
+  },
+  "checkpoint_metadata": {
+    "format": "corridorkey_v2_runtime_checkpoint",
+    "metadata": {
+      "public_model_name": "CorridorKey v2",
+      "pre_recurrence": true,
+      "shape_quantum": 128,
+      "required_vfms": [
+        "C-RADIOv4-SO400M",
+        "MoGe-2-ViT-B",
+        "RVM-small"
+      ]
+    },
+    "model_config": {
+      "d_16": 512,
+      "d_64": 1536,
+      "d_stage2": 1280,
+      "n_enc_16": 2,
+      "n_body_64": 10,
+      "n_dec_16": 6,
+      "num_heads_16": 8,
+      "num_heads_64": 16,
+      "num_heads_stage2": 16,
+      "window_HW": 16,
+      "window_size_stage2": 16,
+      "stage1_local_mix_kernel": 7,
+      "stage1_local_mix_init_std": null,
+      "stage1_body64_local_mix_kernel": 7,
+      "stage1_body64_local_mix_init_std": null,
+      "stage1_body64_mlp_hidden": null,
+      "stage1_body64_direct_concat": false,
+      "stage1_recurrent_64_sites": [],
+      "stage1_hint_adaln_blocks": 2,
+      "stage1_mid_16_blocks": 4,
+      "n_blocks_stage2": 10,
+      "n_final_blocks_stage2": 2,
+      "stage2_local_mix_kernel": 7,
+      "stage2_local_mix_init_std": null,
+      "refine4_blocks": 0,
+      "refine4_width": 96,
+      "refine4_token_channels": 48,
+      "refine4_kernel": 7,
+      "refine4_expansion": 2.0,
+      "mlp_mult": 2.5,
+      "mlp_dw_kernel": 0,
+      "qkv_dw_kernel": 7,
+      "qkv_dw_fraction": 0.25,
+      "use_moge": true,
+      "use_cradio": true,
+      "cradio_repo": "vfms/cradio/C-RADIOv4-SO400M",
+      "moge_checkpoint": "vfms/moge/model.pt",
+      "rvm_variant": "small",
+      "rvm_ckpt": "vfms/rvm/pretrain_rvm_small16_256_204031069.npz",
+      "gradient_checkpoint": false,
+      "overlap_patchify": false,
+      "overlap_mult": 2,
+      "depatch_fourier_features": 0,
+      "depatch_fourier_kernel": 3,
+      "enable_mae_mask_tokens": false,
+      "bottleneck_head_stride": 8,
+      "rope_shift_coords": null,
+      "rope_jitter_coords": null,
+      "rope_rescale_coords": null,
+      "rope_base": 100.0,
+      "foundation_stats_path": "weights/foundation_stats.pt"
+    }
+  },
+  "loaded": {
+    "foundations.cradio": {
+      "params": 431237232,
+      "param_bytes": 1724948928,
+      "buffers": 8,
+      "buffer_bytes": 40,
+      "dtypes": {
+        "float32": 431237238,
+        "int64": 2
+      },
+      "devices": {
+        "cuda:0": 431237240
+      }
+    },
+    "foundations.moge": {
+      "params": 104743592,
+      "param_bytes": 418974368,
+      "buffers": 6,
+      "buffer_bytes": 24,
+      "dtypes": {
+        "float32": 104743598
+      },
+      "devices": {
+        "cuda:0": 104743598
+      }
+    },
+    "foundations.rvm": {
+      "params": 33222656,
+      "param_bytes": 132890624,
+      "buffers": 98304,
+      "buffer_bytes": 393216,
+      "dtypes": {
+        "float32": 33320960
+      },
+      "devices": {
+        "cuda:0": 33320960
+      }
+    },
+    "stage1": {
+      "params": 463607816,
+      "param_bytes": 1854431264,
+      "buffers": 112,
+      "buffer_bytes": 448,
+      "dtypes": {
+        "float32": 463607928
+      },
+      "devices": {
+        "cpu": 463607928
+      }
+    },
+    "stage2": {
+      "params": 201796420,
+      "param_bytes": 807185680,
+      "buffers": 40,
+      "buffer_bytes": 160,
+      "dtypes": {
+        "float32": 201796460
+      },
+      "devices": {
+        "cpu": 201796460
+      }
+    },
+    "model_total": {
+      "params": 1234607716,
+      "param_bytes": 4938430864,
+      "buffers": 103078,
+      "buffer_bytes": 412320,
+      "dtypes": {
+        "float32": 1234710792,
+        "int64": 2
+      },
+      "devices": {
+        "cuda:0": 569306406,
+        "cpu": 665404388
+      }
+    }
+  },
+  "vram_after_load": {
+    "allocated_gib": 2.153,
+    "reserved_gib": 2.266,
+    "max_allocated_gib": 2.153,
+    "nvidia_smi": {
+      "memory.used": "2652",
+      "memory.free": "21474"
+    }
+  }
+}

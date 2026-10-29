@@ -1,0 +1,2 @@
+{"clip": "converge_2160", "megapixels": 8.35584, "mode": "lowvram", "window": 12, "frames": 48, "estimate_gib": 3.2688176842105268, "returncode": 0, "peak_allocated_gib": 3.626, "peak_reserved_gib": 4.908, "wall_s": 105.5}
+{"clip": "converge_2160", "megapixels": 8.35584, "mode": "lowvram", "window": 32, "frames": 48, "estimate_gib": 7.266847157894738, "returncode": 0, "peak_allocated_gib": 8.225, "peak_reserved_gib": 10.355, "wall_s": 112.6}

@@ -1,0 +1,1 @@
+float32 -> bfloat16, every value in [-1, 1]: 2130706434 values, CPU vs GPU mismatches 0

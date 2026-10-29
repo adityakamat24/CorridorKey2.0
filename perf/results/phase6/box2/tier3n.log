@@ -1,0 +1,11 @@
+[02:25:52] opt_hair_detail_a rc=0 {"tag": "opt_hair_detail_a", "rc": 0, "wall_s": 30.7} | peak reserved 8.592 GiB
+[02:26:19] optgpu_hair_detail_a rc=0 {"tag": "optgpu_hair_detail_a", "rc": 0, "wall_s": 26.5} | peak reserved 8.592 GiB
+[02:26:39] opt_motion_blur_a rc=0 {"tag": "opt_motion_blur_a", "rc": 0, "wall_s": 20.1} | peak reserved 8.297 GiB
+[02:26:57] optgpu_motion_blur_a rc=0 {"tag": "optgpu_motion_blur_a", "rc": 0, "wall_s": 18.1} | peak reserved 8.297 GiB
+[02:27:26] opt_hair_detail_b rc=0 {"tag": "opt_hair_detail_b", "rc": 0, "wall_s": 29.3} | peak reserved 8.592 GiB
+[02:27:53] optgpu_hair_detail_b rc=0 {"tag": "optgpu_hair_detail_b", "rc": 0, "wall_s": 26.8} | peak reserved 8.592 GiB
+[02:28:13] opt_motion_blur_b rc=0 {"tag": "opt_motion_blur_b", "rc": 0, "wall_s": 20.2} | peak reserved 8.297 GiB
+[02:28:31] optgpu_motion_blur_b rc=0 {"tag": "optgpu_motion_blur_b", "rc": 0, "wall_s": 18.0} | peak reserved 8.297 GiB
+[02:33:35] opt42 rc=0 {"tag": "opt42", "rc": 0, "wall_s": 303.8} | peak reserved 2.842 GiB
+[02:38:08] optgpu42 rc=0 {"tag": "optgpu42", "rc": 0, "wall_s": 273.3} | peak reserved 2.842 GiB
+[02:38:08] tier3n done

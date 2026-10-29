@@ -1,0 +1,21 @@
+[23:41:23] bf16 cast rc=0: float32 -> bfloat16, every value in [-1, 1]: 2130706434 values, CPU vs GPU mismatches 0
+[23:42:30] hd exr default rc=0
+[23:43:24] hd mp4 default rc=0
+[23:45:09] uhd exr default rc=0
+[23:45:56] hd exr new rc=0
+[23:46:23] hd mp4 new rc=0
+[23:47:36] uhd exr new rc=0
+[23:47:37] 1080p EXR default vs new: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[23:47:37] 1080p mp4 default vs new: 2 files in ref, 2 in cand: 2 identical, 0 differ, 0 on one side only
+[23:47:39] 4K EXR    default vs new: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[23:47:40] base42 rc=1 {"tag": "base42", "rc": 1, "wall_s": 1.1} | 
+[23:52:36] new42 rc=0 {"tag": "new42", "rc": 0, "wall_s": 295.0} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[23:57:14] new42a rc=0 {"tag": "new42a", "rc": 0, "wall_s": 278.2} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:01:48] base84 rc=0 {"tag": "base84", "rc": 0, "wall_s": 274.5} | peak allocated 2.664 GiB, peak reserved 3.559 GiB, budget 12.00 GiB
+[00:07:56] new84a rc=0 {"tag": "new84a", "rc": 0, "wall_s": 367.6} | peak allocated 2.664 GiB, peak reserved 3.559 GiB, budget 12.00 GiB
+[00:12:18] new42a2 rc=0 {"tag": "new42a2", "rc": 0, "wall_s": 262.3} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:12:44] base_hair_detail rc=0 {"tag": "base_hair_detail", "rc": 0, "wall_s": 25.5} | peak allocated 8.272 GiB, peak reserved 8.592 GiB, budget 12.00 GiB
+[00:13:08] new_hair_detail rc=0 {"tag": "new_hair_detail", "rc": 0, "wall_s": 24.5} | peak allocated 8.272 GiB, peak reserved 8.592 GiB, budget 12.00 GiB
+[00:13:25] base_motion_blur rc=0 {"tag": "base_motion_blur", "rc": 0, "wall_s": 17.1} | peak allocated 7.776 GiB, peak reserved 8.297 GiB, budget 12.00 GiB
+[00:13:43] new_motion_blur rc=0 {"tag": "new_motion_blur", "rc": 0, "wall_s": 17.2} | peak allocated 7.776 GiB, peak reserved 8.297 GiB, budget 12.00 GiB
+[00:13:43] tier3f done

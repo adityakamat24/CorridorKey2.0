@@ -1,0 +1,1121 @@
+{
+  "label": "1080p 8/4 block table",
+  "argv": [
+    "perf/bench.py",
+    "--sdpa",
+    "efficient",
+    "--mem_cap_gib",
+    "5.0",
+    "--input",
+    "test_clips/converge_1080",
+    "--hann_chunk",
+    "8",
+    "--hann_stride",
+    "4",
+    "--low_vram",
+    "--num_frames",
+    "8",
+    "--repeats",
+    "1",
+    "--warmup",
+    "0",
+    "--block_mem",
+    "--label",
+    "1080p 8/4 block table",
+    "--out",
+    "perf/results/phase2/blockmem_1080_8x4.json"
+  ],
+  "config": {
+    "hann_chunk": 8,
+    "hann_stride": 4,
+    "carry_hint": true,
+    "hint_quality": 0.95,
+    "carry_hint_quality": 0.95,
+    "shape_quantum": 128,
+    "model_scale": 1.0,
+    "num_frames": 8,
+    "start_mode": "begin",
+    "seed": 0,
+    "low_vram": true,
+    "auto_vram": false,
+    "low_vram_foundation_chunk": 4,
+    "low_vram_mlp_chunk_tokens": 65536,
+    "low_vram_enc_frame_chunk": 1,
+    "low_vram_swin_window_batch": 16,
+    "low_vram_full_attn_query_chunk_tokens": 2048,
+    "stage2_batch": 1,
+    "outputs": [
+      "alpha",
+      "fg"
+    ],
+    "temp_dir": "/root/ck/perf/out/_tmp/bench",
+    "linear_brightness": 1.0,
+    "linear_contrast": 1.0,
+    "linear_contrast_pivot": 0.18,
+    "frame_dir_fps": 30.0,
+    "frame_dir_linear": false,
+    "cutout_linear": false,
+    "despill_strength": 0.5,
+    "output_format": "video",
+    "exr_dtype": "half"
+  },
+  "sdpa": "efficient",
+  "mem_cap_gib": 5.0,
+  "env": {
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "alloc_conf": null,
+    "nvml_idle": {
+      "t": 3949506.773472643,
+      "phase": "idle",
+      "mem_used": 395444224,
+      "sm_mhz": 1792,
+      "mem_mhz": 7501,
+      "gpu_util": 0,
+      "power_w": 44.782,
+      "temp_c": 53
+    }
+  },
+  "model_shape_hw": [
+    1152,
+    1920
+  ],
+  "vram_table_estimate_gib": 4.121037674418605,
+  "load_s": 6.795828673988581,
+  "summary": {
+    "measured_runs": 1,
+    "total_s_median": 13.56058476306498,
+    "total_s_all": [
+      13.561
+    ],
+    "peak_allocated_gib": 3.2236528396606445,
+    "peak_reserved_gib": 4.74609375,
+    "peak_owner_phase": "stage1",
+    "stage1_window_ms_median": 1830.9959716796875,
+    "stage2_forward_ms_per_frame": 510.1430892944336,
+    "phases": {
+      "setup": {
+        "wall_s": 0.12370730191469193,
+        "wall_s_all": [
+          0.124
+        ],
+        "peak_allocated_gib": 2.145106792449951,
+        "peak_reserved_gib": 2.265625,
+        "nvml_mem_used_max_gib": 2.7432861328125,
+        "sm_mhz_median": 1792
+      },
+      "rvm": {
+        "wall_s": 0.8827000590972602,
+        "wall_s_all": [
+          0.883
+        ],
+        "peak_allocated_gib": 2.442470073699951,
+        "peak_reserved_gib": 2.572265625,
+        "nvml_mem_used_max_gib": 3.0831298828125,
+        "sm_mhz_median": 1792
+      },
+      "after_rvm": {
+        "wall_s": 0.00043870508670806885,
+        "wall_s_all": [
+          0.0
+        ],
+        "peak_allocated_gib": 2.154017925262451,
+        "peak_reserved_gib": 2.3671875,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "foundations": {
+        "wall_s": 0.8717004428617656,
+        "wall_s_all": [
+          0.872
+        ],
+        "peak_allocated_gib": 2.2887845039367676,
+        "peak_reserved_gib": 2.44140625,
+        "nvml_mem_used_max_gib": 2.9522705078125,
+        "sm_mhz_median": 1792.0
+      },
+      "after_foundations": {
+        "wall_s": 1.4649074259214103,
+        "wall_s_all": [
+          1.465
+        ],
+        "peak_allocated_gib": 2.154017925262451,
+        "peak_reserved_gib": 3.72265625,
+        "nvml_mem_used_max_gib": 4.2178955078125,
+        "sm_mhz_median": 1950
+      },
+      "stage1": {
+        "wall_s": 3.2807499961927533,
+        "wall_s_all": [
+          3.281
+        ],
+        "peak_allocated_gib": 3.2236528396606445,
+        "peak_reserved_gib": 4.74609375,
+        "nvml_mem_used_max_gib": 5.2589111328125,
+        "sm_mhz_median": 1950.0
+      },
+      "after_stage1": {
+        "wall_s": 0.0003904537297785282,
+        "wall_s_all": [
+          0.0
+        ],
+        "peak_allocated_gib": 1.7474937438964844,
+        "peak_reserved_gib": 1.83984375,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "stage2": {
+        "wall_s": 6.376411670353264,
+        "wall_s_all": [
+          6.376
+        ],
+        "peak_allocated_gib": 1.4488630294799805,
+        "peak_reserved_gib": 1.873046875,
+        "nvml_mem_used_max_gib": 2.3878173828125,
+        "sm_mhz_median": 1935.0
+      },
+      "encode_tail": {
+        "wall_s": 0.5599084720015526,
+        "wall_s_all": [
+          0.56
+        ],
+        "peak_allocated_gib": 0.7713265419006348,
+        "peak_reserved_gib": 1.873046875,
+        "nvml_mem_used_max_gib": 2.3878173828125,
+        "sm_mhz_median": 1935
+      }
+    }
+  },
+  "runs": [
+    {
+      "warmup": false,
+      "total_s": 13.56058476306498,
+      "frames": 8,
+      "phases": [
+        {
+          "phase": "setup",
+          "allocated_start_gib": 2.145106792449951,
+          "wall_s": 0.12370730191469193,
+          "peak_allocated_gib": 2.145106792449951,
+          "peak_reserved_gib": 2.265625,
+          "allocated_end_gib": 2.145106792449951,
+          "reserved_end_gib": 2.265625,
+          "nvml_samples": 7,
+          "nvml_mem_used_max_gib": 2.7432861328125,
+          "sm_mhz_median": 1792,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 0.0,
+          "power_w_median": 44.453,
+          "temp_c_max": 52
+        },
+        {
+          "phase": "rvm",
+          "allocated_start_gib": 2.145106792449951,
+          "wall_s": 0.8827000590972602,
+          "peak_allocated_gib": 2.442470073699951,
+          "peak_reserved_gib": 2.572265625,
+          "allocated_end_gib": 2.154017925262451,
+          "reserved_end_gib": 2.3671875,
+          "nvml_samples": 43,
+          "nvml_mem_used_max_gib": 3.0831298828125,
+          "sm_mhz_median": 1792,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 0.0,
+          "power_w_median": 42.442,
+          "temp_c_max": 52
+        },
+        {
+          "phase": "after_rvm",
+          "allocated_start_gib": 2.154017925262451,
+          "wall_s": 0.00043870508670806885,
+          "peak_allocated_gib": 2.154017925262451,
+          "peak_reserved_gib": 2.3671875,
+          "allocated_end_gib": 2.154017925262451,
+          "reserved_end_gib": 2.3671875
+        },
+        {
+          "phase": "foundations",
+          "allocated_start_gib": 2.154017925262451,
+          "wall_s": 0.8717004428617656,
+          "peak_allocated_gib": 2.2887845039367676,
+          "peak_reserved_gib": 2.44140625,
+          "allocated_end_gib": 2.154017925262451,
+          "reserved_end_gib": 2.365234375,
+          "nvml_samples": 42,
+          "nvml_mem_used_max_gib": 2.9522705078125,
+          "sm_mhz_median": 1792.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 2.8333333333333335,
+          "power_w_median": 44.453,
+          "temp_c_max": 53
+        },
+        {
+          "phase": "after_foundations",
+          "allocated_start_gib": 2.154017925262451,
+          "wall_s": 1.4649074259214103,
+          "peak_allocated_gib": 2.154017925262451,
+          "peak_reserved_gib": 3.72265625,
+          "allocated_end_gib": 1.7474937438964844,
+          "reserved_end_gib": 1.83984375,
+          "nvml_samples": 73,
+          "nvml_mem_used_max_gib": 4.2178955078125,
+          "sm_mhz_median": 1950,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 18.506849315068493,
+          "power_w_median": 61.959,
+          "temp_c_max": 53
+        },
+        {
+          "phase": "stage1",
+          "allocated_start_gib": 1.7474937438964844,
+          "wall_s": 3.2807499961927533,
+          "peak_allocated_gib": 3.2236528396606445,
+          "peak_reserved_gib": 4.74609375,
+          "allocated_end_gib": 1.7474937438964844,
+          "reserved_end_gib": 1.83984375,
+          "nvml_samples": 162,
+          "nvml_mem_used_max_gib": 5.2589111328125,
+          "sm_mhz_median": 1950.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 61.29012345679013,
+          "power_w_median": 67.391,
+          "temp_c_max": 63
+        },
+        {
+          "phase": "after_stage1",
+          "allocated_start_gib": 1.7474937438964844,
+          "wall_s": 0.0003904537297785282,
+          "peak_allocated_gib": 1.7474937438964844,
+          "peak_reserved_gib": 1.83984375,
+          "allocated_end_gib": 1.7474937438964844,
+          "reserved_end_gib": 1.83984375
+        },
+        {
+          "phase": "stage2",
+          "allocated_start_gib": 1.7474937438964844,
+          "wall_s": 6.376411670353264,
+          "peak_allocated_gib": 1.4488630294799805,
+          "peak_reserved_gib": 1.873046875,
+          "allocated_end_gib": 0.7713265419006348,
+          "reserved_end_gib": 1.873046875,
+          "nvml_samples": 316,
+          "nvml_mem_used_max_gib": 2.3878173828125,
+          "sm_mhz_median": 1935.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 70.32278481012658,
+          "power_w_median": 119.006,
+          "temp_c_max": 64
+        },
+        {
+          "phase": "encode_tail",
+          "allocated_start_gib": 0.7713265419006348,
+          "wall_s": 0.5599084720015526,
+          "peak_allocated_gib": 0.7713265419006348,
+          "peak_reserved_gib": 1.873046875,
+          "allocated_end_gib": 0.7713265419006348,
+          "reserved_end_gib": 0.802734375,
+          "nvml_samples": 27,
+          "nvml_mem_used_max_gib": 2.3878173828125,
+          "sm_mhz_median": 1935,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 36.666666666666664,
+          "power_w_median": 116.727,
+          "temp_c_max": 63
+        }
+      ],
+      "oom": null,
+      "stage1_windows_ms": [
+        1830.9959716796875
+      ],
+      "stage2_forward_ms_total": 4081.1447143554688,
+      "phase_before_encode": "stage2",
+      "stage2_forwards": 8,
+      "block_mem": [
+        {
+          "block": "stage1.stem",
+          "transient_peak_gib": 0.4091806411743164,
+          "resident_delta_gib": 0.0712900161743164
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.08629703521728516,
+          "resident_delta_gib": 0.017719268798828125
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.0861196517944336,
+          "resident_delta_gib": 0.017541885375976562
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.0",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.enc_16.1",
+          "transient_peak_gib": 0.07828330993652344,
+          "resident_delta_gib": 0.00823974609375
+        },
+        {
+          "block": "stage1.down",
+          "transient_peak_gib": 0.14496088027954102,
+          "resident_delta_gib": 0.035370826721191406
+        },
+        {
+          "block": "stage1.fuse",
+          "transient_peak_gib": 0.27631282806396484,
+          "resident_delta_gib": 0.10162162780761719
+        },
+        {
+          "block": "stage1.body_64.0",
+          "transient_peak_gib": 0.15946483612060547,
+          "resident_delta_gib": 0.0637969970703125
+        },
+        {
+          "block": "stage1.body_64.1",
+          "transient_peak_gib": 0.15946483612060547,
+          "resident_delta_gib": 0.0634002685546875
+        },
+        {
+          "block": "stage1.body_64.2",
+          "transient_peak_gib": 0.16001415252685547,
+          "resident_delta_gib": 0.0639495849609375
+        },
+        {
+          "block": "stage1.body_64.3",
+          "transient_peak_gib": 0.15949535369873047,
+          "resident_delta_gib": 0.0639495849609375
+        },
+        {
+          "block": "stage1.body_64.4",
+          "transient_peak_gib": 0.15774059295654297,
+          "resident_delta_gib": 0.06297111511230469
+        },
+        {
+          "block": "stage1.mid_up",
+          "transient_peak_gib": 0.2973794937133789,
+          "resident_delta_gib": 0.0937662124633789
+        },
+        {
+          "block": "stage1.mid_16.0",
+          "transient_peak_gib": 1.3288536071777344,
+          "resident_delta_gib": 0.13806915283203125
+        },
+        {
+          "block": "stage1.mid_16.1",
+          "transient_peak_gib": 1.2208495140075684,
+          "resident_delta_gib": 0.13834381103515625
+        },
+        {
+          "block": "stage1.mid_16.2",
+          "transient_peak_gib": 0.8701333999633789,
+          "resident_delta_gib": 0.1382007598876953
+        },
+        {
+          "block": "stage1.mid_16.3",
+          "transient_peak_gib": 0.8701333999633789,
+          "resident_delta_gib": 0.1382007598876953
+        },
+        {
+          "block": "stage1.mid_down",
+          "transient_peak_gib": 0.36896371841430664,
+          "resident_delta_gib": 0.10611248016357422
+        },
+        {
+          "block": "stage1.body_64.5",
+          "transient_peak_gib": 0.15703868865966797,
+          "resident_delta_gib": 0.06297111511230469
+        },
+        {
+          "block": "stage1.body_64.6",
+          "transient_peak_gib": 0.15703868865966797,
+          "resident_delta_gib": 0.06297111511230469
+        },
+        {
+          "block": "stage1.body_64.7",
+          "transient_peak_gib": 0.15760326385498047,
+          "resident_delta_gib": 0.06353569030761719
+        },
+        {
+          "block": "stage1.body_64.8",
+          "transient_peak_gib": 0.15703868865966797,
+          "resident_delta_gib": 0.06297111511230469
+        },
+        {
+          "block": "stage1.body_64.9",
+          "transient_peak_gib": 0.15703868865966797,
+          "resident_delta_gib": 0.06297111511230469
+        },
+        {
+          "block": "stage1.bottleneck_depatchify",
+          "transient_peak_gib": 0.026230812072753906,
+          "resident_delta_gib": 0.005218982696533203
+        },
+        {
+          "block": "stage1.up",
+          "transient_peak_gib": 0.2959151268005371,
+          "resident_delta_gib": 0.0937662124633789
+        },
+        {
+          "block": "stage1.dec_16.0",
+          "transient_peak_gib": 0.9693355560302734,
+          "resident_delta_gib": 0.1379261016845703
+        },
+        {
+          "block": "stage1.dec_16.1",
+          "transient_peak_gib": 0.8700418472290039,
+          "resident_delta_gib": 0.1390857696533203
+        },
+        {
+          "block": "stage1.dec_16.2",
+          "transient_peak_gib": 0.8691568374633789,
+          "resident_delta_gib": 0.1382007598876953
+        },
+        {
+          "block": "stage1.dec_16.3",
+          "transient_peak_gib": 0.8701333999633789,
+          "resident_delta_gib": 0.1382007598876953
+        },
+        {
+          "block": "stage1.dec_16.4",
+          "transient_peak_gib": 0.8701333999633789,
+          "resident_delta_gib": 0.1382007598876953
+        },
+        {
+          "block": "stage1.dec_16.5",
+          "transient_peak_gib": 0.8710184097290039,
+          "resident_delta_gib": 0.1395740509033203
+        },
+        {
+          "block": "stage1.aux_depatchify",
+          "transient_peak_gib": 0.2336435317993164,
+          "resident_delta_gib": 0.0339360237121582
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4461202621459961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4534444808959961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4917325973510742,
+          "resident_delta_gib": 0.07695817947387695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07660055160522461
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03524923324584961,
+          "resident_delta_gib": 0.01464986801147461
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30648040771484375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4617452621459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        },
+        {
+          "block": "stage2.patch_1",
+          "transient_peak_gib": 0.01757955551147461,
+          "resident_delta_gib": 0.01757955551147461
+        },
+        {
+          "block": "stage2.pre_blocks.0",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.1",
+          "transient_peak_gib": 0.4470968246459961,
+          "resident_delta_gib": 0.07703447341918945
+        },
+        {
+          "block": "stage2.pre_blocks.2",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.3",
+          "transient_peak_gib": 0.4544210433959961,
+          "resident_delta_gib": 0.07756853103637695
+        },
+        {
+          "block": "stage2.pre_blocks.4",
+          "transient_peak_gib": 0.2647390365600586,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.pre_blocks.5",
+          "transient_peak_gib": 0.2644186019897461,
+          "resident_delta_gib": 0.07635641098022461
+        },
+        {
+          "block": "stage2.pre_blocks.6",
+          "transient_peak_gib": 0.4925870895385742,
+          "resident_delta_gib": 0.07683610916137695
+        },
+        {
+          "block": "stage2.pre_blocks.7",
+          "transient_peak_gib": 0.29830169677734375,
+          "resident_delta_gib": 0.07667684555053711
+        },
+        {
+          "block": "stage2.patch_2_gate",
+          "transient_peak_gib": 0.03563070297241211,
+          "resident_delta_gib": 0.01503133773803711
+        },
+        {
+          "block": "stage2.patch_2",
+          "transient_peak_gib": 0.01675558090209961,
+          "resident_delta_gib": 0.01675558090209961
+        },
+        {
+          "block": "stage2.final_blocks.0",
+          "transient_peak_gib": 0.30660247802734375,
+          "resident_delta_gib": 0.07721090316772461
+        },
+        {
+          "block": "stage2.final_blocks.1",
+          "transient_peak_gib": 0.4627218246459961,
+          "resident_delta_gib": 0.07671403884887695
+        },
+        {
+          "block": "stage2.depatchify",
+          "transient_peak_gib": 0.1199350357055664,
+          "resident_delta_gib": 0.026245594024658203
+        }
+      ]
+    }
+  ]
+}

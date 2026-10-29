@@ -1,0 +1,31 @@
+GPU kernel time 14048.6 ms over 47377 launches; memcpy/memset time 1534.1 ms
+run wall time 21916.0 ms -> GPU busy 71.1% (kernels 64.1%), idle 28.9%
+
+host-blocking / copy APIs:
+  cudaStreamSynchronize            calls    5104  total   10935.9 ms  avg   2142.6 us
+  cudaMemcpyAsync                  calls    5264  total    2420.2 ms  avg    459.8 us
+  cudaFree                         calls     195  total     114.8 ms  avg    588.8 us
+  cudaMalloc                       calls     222  total      20.5 ms  avg     92.1 us
+  cudaHostAlloc                    calls       1  total       1.5 ms  avg   1537.8 us
+  cudaMemsetAsync                  calls    1757  total       1.1 ms  avg      0.6 us
+  cudaDeviceSynchronize            calls      16  total       0.1 ms  avg      8.5 us
+
+memory operations:
+  [CUDA memcpy Device-to-Host]             count    1553  total    1043.4 ms
+  [CUDA memcpy Host-to-Device]             count    3607  total     483.7 ms
+  [CUDA memset]                            count      47  total       3.9 ms
+  [CUDA memcpy Device-to-Device]           count     104  total       3.2 ms
+
+top kernels:
+   13.3%    1862.6 ms     350x  void at::native::<unnamed>::conv_depthwise2d_forward_kernel_generic<c10::BFloat16, int>(at::GenericP
+   12.7%    1790.3 ms     870x  void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x256_32x3_tn_align8>(T1::Para
+   11.5%    1612.3 ms    1014x  fmha_cutlassF_bf16_aligned_64x128_rf_sm80(PyTorchMemEffAttention::AttentionKernel<cutlass::bfloat16_
+    7.5%    1056.2 ms      19x  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_bf16_s16816dgrad_optimized_bf16_128x64_32x6_nhwc_ali
+    7.1%     992.3 ms     746x  void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_256x128_32x3_tn_align8>(T1::Para
+    5.5%     773.3 ms     740x  fmha_cutlassF_bf16_aligned_64x64_rf_sm80(PyTorchMemEffAttention::AttentionKernel<cutlass::bfloat16_t
+    5.5%     771.4 ms    3816x  void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::na
+    4.2%     583.7 ms     378x  ampere_bf16_s16816gemm_bf16_256x128_ldg8_relu_f2f_stages_32x3_tn
+    3.2%     452.1 ms    4778x  void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::na
+    2.6%     362.3 ms    1010x  void at::native::<unnamed>::vectorized_layer_norm_kernel<c10::BFloat16, float, (bool)1>(int, T2, con
+    2.5%     344.6 ms      32x  void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, (int)1024, (int)5, (int)5, (int)3, (int)3
+    2.3%     329.2 ms    1707x  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::na

@@ -1,0 +1,27 @@
+[22:18:35] gpu_prep vs cpu, 1080p PNG: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[22:18:37] gpu_prep vs cpu, 4K EXR:    32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[22:18:56] 1080p: hair_1080                    48  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0,1,2,3,4
+[22:19:26] 4K: 04_5h                        16  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0,1,2,3,4
+[22:24:56] bench 4K cpu prep: [bench] median total 316.41s; peak reserved 3.17 GiB (allocated 2.93) in prepass; table estimate 8.790615765237021
+    load 4.32 s
+    setup                0.56 s   SM median   2482 MHz
+    prepass             40.78 s   SM median   2482 MHz
+    after_prepass        0.68 s   SM median   2482 MHz
+    stage1             119.10 s   SM median   2482 MHz
+    after_stage1         0.00 s   SM median      0 MHz
+    stage2             128.82 s   SM median   2482 MHz
+    encode_tail         26.46 s   SM median   2482 MHz
+[22:29:53] bench 4K gpu prep: [bench] median total 283.17s; peak reserved 4.11 GiB (allocated 3.03) in prepass; table estimate 8.790615765237021
+    load 6.97 s
+    setup                0.54 s   SM median   2482 MHz
+    prepass             21.95 s   SM median   2482 MHz
+    after_prepass        0.65 s   SM median   2482 MHz
+    stage1             116.53 s   SM median   2482 MHz
+    after_stage1         0.00 s   SM median      0 MHz
+    stage2             117.06 s   SM median   2482 MHz
+    encode_tail         26.44 s   SM median   2482 MHz
+[22:35:23] tos_cpu rc=0 {"tag": "tos_cpu", "rc": 0, "wall_s": 329.8}
+[22:40:31] tos_gpu rc=0 {"tag": "tos_gpu", "rc": 0, "wall_s": 308.0}
+[22:46:08] tos_cpu2 rc=0 {"tag": "tos_cpu2", "rc": 0, "wall_s": 336.6}
+[22:51:25] tos_gpu2 rc=0 {"tag": "tos_gpu2", "rc": 0, "wall_s": 316.9}
+[22:51:25] tier2e done

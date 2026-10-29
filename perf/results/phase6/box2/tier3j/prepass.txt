@@ -1,0 +1,38 @@
+10.8 s of main-thread samples in precompute_prepasses_to_memmap
+     4.89 s  precompute_prepasses_to_memmap:895 -> <self>
+     1.33 s  precompute_prepasses_to_memmap:902 -> run_foundations (corridorkey/runtime.py:869)
+     1.25 s  precompute_prepasses_to_memmap:892 -> iter_frame_dir_views_on_device (corridorkey/video_io.py:499)
+     1.10 s  precompute_prepasses_to_memmap:902 -> run_foundations (corridorkey/runtime.py:871)
+     0.84 s  precompute_prepasses_to_memmap:902 -> run_rvm (corridorkey/runtime.py:856)
+     0.47 s  precompute_prepasses_to_memmap:902 -> run_foundations (corridorkey/runtime.py:865)
+     0.46 s  precompute_prepasses_to_memmap:892 -> iter_frame_dir_views_on_device (corridorkey/video_io.py:497)
+     0.26 s  precompute_prepasses_to_memmap:902 -> run_rvm (corridorkey/runtime.py:858)
+     0.09 s  precompute_prepasses_to_memmap:902 -> run_rvm (corridorkey/runtime.py:857)
+     0.04 s  precompute_prepasses_to_memmap:909 -> flush (numpy/core/memmap.py:317)
+     0.03 s  precompute_prepasses_to_memmap:910 -> <self>
+     0.02 s  precompute_prepasses_to_memmap:902 -> run_rvm (corridorkey/runtime.py:850)
+     0.02 s  precompute_prepasses_to_memmap:911 -> empty_cache (torch/cuda/memory.py:224)
+     0.01 s  precompute_prepasses_to_memmap:902 -> run_foundations (corridorkey/runtime.py:863)
+     0.01 s  precompute_prepasses_to_memmap:909 -> <self>
+leaf frames:
+     4.89 s  precompute_prepasses_to_memmap (corridorkey/runtime.py:895)
+     1.33 s  run_foundations (corridorkey/runtime.py:869)
+     1.10 s  run_foundations (corridorkey/runtime.py:871)
+     0.81 s  frame_dir_views_on_device (corridorkey/video_io.py:513)
+     0.46 s  wait (threading.py:327)
+     0.41 s  forward (torch/nn/modules/linear.py:134)
+     0.35 s  _conv_forward (torch/nn/modules/conv.py:543)
+     0.26 s  run_rvm (corridorkey/runtime.py:858)
+     0.17 s  _extract_final (radio_model.py:196)
+     0.10 s  linear_to_srgb (corridorkey/color_utils.py:44)
+     0.09 s  run_rvm (corridorkey/runtime.py:857)
+     0.07 s  linear_to_srgb (corridorkey/color_utils.py:47)
+     0.07 s  linear_to_srgb (corridorkey/color_utils.py:45)
+     0.06 s  linear_to_asinh (corridorkey/color_utils.py:134)
+     0.05 s  layer_norm (torch/nn/functional.py:2901)
+     0.04 s  frame_dir_views_on_device (corridorkey/video_io.py:516)
+     0.04 s  forward (corridorkey/rvm.py:151)
+     0.04 s  flush (numpy/core/memmap.py:317)
+     0.03 s  forward (corridorkey/rvm.py:167)
+     0.03 s  precompute_prepasses_to_memmap (corridorkey/runtime.py:910)
+threads: {'_bootstrap (threading.py:1002)': 382.1, 'main': 94.2, '': 0.5}

@@ -1,0 +1,48 @@
+29.6 s of main-thread samples in hann_stage1_stream
+    17.27 s  hann_stage1_stream:1184 -> _wrapped_call_impl (torch/nn/modules/module.py:1775)
+     2.80 s  hann_stage1_stream:1213 -> <self>
+     2.45 s  hann_stage1_stream:1199 -> <self>
+     2.13 s  hann_stage1_stream:1223 -> flush_before (corridorkey/runtime.py:1095)
+     1.80 s  hann_stage1_stream:1129 -> window (corridorkey/runtime.py:627)
+     0.95 s  hann_stage1_stream:1223 -> flush_before (corridorkey/runtime.py:1097)
+     0.41 s  hann_stage1_stream:1153 -> <self>
+     0.39 s  hann_stage1_stream:1216 -> accumulate (corridorkey/runtime.py:1107)
+     0.27 s  hann_stage1_stream:1170 -> <self>
+     0.18 s  hann_stage1_stream:1168 -> <self>
+     0.17 s  hann_stage1_stream:1201 -> <self>
+     0.15 s  hann_stage1_stream:1216 -> accumulate (corridorkey/runtime.py:1110)
+     0.08 s  hann_stage1_stream:1154 -> <self>
+     0.07 s  hann_stage1_stream:1221 -> <self>
+     0.06 s  hann_stage1_stream:1139 -> <self>
+     0.06 s  hann_stage1_stream:1205 -> <self>
+     0.06 s  hann_stage1_stream:1130 -> <self>
+     0.06 s  hann_stage1_stream:1171 -> <self>
+     0.05 s  hann_stage1_stream:1219 -> <self>
+     0.05 s  hann_stage1_stream:1169 -> <self>
+     0.03 s  hann_stage1_stream:1242 -> <self>
+     0.02 s  hann_stage1_stream:1175 -> <self>
+     0.01 s  hann_stage1_stream:1174 -> <self>
+     0.01 s  hann_stage1_stream:1176 -> <self>
+     0.01 s  hann_stage1_stream:1241 -> flush (numpy/core/memmap.py:317)
+leaf frames:
+     3.12 s  forward (torch/nn/modules/linear.py:134)
+     2.89 s  forward (corridorkey/stage1.py:859)
+     2.80 s  hann_stage1_stream (corridorkey/runtime.py:1213)
+     2.45 s  hann_stage1_stream (corridorkey/runtime.py:1199)
+     2.13 s  flush_before (corridorkey/runtime.py:1095)
+     1.80 s  window (corridorkey/runtime.py:627)
+     1.11 s  _forward_lean (corridorkey/blocks.py:1838)
+     1.06 s  _swin3d_run_lean (corridorkey/stage1.py:659)
+     0.95 s  flush_before (corridorkey/runtime.py:1097)
+     0.80 s  pad (torch/nn/functional.py:5294)
+     0.51 s  apply_rotary (corridorkey/rope.py:92)
+     0.48 s  rms_norm (torch/nn/functional.py:2920)
+     0.41 s  hann_stage1_stream (corridorkey/runtime.py:1153)
+     0.39 s  accumulate (corridorkey/runtime.py:1107)
+     0.39 s  forward (torch/nn/modules/conv.py:1161)
+     0.38 s  forward (corridorkey/blocks.py:91)
+     0.37 s  apply_rotary (corridorkey/rope.py:91)
+     0.34 s  _forward_lean (corridorkey/blocks.py:1824)
+     0.33 s  apply_rotary (corridorkey/rope.py:93)
+     0.30 s  _conv_forward (torch/nn/modules/conv.py:543)
+threads: {'_bootstrap (threading.py:1002)': 353.6, 'main': 95.3, '': 0.4, '_exitfunc (weakref.py:666)': 0.0}

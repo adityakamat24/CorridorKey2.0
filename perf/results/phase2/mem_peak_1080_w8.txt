@@ -1,0 +1,27 @@
+peak allocated 4.096 GiB across 770 blocks
+      MiB  blocks  site
+   1768.5     520  runtime.py:868 run_inference
+    230.2      48  blocks.py:325 forward
+    160.0       1  blocks.py:1399 forward
+    160.0       1  blocks.py:1493 forward
+    160.0       1  blocks.py:1511 forward
+    160.0       1  blocks.py:607 window_unpartition_3d
+    135.0       1  stage1.py:895 forward
+    135.0       1  stage1.py:596 _swin3d_run
+    135.0       1  blocks.py:90 forward
+    135.0       1  blocks.py:1532 forward
+    128.0       4  blocks.py:3132 forward
+    115.0      24  blocks.py:327 forward
+    101.2       1  runtime.py:508 hann_stage1_stream
+     88.6      22  blocks.py:948 forward
+     83.2       6  blocks.py:551 forward
+     71.5       3  blocks.py:3112 forward
+     67.5       1  stage1.py:599 _swin3d_run
+     54.0       8  blocks.py:2193 forward
+     48.0       4  blocks.py:3167 forward
+     48.0       1  blocks.py:949 forward
+     45.0      20  blocks.py:2223 forward
+     33.8       1  runtime.py:509 hann_stage1_stream
+     32.0       1  blocks.py:1460 _take_windows
+     19.0       1  runtime.py:526 hann_stage1_stream
+     12.7       1  runtime.py:524 hann_stage1_stream

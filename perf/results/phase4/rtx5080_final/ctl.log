@@ -1,0 +1,14 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[07:51:00] setup: setup done
+[07:52:58] video ref vs ref2: 4 files in ref, 4 in cand: 0 identical, 4 differ, 0 on one side only
+[07:52:58] video ref vs all:  4 files in ref, 4 in cand: 0 identical, 4 differ, 0 on one side only
+[07:55:51] exr ref vs ref2: 96 files in ref, 96 in cand: 16 identical, 80 differ, 0 on one side only
+[07:55:52] exr ref vs all:  96 files in ref, 96 in cand: 16 identical, 80 differ, 0 on one side only
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+converge200_1080             24  5.62e-05  7.81e-03  4.80e-04  7.81e-03  4.53e-04  1.01e-04  15,19,11,14,20
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+converge200_1080             24  5.63e-05  1.17e-02  4.85e-04  1.17e-02  4.53e-04  1.01e-04  19,15,11,18,16
+[08:01:24] w20 ref vs ref2: 96 files in ref, 96 in cand: 20 identical, 76 differ, 0 on one side only
+[08:01:25] w20 ref vs all:  96 files in ref, 96 in cand: 20 identical, 76 differ, 0 on one side only
+[08:01:25] tos frames: 24
+[08:06:44] control done

@@ -1,0 +1,90 @@
+diff --git a/corridorkey/blocks.py b/corridorkey/blocks.py
+index 25f5c15..fbd9bb3 100644
+--- a/corridorkey/blocks.py
++++ b/corridorkey/blocks.py
+@@ -374,6 +374,10 @@ class DepthwiseSwiGLU2D(nn.Module):
+             mode = 'reflect' if x.shape[1] > self.pad and x.shape[2] > self.pad else 'replicate'
+             u = F.pad(u, (self.pad, self.pad, self.pad, self.pad),
+                       mode=mode)
++        if getattr(self, 'inference_channels_last', False):
++            # F.pad returns NCHW-contiguous, which sends depthwise convs to
++            # PyTorch's generic kernel; channels-last routes them to cuDNN.
++            u = u.contiguous(memory_format=torch.channels_last)
+         # One grouped conv with two filters per input channel. Keep value/gate
+         # as separate parameters for optimizer state and checkpoint clarity,
+         # but avoid launching two depthwise convs over the same activation.
+@@ -869,6 +873,17 @@ def _shifted_region_groups_3d_cached(
+     )
+ 
+ 
++_REGION_INDEX_CACHE: dict | None = None
++
++
++def set_region_index_cache(enabled: bool) -> None:
++    """Opt-in: keep the index tensors of shifted-window region groups on the
++    GPU across calls. Without it every call builds them from Python tuples,
++    one blocking host-to-device copy per tensor. Same indices, same results."""
++    global _REGION_INDEX_CACHE
++    _REGION_INDEX_CACHE = {} if enabled else None
++
++
+ def _sdpa_with_region_groups(
+     q: torch.Tensor,
+     k: torch.Tensor,
+@@ -885,14 +900,32 @@ def _sdpa_with_region_groups(
+             f"cached window count {num_windows} does not divide attention "
+             f"window batch {q.shape[0]}")
+     batch_windows = q.shape[0] // num_windows
++    cache = _REGION_INDEX_CACHE
++
++    def _index(values: tuple[int, ...]) -> torch.Tensor:
++        if cache is None:
++            return torch.tensor(values, device=q.device, dtype=torch.long)
++        key = ("idx", values, q.device)
++        t = cache.get(key)
++        if t is None:
++            t = cache[key] = torch.tensor(values, device=q.device, dtype=torch.long)
++        return t
+ 
+     def _batched_windows(base: tuple[int, ...]) -> torch.Tensor:
+-        idx = torch.tensor(base, device=q.device, dtype=torch.long)
++        if cache is not None:
++            key = ("win", base, batch_windows, num_windows, q.device)
++            t = cache.get(key)
++            if t is not None:
++                return t
++        idx = _index(base)
+         if batch_windows == 1 or idx.numel() == 0:
+             return idx
+         offsets = torch.arange(
+             batch_windows, device=q.device, dtype=torch.long) * num_windows
+-        return (idx.unsqueeze(0) + offsets.unsqueeze(1)).reshape(-1)
++        idx = (idx.unsqueeze(0) + offsets.unsqueeze(1)).reshape(-1)
++        if cache is not None:
++            cache[("win", base, batch_windows, num_windows, q.device)] = idx
++        return idx
+ 
+     out = torch.zeros_like(q)
+     if full_idx:
+@@ -914,7 +947,7 @@ def _sdpa_with_region_groups(
+     out_nlhd = out.permute(0, 2, 1, 3)
+     for token_tuple, win_tuple in groups:
+         win_idx = _batched_windows(win_tuple)
+-        token_idx = torch.tensor(token_tuple, device=q.device, dtype=torch.long)
++        token_idx = _index(token_tuple)
+         attn = F.scaled_dot_product_attention(
+             q.index_select(0, win_idx).index_select(2, token_idx),
+             k.index_select(0, win_idx).index_select(2, token_idx),
+@@ -1022,8 +1055,12 @@ class QKVDepthwiseSpatial(nn.Module):
+         elems_per_item = C3 * (H + 2 * self.pad) * (W + 2 * self.pad)
+         max_items = max(1, 1_000_000_000 // max(1, elems_per_item))
+ 
++        channels_last = bool(getattr(self, 'inference_channels_last', False))
++
+         def apply_dw(z: torch.Tensor) -> torch.Tensor:
+             z = F.pad(z, (self.pad, self.pad, self.pad, self.pad), mode=mode)
++            if channels_last:
++                z = z.contiguous(memory_format=torch.channels_last)
+             return self.dw(z)
+ 
+         if y.shape[0] > max_items:

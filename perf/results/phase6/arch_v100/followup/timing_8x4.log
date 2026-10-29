@@ -1,0 +1,6 @@
+[06:12:48] sdpa: 6 unavailable combos
+[06:13:41] timing 8/4 low-VRAM orig rc=0 wall 52.6 s
+[06:14:19] timing 8/4 low-VRAM opt rc=0 wall 37.7 s
+[06:15:13] timing 8/4 low-VRAM orig2 rc=0 wall 54.2 s
+[06:15:51] timing 8/4 low-VRAM opt2 rc=0 wall 37.5 s
+[06:15:51] time done

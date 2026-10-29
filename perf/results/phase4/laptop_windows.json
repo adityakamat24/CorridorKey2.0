@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "machine": "Windows 11, NVIDIA GeForce RTX 3060 Laptop GPU 6 GB, driver 616.56, torch 2.9.1+cu128",
+  "clip": "test_clips/converge_1080 or converge_1440, 48 frames; wall time includes model load",
+  "notes": [
+   "final_auto_1080/final_auto_1440: the rejected budget-cap mode (max_split + process cap): CUDA error: unknown error",
+   "final2_auto_1440: ran out of host commit memory (Windows commit limit; McAfee mc-fw-host held 5.8 GB)",
+   "opt_* fixed-window runs used the arena at x1.05; final2_auto_1080 is the final code"
+  ]
+ },
+ "runs": [
+  {
+   "run": "final2_auto_1080",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)",
+   "window": "40/20 x2",
+   "arena_gb": 3.6,
+   "status": "ok",
+   "peak_allocated_gib": 4.491,
+   "peak_reserved_gib": 4.629,
+   "wall_s": 130.1
+  },
+  {
+   "run": "final2_auto_1440",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=28, hann_stride=14, low_vram=True (estimated peak 3.8 GB)",
+   "window": "28/14 x3",
+   "arena_gb": 3.4,
+   "status": "failed: numpy.core._exceptions._ArrayMemoryError: Unable to allocate 78.8 MiB for an array with shape (28, 768, 24, 40) and ",
+   "peak_allocated_gib": null,
+   "peak_reserved_gib": null,
+   "wall_s": null
+  },
+  {
+   "run": "final_auto_1080",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)",
+   "window": "40/20 x2",
+   "arena_gb": null,
+   "status": "failed: torch.AcceleratorError: CUDA error: unknown error",
+   "peak_allocated_gib": null,
+   "peak_reserved_gib": null,
+   "wall_s": null
+  },
+  {
+   "run": "final_auto_1440",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=32, hann_stride=16, low_vram=True (estimated peak 4.2 GB)",
+   "window": "32/16 x2",
+   "arena_gb": null,
+   "status": "failed",
+   "peak_allocated_gib": null,
+   "peak_reserved_gib": null,
+   "wall_s": null
+  },
+  {
+   "run": "opt_32x16",
+   "free_gib_at_start": 5.01,
+   "auto_pick": null,
+   "window": "32/16 x2",
+   "arena_gb": 2.6,
+   "status": "ok",
+   "peak_allocated_gib": 3.517,
+   "peak_reserved_gib": 3.656,
+   "wall_s": 102.1
+  },
+  {
+   "run": "opt_40x20",
+   "free_gib_at_start": 5.01,
+   "auto_pick": null,
+   "window": "40/20 x2",
+   "arena_gb": 3.3,
+   "status": "ok",
+   "peak_allocated_gib": 4.179,
+   "peak_reserved_gib": 4.451,
+   "wall_s": 123.0
+  },
+  {
+   "run": "opt_48x24",
+   "free_gib_at_start": 5.01,
+   "auto_pick": null,
+   "window": "48/24 x1",
+   "arena_gb": 3.7,
+   "status": "ok",
+   "peak_allocated_gib": 4.66,
+   "peak_reserved_gib": 5.363,
+   "wall_s": 114.0
+  },
+  {
+   "run": "opt_auto_final",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)",
+   "window": "40/20 x2",
+   "arena_gb": 3.6,
+   "status": "ok",
+   "peak_allocated_gib": 4.491,
+   "peak_reserved_gib": 4.629,
+   "wall_s": 115.2
+  },
+  {
+   "run": "shipped_auto",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=8, hann_stride=4, low_vram=True (estimated peak 4.1 GB)",
+   "window": "8/4 x11",
+   "arena_gb": null,
+   "status": "ok",
+   "peak_allocated_gib": 4.118,
+   "peak_reserved_gib": 4.746,
+   "wall_s": 155.0
+  },
+  {
+   "run": "shipped_auto_1440",
+   "free_gib_at_start": 5.01,
+   "auto_pick": "hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 3.9 GB)",
+   "window": "4/2 x23",
+   "arena_gb": null,
+   "status": "ok",
+   "peak_allocated_gib": 3.848,
+   "peak_reserved_gib": 4.238,
+   "wall_s": 278.1
+  }
+ ]
+}

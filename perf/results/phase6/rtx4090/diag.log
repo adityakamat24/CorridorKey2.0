@@ -1,0 +1,8 @@
+[05:17:08] original run 2 rc=0
+[05:17:11] original vs original run 2: 48 files in ref, 48 in cand: 0 identical, 48 differ, 0 on one side only
+[05:17:30] original vs optimized: hair_detail                  24  8.16e-05  7.81e-03  6.24e-05  7.81e-03  2.83e-05  1.45e-04  17,20,11,14,4
+[05:17:48] original vs original 2: hair_detail                  24  8.30e-05  7.81e-03  6.09e-05  7.81e-03  2.92e-05  1.47e-04  20,22,21,12,0
+[05:20:11] carry hint off, original vs optimized: 48 files in ref, 48 in cand: 0 identical, 48 differ, 0 on one side only
+[05:20:30] carry hint off metrics: hair_detail                  24  8.53e-05  7.81e-03  6.15e-05  7.81e-03  2.80e-05  1.50e-04  4,3,16,2,0
+[05:20:30] flags: cudnn.benchmark default: False deterministic: False 
+[05:20:30] diag done

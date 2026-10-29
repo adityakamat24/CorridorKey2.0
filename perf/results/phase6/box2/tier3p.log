@@ -1,0 +1,16 @@
+[03:03:15] hd default rc=0
+[03:04:01] hd --optimized rc=0
+[03:04:53] hd cpu prep rc=0
+[03:04:54] hd default vs --optimized: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[03:04:55] hd default vs cpu-prep options: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[03:06:39] uhd default rc=0
+[03:07:52] uhd --optimized rc=0
+[03:09:06] uhd cpu prep rc=0
+[03:09:08] uhd default vs --optimized: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[03:09:10] uhd default vs cpu-prep options: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[03:14:05] old84 rc=0 {"tag": "old84", "rc": 0, "wall_s": 293.3} | peak allocated 2.664 GiB, peak reserved 2.914 GiB, budget 12.00 GiB
+[03:18:27] new84 rc=0 {"tag": "new84", "rc": 0, "wall_s": 262.8} | peak allocated 2.664 GiB, peak reserved 3.617 GiB, budget 12.00 GiB
+[03:23:31] old42 rc=0 {"tag": "old42", "rc": 0, "wall_s": 303.5} | peak allocated 2.664 GiB, peak reserved 2.842 GiB, budget 12.00 GiB
+[03:27:48] new42 rc=0 {"tag": "new42", "rc": 0, "wall_s": 256.8} | peak allocated 2.664 GiB, peak reserved 2.764 GiB, budget 12.00 GiB
+[03:32:13] new84b rc=0 {"tag": "new84b", "rc": 0, "wall_s": 264.8} | peak allocated 2.664 GiB, peak reserved 3.617 GiB, budget 12.00 GiB
+[03:32:13] tier3p done

@@ -1,0 +1,221 @@
+{
+  "label": "1080p sweep w16 bf16_weights",
+  "argv": [
+    "perf/bench.py",
+    "--sdpa",
+    "efficient",
+    "--mem_cap_gib",
+    "5.0",
+    "--bf16_weights",
+    "--input",
+    "test_clips/converge_1080",
+    "--hann_chunk",
+    "16",
+    "--hann_stride",
+    "8",
+    "--low_vram",
+    "--num_frames",
+    "32",
+    "--repeats",
+    "1",
+    "--warmup",
+    "0",
+    "--label",
+    "1080p sweep w16 bf16_weights",
+    "--out",
+    "perf/results/phase3/sweep_1080_w16_bf16.json"
+  ],
+  "config": {
+    "hann_chunk": 16,
+    "hann_stride": 8,
+    "carry_hint": true,
+    "hint_quality": 0.95,
+    "carry_hint_quality": 0.95,
+    "shape_quantum": 128,
+    "model_scale": 1.0,
+    "num_frames": 32,
+    "start_mode": "begin",
+    "seed": 0,
+    "low_vram": true,
+    "auto_vram": false,
+    "low_vram_foundation_chunk": 4,
+    "low_vram_mlp_chunk_tokens": 65536,
+    "low_vram_enc_frame_chunk": 1,
+    "low_vram_swin_window_batch": 16,
+    "low_vram_full_attn_query_chunk_tokens": 2048,
+    "stage2_batch": 1,
+    "outputs": [
+      "alpha",
+      "fg"
+    ],
+    "temp_dir": "/root/ck/perf/out/_tmp/bench",
+    "linear_brightness": 1.0,
+    "linear_contrast": 1.0,
+    "linear_contrast_pivot": 0.18,
+    "frame_dir_fps": 30.0,
+    "frame_dir_linear": false,
+    "cutout_linear": false,
+    "despill_strength": 0.5,
+    "output_format": "video",
+    "exr_dtype": "half"
+  },
+  "sdpa": "efficient",
+  "mem_cap_gib": 5.0,
+  "weights": "bf16_linear_conv+frozen",
+  "env": {
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "alloc_conf": null,
+    "nvml_idle": {
+      "t": 3953014.166530913,
+      "phase": "idle",
+      "mem_used": 395444224,
+      "sm_mhz": 1792,
+      "mem_mhz": 7501,
+      "gpu_util": 0,
+      "power_w": 43.751,
+      "temp_c": 54
+    }
+  },
+  "model_shape_hw": [
+    1152,
+    1920
+  ],
+  "vram_table_estimate_gib": 5.906802558139535,
+  "load_s": 7.193968139123172,
+  "summary": {
+    "measured_runs": 0,
+    "oom": {
+      "phase": "stage1",
+      "message": "CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 11.63 GiB of which 6.58 GiB is free. Including non-PyTorch memory, this process has 5.04 GiB memory in use. 5.00 GiB allowed; Of the allocated memory 4.30 GiB is allocated by PyTorch, and 622.13 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    }
+  },
+  "runs": [
+    {
+      "warmup": false,
+      "total_s": 15.888850239105523,
+      "frames": 0,
+      "phases": [
+        {
+          "phase": "setup",
+          "allocated_start_gib": 1.1296286582946777,
+          "wall_s": 0.09837606269866228,
+          "peak_allocated_gib": 1.1296286582946777,
+          "peak_reserved_gib": 1.3984375,
+          "allocated_end_gib": 1.1296286582946777,
+          "reserved_end_gib": 1.3984375,
+          "nvml_samples": 5,
+          "nvml_mem_used_max_gib": 1.8917236328125,
+          "sm_mhz_median": 1792,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 90.0,
+          "power_w_median": 42.501,
+          "temp_c_max": 51
+        },
+        {
+          "phase": "rvm",
+          "allocated_start_gib": 1.1296286582946777,
+          "wall_s": 2.7730877939611673,
+          "peak_allocated_gib": 1.4368410110473633,
+          "peak_reserved_gib": 1.697265625,
+          "allocated_end_gib": 1.1387038230895996,
+          "reserved_end_gib": 1.3984375,
+          "nvml_samples": 136,
+          "nvml_mem_used_max_gib": 2.2081298828125,
+          "sm_mhz_median": 1792.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 10.897058823529411,
+          "power_w_median": 44.203,
+          "temp_c_max": 52
+        },
+        {
+          "phase": "after_rvm",
+          "allocated_start_gib": 1.1387038230895996,
+          "wall_s": 0.0005334173329174519,
+          "peak_allocated_gib": 1.1387038230895996,
+          "peak_reserved_gib": 1.3984375,
+          "allocated_end_gib": 1.1387038230895996,
+          "reserved_end_gib": 1.3984375
+        },
+        {
+          "phase": "foundations",
+          "allocated_start_gib": 1.1387038230895996,
+          "wall_s": 2.990311980713159,
+          "peak_allocated_gib": 1.273634433746338,
+          "peak_reserved_gib": 1.48828125,
+          "allocated_end_gib": 1.1387038230895996,
+          "reserved_end_gib": 1.3984375,
+          "nvml_samples": 144,
+          "nvml_mem_used_max_gib": 1.9991455078125,
+          "sm_mhz_median": 1942.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 32.479166666666664,
+          "power_w_median": 79.202,
+          "temp_c_max": 57
+        },
+        {
+          "phase": "after_foundations",
+          "allocated_start_gib": 1.1387038230895996,
+          "wall_s": 0.7100838199257851,
+          "peak_allocated_gib": 1.1387038230895996,
+          "peak_reserved_gib": 1.572265625,
+          "allocated_end_gib": 0.8849954605102539,
+          "reserved_end_gib": 1.017578125,
+          "nvml_samples": 35,
+          "nvml_mem_used_max_gib": 2.0596923828125,
+          "sm_mhz_median": 1942,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 31.457142857142856,
+          "power_w_median": 73.164,
+          "temp_c_max": 53
+        },
+        {
+          "phase": "stage1",
+          "allocated_start_gib": 0.8849954605102539,
+          "wall_s": 9.255664274096489,
+          "peak_allocated_gib": 4.562373638153076,
+          "peak_reserved_gib": 4.974609375,
+          "allocated_end_gib": 4.298701763153076,
+          "reserved_end_gib": 4.90625,
+          "nvml_samples": 458,
+          "nvml_mem_used_max_gib": 5.4874267578125,
+          "sm_mhz_median": 1942.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 56.0589519650655,
+          "power_w_median": 113.545,
+          "temp_c_max": 63
+        },
+        {
+          "phase": "encode_tail",
+          "allocated_start_gib": 4.298701763153076,
+          "wall_s": 0.06100829318165779,
+          "peak_allocated_gib": 4.298701763153076,
+          "peak_reserved_gib": 4.90625,
+          "allocated_end_gib": 0.8849954605102539,
+          "reserved_end_gib": 4.90625,
+          "nvml_samples": 3,
+          "nvml_mem_used_max_gib": 5.4190673828125,
+          "sm_mhz_median": 1935,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 100.0,
+          "power_w_median": 152.875,
+          "temp_c_max": 62
+        }
+      ],
+      "oom": {
+        "phase": "stage1",
+        "message": "CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 11.63 GiB of which 6.58 GiB is free. Including non-PyTorch memory, this process has 5.04 GiB memory in use. 5.00 GiB allowed; Of the allocated memory 4.30 GiB is allocated by PyTorch, and 622.13 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "stage1_windows_ms": [
+        3982.70263671875
+      ],
+      "stage2_forward_ms_total": 0,
+      "phase_before_encode": "stage1",
+      "stage2_forwards": 0
+    }
+  ]
+}

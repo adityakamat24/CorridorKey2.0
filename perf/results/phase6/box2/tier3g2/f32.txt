@@ -1,0 +1,1 @@
+16 frames, 424673266 values outside half precision, reread dtype float32, still outside half: 26542079

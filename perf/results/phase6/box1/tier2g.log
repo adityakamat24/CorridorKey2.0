@@ -1,0 +1,3 @@
+[22:59:19] profile 4K 4/2 rc=0: [bench] median total 40.85s; peak reserved 3.18 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+[23:01:36] profile 4K 8/4 rc=0: [bench] median total 39.92s; peak reserved 3.80 GiB (allocated 2.99) in prepass; table estimate 8.790615765237021
+[23:01:36] tier2g done

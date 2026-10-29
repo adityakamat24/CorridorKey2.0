@@ -1,0 +1,4 @@
+[19:47:38] old --optimized rc=0
+[19:49:38] new rc=0
+[19:49:40] hair_1080 8/4 carry hint on, --optimized vs + --gpu_prep --async_baton: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[19:49:40] laptop exact done

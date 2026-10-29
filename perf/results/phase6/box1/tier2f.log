@@ -1,0 +1,5 @@
+[22:51:29] jer: 39cc942 feat(bench): stock is upstream at 485f5e9; rows are stock, Python with our kernels, and ck
+[22:52:51] jer vs fp32: hair_1080                    48  3.91e-04  2.97e-02  1.85e-03  2.97e-02  6.94e-04  3.38e-04  31,39,43,32,34
+[22:54:23] jer vs fp32: smoke_1080                   48  9.82e-04  2.17e-01  5.99e-03  2.17e-01  2.79e-03  2.73e-04  2,1,3,0,43
+[22:56:08] jer vs fp32: converge_1080                48  1.33e-04  1.31e-01  1.79e-03  1.31e-01  7.12e-04  1.28e-04  47,44,43,46,42
+[22:56:08] tier2f done

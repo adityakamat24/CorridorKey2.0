@@ -1,0 +1,267 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[corridorkey] corridorkey_v2.safetensors
+[corridorkey] foundation_stats.safetensors
+[c-radio] nvidia/C-RADIOv4-SO400M@c0457f5
+[moge] Ruicheng/moge-2-vitb-normal@ca5f0e0
+[rvm] https://storage.googleapis.com/representations4d/checkpoints/pretrain_rvm_small16_256_204031069.npz
+All assets are in place under /root/ck
+converge_1080: 48 frames [1920, 1080] from converge ['hcw_converge.0000.png', 'hcw_converge.0047.png']
+converge_1440: 48 frames [2560, 1440] from converge ['hcw_converge.0000.png', 'hcw_converge.0047.png']
+converge_3k: 48 frames [3072, 1728] from converge ['hcw_converge.0000.png', 'hcw_converge.0047.png']
+converge_2160: 48 frames [3840, 2160] from converge ['hcw_converge.0000.png', 'hcw_converge.0047.png']
+converge200_1080: 200 frames [1920, 1080] from converge ['hcw_converge.0000.png', 'hcw_converge.0199.png']
+tiers setup done
+Loading CorridorKey v2 runtime weights: /root/ck/weights/corridorkey_v2.safetensors
+[RVM] loaded /root/ck/vfms/rvm/pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from /root/ck/weights/foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+lowvram 720p (1280x768, 0.98 MP)
+  lowvram 1280x768 T=1: window 2.667 GiB, global 2.667
+  lowvram 1280x768 T=8: window 3.223 GiB, global 3.223
+  lowvram 1280x768 T=24: window 4.510 GiB, global 4.510
+  lowvram 1280x768 T=48: window 6.556 GiB, global 6.556
+lowvram 1080p (1920x1152, 2.21 MP)
+  lowvram 1920x1152 T=1: window 2.759 GiB, global 2.759
+  lowvram 1920x1152 T=8: window 4.096 GiB, global 4.096
+  lowvram 1920x1152 T=24: window 7.675 GiB, global 7.675
+  lowvram 1920x1152 T=48: window 13.188 GiB, global 13.188
+lowvram 4k (3840x2176, 8.36 MP)
+  lowvram 3840x2176 T=1: window 3.219 GiB, global 3.233
+  lowvram 3840x2176 T=8: window 8.363 GiB, global 8.363
+  lowvram 3840x2176 T=24: window 20.763 GiB, global 20.763
+  lowvram 3840x2176 T=48: window 39.644 GiB, global 39.644
+[W1024 10:55:08.630276537 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+Loading CorridorKey v2 runtime weights: /root/ck/weights/corridorkey_v2.safetensors
+[RVM] loaded /root/ck/vfms/rvm/pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from /root/ck/weights/foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+lowvram 720p (1280x768, 0.98 MP)
+  lowvram 1280x768 T=1: window 0.998 GiB, global 1.167
+  lowvram 1280x768 T=2: window 1.041 GiB, global 1.167
+  lowvram 1280x768 T=4: window 1.209 GiB, global 1.209
+  lowvram 1280x768 T=6: window 1.377 GiB, global 1.377
+  lowvram 1280x768 T=8: window 1.545 GiB, global 1.545
+  lowvram 1280x768 T=10: window 1.714 GiB, global 1.714
+  lowvram 1280x768 T=12: window 1.882 GiB, global 1.882
+  lowvram 1280x768 T=14: window 2.050 GiB, global 2.050
+  lowvram 1280x768 T=16: window 2.218 GiB, global 2.218
+  lowvram 1280x768 T=20: window 2.555 GiB, global 2.555
+  lowvram 1280x768 T=24: window 2.891 GiB, global 2.891
+  lowvram 1280x768 T=28: window 3.228 GiB, global 3.228
+  lowvram 1280x768 T=32: window 3.564 GiB, global 3.564
+  lowvram 1280x768 T=40: window 4.237 GiB, global 4.237
+  lowvram 1280x768 T=48: window 4.910 GiB, global 4.910
+  lowvram 1280x768 T=56: window 5.583 GiB, global 5.583
+  lowvram 1280x768 T=64: window 6.256 GiB, global 6.256
+  lowvram 1280x768 T=80: window 7.601 GiB, global 7.601
+lowvram 1080p (1920x1152, 2.21 MP)
+  lowvram 1920x1152 T=1: window 1.033 GiB, global 1.241
+  lowvram 1920x1152 T=2: window 1.190 GiB, global 1.241
+  lowvram 1920x1152 T=4: window 1.508 GiB, global 1.508
+  lowvram 1920x1152 T=6: window 1.826 GiB, global 1.826
+  lowvram 1920x1152 T=8: window 2.144 GiB, global 2.144
+  lowvram 1920x1152 T=10: window 2.461 GiB, global 2.461
+  lowvram 1920x1152 T=12: window 2.779 GiB, global 2.779
+  lowvram 1920x1152 T=14: window 3.097 GiB, global 3.097
+  lowvram 1920x1152 T=16: window 3.414 GiB, global 3.414
+  lowvram 1920x1152 T=20: window 4.050 GiB, global 4.050
+  lowvram 1920x1152 T=24: window 4.685 GiB, global 4.685
+  lowvram 1920x1152 T=28: window 5.321 GiB, global 5.321
+  lowvram 1920x1152 T=32: window 5.956 GiB, global 5.956
+  lowvram 1920x1152 T=40: window 7.227 GiB, global 7.227
+  lowvram 1920x1152 T=48: window 8.498 GiB, global 8.498
+  lowvram 1920x1152 T=56: window 9.769 GiB, global 9.769
+  lowvram 1920x1152 T=64: window 11.040 GiB, global 11.040
+  lowvram 1920x1152 T=80: window 13.581 GiB, global 13.581
+lowvram 1440p (2560x1536, 3.93 MP)
+  lowvram 2560x1536 T=1: window 1.125 GiB, global 1.353
+  lowvram 2560x1536 T=2: window 1.409 GiB, global 1.409
+  lowvram 2560x1536 T=4: window 1.945 GiB, global 1.945
+  lowvram 2560x1536 T=6: window 2.481 GiB, global 2.481
+  lowvram 2560x1536 T=8: window 3.017 GiB, global 3.017
+  lowvram 2560x1536 T=10: window 3.553 GiB, global 3.553
+  lowvram 2560x1536 T=12: window 4.089 GiB, global 4.089
+  lowvram 2560x1536 T=14: window 4.625 GiB, global 4.625
+  lowvram 2560x1536 T=16: window 5.161 GiB, global 5.161
+  lowvram 2560x1536 T=20: window 6.233 GiB, global 6.233
+  lowvram 2560x1536 T=24: window 7.305 GiB, global 7.305
+  lowvram 2560x1536 T=28: window 8.377 GiB, global 8.377
+  lowvram 2560x1536 T=32: window 9.449 GiB, global 9.449
+  lowvram 2560x1536 T=40: window 11.593 GiB, global 11.593
+  lowvram 2560x1536 T=48: window 13.737 GiB, global 13.737
+  lowvram 2560x1536 T=56: window 15.881 GiB, global 15.881
+  lowvram 2560x1536 T=64: window 18.025 GiB, global 18.025
+  lowvram 2560x1536 T=80: window 22.313 GiB, global 22.313
+lowvram 3k (3072x1792, 5.51 MP)
+  lowvram 3072x1792 T=1: window 1.226 GiB, global 1.746
+  lowvram 3072x1792 T=2: window 1.619 GiB, global 1.746
+  lowvram 3072x1792 T=4: window 2.366 GiB, global 2.366
+  lowvram 3072x1792 T=6: window 3.112 GiB, global 3.112
+  lowvram 3072x1792 T=8: window 3.859 GiB, global 3.859
+  lowvram 3072x1792 T=10: window 4.605 GiB, global 4.605
+  lowvram 3072x1792 T=12: window 5.352 GiB, global 5.352
+  lowvram 3072x1792 T=14: window 6.098 GiB, global 6.098
+  lowvram 3072x1792 T=16: window 6.844 GiB, global 6.844
+  lowvram 3072x1792 T=20: window 8.337 GiB, global 8.337
+  lowvram 3072x1792 T=24: window 9.830 GiB, global 9.830
+  lowvram 3072x1792 T=28: window 11.323 GiB, global 11.323
+  lowvram 3072x1792 T=32: window 12.816 GiB, global 12.816
+  lowvram 3072x1792 T=40: window 15.802 GiB, global 15.802
+  lowvram 3072x1792 T=48: window 18.788 GiB, global 18.788
+  lowvram 3072x1792 T=56: window 21.774 GiB, global 21.774
+  lowvram 3072x1792 T=64: window 24.760 GiB, global 24.760
+  lowvram 3072x1792 T=80: window 30.732 GiB, global 30.732
+lowvram 4k (3840x2176, 8.36 MP)
+  lowvram 3840x2176 T=1: window 1.421 GiB, global 2.519
+  lowvram 3840x2176 T=2: window 1.985 GiB, global 2.519
+  lowvram 3840x2176 T=4: window 3.097 GiB, global 3.097
+  lowvram 3840x2176 T=6: window 4.209 GiB, global 4.209
+  lowvram 3840x2176 T=8: window 5.321 GiB, global 5.321
+  lowvram 3840x2176 T=10: window 6.433 GiB, global 6.433
+  lowvram 3840x2176 T=12: window 7.545 GiB, global 7.545
+  lowvram 3840x2176 T=14: window 8.657 GiB, global 8.657
+  lowvram 3840x2176 T=16: window 9.769 GiB, global 9.769
+  lowvram 3840x2176 T=20: window 11.994 GiB, global 11.994
+  lowvram 3840x2176 T=24: window 14.218 GiB, global 14.218
+  lowvram 3840x2176 T=28: window 16.442 GiB, global 16.442
+  lowvram 3840x2176 T=32: window 18.666 GiB, global 18.666
+  lowvram 3840x2176 T=40: window 23.114 GiB, global 23.114
+  lowvram 3840x2176 T=48: window 27.563 GiB, global 27.563
+  lowvram 3840x2176 T=56: window 32.011 GiB, global 32.011
+  lowvram 3840x2176 T=64: window 36.459 GiB, global 36.459
+  lowvram 3840x2176 T=80: window 45.356 GiB, global 45.356
+lowvram 4k_dci (4096x2176, 8.91 MP)
+  lowvram 4096x2176 T=1: window 1.457 GiB, global 2.664
+  lowvram 4096x2176 T=2: window 2.122 GiB, global 2.664
+  lowvram 4096x2176 T=4: window 3.245 GiB, global 3.245
+  lowvram 4096x2176 T=6: window 4.431 GiB, global 4.431
+  lowvram 4096x2176 T=8: window 5.618 GiB, global 5.618
+  lowvram 4096x2176 T=10: window 6.804 GiB, global 6.804
+  lowvram 4096x2176 T=12: window 7.990 GiB, global 7.990
+  lowvram 4096x2176 T=14: window 9.176 GiB, global 9.176
+  lowvram 4096x2176 T=16: window 10.362 GiB, global 10.362
+  lowvram 4096x2176 T=20: window 12.735 GiB, global 12.735
+  lowvram 4096x2176 T=24: window 15.107 GiB, global 15.107
+  lowvram 4096x2176 T=28: window 17.480 GiB, global 17.480
+  lowvram 4096x2176 T=32: window 19.852 GiB, global 19.852
+  lowvram 4096x2176 T=40: window 24.597 GiB, global 24.597
+  lowvram 4096x2176 T=48: window 29.342 GiB, global 29.342
+  lowvram 4096x2176 T=56: window 34.087 GiB, global 34.087
+  lowvram 4096x2176 T=64: window 38.832 GiB, global 38.832
+  lowvram 4096x2176 T=80: window nan GiB, global nan
+normal 720p (1280x768, 0.98 MP)
+  normal 1280x768 T=1: window 2.478 GiB, global 2.581
+  normal 1280x768 T=2: window 2.527 GiB, global 2.581
+  normal 1280x768 T=4: window 2.708 GiB, global 2.708
+  normal 1280x768 T=6: window 2.888 GiB, global 2.888
+  normal 1280x768 T=8: window 3.068 GiB, global 3.068
+  normal 1280x768 T=10: window 3.249 GiB, global 3.249
+  normal 1280x768 T=12: window 3.429 GiB, global 3.429
+  normal 1280x768 T=14: window 3.610 GiB, global 3.610
+  normal 1280x768 T=16: window 3.790 GiB, global 3.790
+  normal 1280x768 T=20: window 4.151 GiB, global 4.151
+  normal 1280x768 T=24: window 4.512 GiB, global 4.512
+  normal 1280x768 T=28: window 4.873 GiB, global 4.873
+  normal 1280x768 T=32: window 5.233 GiB, global 5.233
+  normal 1280x768 T=40: window 5.955 GiB, global 5.955
+  normal 1280x768 T=48: window 6.677 GiB, global 6.677
+  normal 1280x768 T=56: window 7.398 GiB, global 7.398
+  normal 1280x768 T=64: window 8.120 GiB, global 8.120
+  normal 1280x768 T=80: window 9.563 GiB, global 9.563
+normal 1080p (1920x1152, 2.21 MP)
+  normal 1920x1152 T=1: window 2.591 GiB, global 2.947
+  normal 1920x1152 T=2: window 2.834 GiB, global 2.947
+  normal 1920x1152 T=4: window 3.322 GiB, global 3.322
+  normal 1920x1152 T=6: window 3.810 GiB, global 3.810
+  normal 1920x1152 T=8: window 4.297 GiB, global 4.297
+  normal 1920x1152 T=10: window 4.785 GiB, global 4.785
+  normal 1920x1152 T=12: window 5.273 GiB, global 5.273
+  normal 1920x1152 T=14: window 5.760 GiB, global 5.760
+  normal 1920x1152 T=16: window 6.248 GiB, global 6.248
+  normal 1920x1152 T=20: window 7.223 GiB, global 7.223
+  normal 1920x1152 T=24: window 8.199 GiB, global 8.199
+  normal 1920x1152 T=28: window 9.174 GiB, global 9.174
+  normal 1920x1152 T=32: window 10.149 GiB, global 10.149
+  normal 1920x1152 T=40: window 11.205 GiB, global 11.205
+  normal 1920x1152 T=48: window 12.320 GiB, global 12.320
+  normal 1920x1152 T=56: window 13.545 GiB, global 13.545
+  normal 1920x1152 T=64: window 14.645 GiB, global 14.645
+  normal 1920x1152 T=80: window 16.858 GiB, global 16.858
+normal 1440p (2560x1536, 3.93 MP)
+  normal 2560x1536 T=1: window 2.721 GiB, global 3.314
+  normal 2560x1536 T=2: window 3.096 GiB, global 3.314
+  normal 2560x1536 T=4: window 3.845 GiB, global 3.845
+  normal 2560x1536 T=6: window 4.594 GiB, global 4.594
+  normal 2560x1536 T=8: window 5.343 GiB, global 5.343
+  normal 2560x1536 T=10: window 6.092 GiB, global 6.092
+  normal 2560x1536 T=12: window 6.842 GiB, global 6.842
+  normal 2560x1536 T=14: window 7.591 GiB, global 7.591
+  normal 2560x1536 T=16: window 8.340 GiB, global 8.340
+  normal 2560x1536 T=20: window 9.838 GiB, global 9.838
+  normal 2560x1536 T=24: window 11.336 GiB, global 11.336
+  normal 2560x1536 T=28: window 12.096 GiB, global 12.096
+  normal 2560x1536 T=32: window 13.051 GiB, global 13.051
+  normal 2560x1536 T=40: window 15.024 GiB, global 15.024
+  normal 2560x1536 T=48: window 16.573 GiB, global 16.573
+  normal 2560x1536 T=56: window 18.572 GiB, global 18.572
+  normal 2560x1536 T=64: window 20.890 GiB, global 20.890
+  normal 2560x1536 T=80: window 25.525 GiB, global 25.525
+normal 3k (3072x1792, 5.51 MP)
+  normal 3072x1792 T=1: window 2.876 GiB, global 3.708
+  normal 3072x1792 T=2: window 3.406 GiB, global 3.708
+  normal 3072x1792 T=4: window 4.465 GiB, global 4.465
+  normal 3072x1792 T=6: window 5.524 GiB, global 5.524
+  normal 3072x1792 T=8: window 6.583 GiB, global 6.583
+  normal 3072x1792 T=10: window 7.642 GiB, global 7.642
+  normal 3072x1792 T=12: window 8.700 GiB, global 8.700
+  normal 3072x1792 T=14: window 9.759 GiB, global 9.759
+  normal 3072x1792 T=16: window 10.818 GiB, global 10.818
+  normal 3072x1792 T=20: window 12.214 GiB, global 12.214
+  normal 3072x1792 T=24: window 13.578 GiB, global 13.578
+  normal 3072x1792 T=28: window 14.847 GiB, global 14.847
+  normal 3072x1792 T=32: window 16.006 GiB, global 16.006
+  normal 3072x1792 T=40: window 18.571 GiB, global 18.571
+  normal 3072x1792 T=48: window 21.816 GiB, global 21.816
+  normal 3072x1792 T=56: window 25.061 GiB, global 25.061
+  normal 3072x1792 T=64: window 28.306 GiB, global 28.306
+  normal 3072x1792 T=80: window 34.796 GiB, global 34.796
+normal 4k (3840x2176, 8.36 MP)
+  normal 3840x2176 T=1: window 3.201 GiB, global 4.481
+  normal 3840x2176 T=2: window 4.055 GiB, global 4.481
+  normal 3840x2176 T=4: window 5.763 GiB, global 5.763
+  normal 3840x2176 T=6: window 7.471 GiB, global 7.471
+  normal 3840x2176 T=8: window 9.179 GiB, global 9.179
+  normal 3840x2176 T=10: window 10.887 GiB, global 10.887
+  normal 3840x2176 T=12: window 11.937 GiB, global 11.937
+  normal 3840x2176 T=14: window 13.016 GiB, global 13.016
+  normal 3840x2176 T=16: window 14.008 GiB, global 14.008
+  normal 3840x2176 T=20: window 15.847 GiB, global 15.847
+  normal 3840x2176 T=24: window 17.678 GiB, global 17.678
+  normal 3840x2176 T=28: window 19.585 GiB, global 19.585
+  normal 3840x2176 T=32: window 22.047 GiB, global 22.047
+  normal 3840x2176 T=40: window 26.972 GiB, global 26.972
+  normal 3840x2176 T=48: window 31.898 GiB, global 31.898
+  normal 3840x2176 T=56: window 36.823 GiB, global 36.823
+  normal 3840x2176 T=64: window 41.748 GiB, global 41.748
+  normal 3840x2176 T=80: window nan GiB, global nan
+normal 4k_dci (4096x2176, 8.91 MP)
+  normal 4096x2176 T=1: window 3.258 GiB, global 4.626
+  normal 4096x2176 T=2: window 4.169 GiB, global 4.626
+  normal 4096x2176 T=4: window 5.991 GiB, global 5.991
+  normal 4096x2176 T=6: window 7.812 GiB, global 7.812
+  normal 4096x2176 T=8: window 9.634 GiB, global 9.634
+  normal 4096x2176 T=10: window 11.456 GiB, global 11.456
+  normal 4096x2176 T=12: window 12.389 GiB, global 12.389
+  normal 4096x2176 T=14: window 13.516 GiB, global 13.516
+  normal 4096x2176 T=16: window 14.516 GiB, global 14.516
+  normal 4096x2176 T=20: window 16.502 GiB, global 16.502
+  normal 4096x2176 T=24: window 18.440 GiB, global 18.440
+  normal 4096x2176 T=28: window 20.734 GiB, global 20.734
+  normal 4096x2176 T=32: window 23.361 GiB, global 23.361
+  normal 4096x2176 T=40: window 28.614 GiB, global 28.614
+  normal 4096x2176 T=48: window 33.868 GiB, global 33.868
+  normal 4096x2176 T=56: window 39.121 GiB, global 39.121
+  normal 4096x2176 T=64: window 44.374 GiB, global 44.374
+  normal 4096x2176 T=80: window nan GiB, global nan
+[W1024 11:12:55.806284054 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+tiers measure done

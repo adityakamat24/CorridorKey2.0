@@ -1,0 +1,12 @@
+[00:37:49] 4K 8/4 cpu prep, old code: [bench] median total 86.83s; peak reserved 3.19 GiB (allocated 2.93) in prepass; table estimate 8.790615765237021
+    prepass 12.22 s peak reserved 3.19 GiB; stage1 peak 3.07 GiB
+[00:39:21] 4K 8/4 cpu prep, new code: [bench] median total 85.33s; peak reserved 3.07 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021
+    prepass 11.87 s peak reserved 2.03 GiB; stage1 peak 3.07 GiB
+[00:40:55] 4K 4/2 cpu prep, old code: [bench] median total 87.40s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+    prepass 12.22 s peak reserved 2.01 GiB; stage1 peak 3.08 GiB
+[00:42:27] 4K 4/2 cpu prep, new code: [bench] median total 85.15s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+    prepass 11.74 s peak reserved 2.08 GiB; stage1 peak 3.08 GiB
+[00:46:50] flip42 rc=0 {"tag": "flip42", "rc": 0, "wall_s": 262.9}
+[00:51:04] ls42 rc=0 {"tag": "ls42", "rc": 0, "wall_s": 254.2}
+[00:55:23] base42_c rc=0 {"tag": "base42_c", "rc": 0, "wall_s": 259.1}
+[00:55:23] tier3i done

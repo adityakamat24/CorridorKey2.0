@@ -1,0 +1,86 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                mod::foundations.cradio         0.00%       0.000us         0.00%       0.000us       0.000us       28.312s       127.00%       28.312s        3.539s             8  
+                     aten::scaled_dot_product_attention         0.11%      24.336ms         2.05%     470.398ms     151.546us       0.000us         0.00%        6.607s       2.129ms          3104  
+              aten::_scaled_dot_product_flash_attention         0.07%      15.536ms         1.76%     405.168ms     133.542us       0.000us         0.00%        6.391s       2.106ms          3034  
+                         aten::_flash_attention_forward         0.12%      27.231ms         1.60%     367.806ms     121.228us        6.135s        27.52%        6.391s       2.106ms          3034  
+                                           aten::linear         0.16%      35.919ms         8.06%        1.853s     223.598us       0.000us         0.00%        6.246s     753.766us          8287  
+                                            aten::copy_         1.90%     436.571ms        72.88%       16.749s     758.161us        4.862s        21.81%        5.497s     248.818us         22092  
+                                      aten::convolution         0.02%       4.177ms         1.25%     286.588ms     219.439us       0.000us         0.00%        4.426s       3.389ms          1306  
+                                     aten::_convolution         0.03%       7.510ms         1.23%     282.411ms     216.241us       0.000us         0.00%        4.426s       3.389ms          1306  
+                                           aten::conv2d         0.02%       5.350ms         1.27%     291.152ms     223.791us       0.000us         0.00%        4.327s       3.326ms          1301  
+                                            aten::addmm         0.35%      80.314ms         1.86%     426.402ms     105.493us        3.663s        16.43%        3.981s     984.909us          4042  
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s1681...         0.00%       0.000us         0.00%       0.000us       0.000us        3.639s        16.33%        3.639s       1.118ms          3254  
+                                               aten::to         0.07%      15.940ms        60.81%       13.975s     811.313us       0.000us         0.00%        3.548s     206.001us         17225  
+                                         aten::_to_copy         0.14%      31.400ms        60.74%       13.959s       1.401ms       0.000us         0.00%        3.548s     356.226us          9961  
+void pytorch_flash::flash_fwd_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us        3.456s        15.50%        3.456s       2.890ms          1196  
+                       Memcpy DtoH (Device -> Pageable)         0.00%       0.000us         0.00%       0.000us       0.000us        2.393s        10.73%        2.393s       1.729ms          1384  
+                                aten::_conv_depthwise2d         0.03%       6.183ms         0.65%     149.062ms     124.634us        2.115s         9.49%        2.364s       1.976ms          1196  
+                                    Command Buffer Full        29.65%        6.814s        29.65%        6.814s     665.984us        2.325s        10.43%        2.325s     227.180us         10232  
+                               mod::stage2.pre_blocks.0         0.00%       0.000us         0.00%       0.000us       0.000us        2.133s         9.57%        2.133s     133.330ms            16  
+                               mod::stage2.pre_blocks.4         0.00%       0.000us         0.00%       0.000us       0.000us        2.133s         9.57%        2.133s     133.293ms            16  
+                               mod::stage2.pre_blocks.0         0.13%      28.729ms         0.48%     110.555ms       6.910ms       0.000us         0.00%        2.132s     133.276ms            16  
+                               mod::stage2.pre_blocks.4         0.09%      20.066ms         0.38%      87.226ms       5.452ms       0.000us         0.00%        2.132s     133.239ms            16  
+void at::native::(anonymous namespace)::conv_depthwi...         0.00%       0.000us         0.00%       0.000us       0.000us        2.115s         9.49%        2.115s       1.768ms          1196  
+void pytorch_flash::flash_fwd_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us        1.845s         8.27%        1.845s       1.450ms          1272  
+                                aten::cudnn_convolution         0.02%       4.677ms         0.49%     111.758ms       1.270ms        1.057s         4.74%        1.787s      20.307ms            88  
+                                       cudaLaunchKernel         1.46%     334.959ms        25.10%        5.768s      89.397us       0.000us         0.00%        1.648s      25.549us         64522  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us        1.374s         6.16%        1.374s     119.231us         11526  
+                                            aten::clone         0.06%      12.933ms         4.71%        1.081s     183.753us       0.000us         0.00%        1.194s     202.872us          5885  
+                                       aten::contiguous         0.02%       4.888ms         3.32%     762.736ms     173.388us       0.000us         0.00%        1.114s     253.185us          4399  
+                                   mod::stage1.enc_16.1         0.15%      33.436ms         3.84%     882.084ms      36.754ms       0.000us         0.00%        1.096s      45.674ms            24  
+                                   mod::stage1.enc_16.0         0.14%      32.383ms         2.98%     685.131ms      28.547ms       0.000us         0.00%        1.070s      44.579ms            24  
+                                   mod::stage1.enc_16.1         0.00%       0.000us         0.00%       0.000us       0.000us        1.018s         4.57%        1.018s      42.421ms            24  
+                                   mod::stage1.enc_16.0         0.00%       0.000us         0.00%       0.000us       0.000us        1.018s         4.57%        1.018s      42.419ms            24  
+                                         aten::rms_norm         0.03%       6.230ms         1.51%     347.128ms     142.558us       0.000us         0.00%     965.737ms     396.607us          2435  
+                                  aten::_fused_rms_norm         0.09%      20.523ms         1.48%     340.898ms     139.999us     818.770ms         3.67%     965.737ms     396.607us          2435  
+void cutlass__5x_cudnn::Kernel<cutlass_tensorop_bf16...         0.00%       0.000us         0.00%       0.000us       0.000us     885.982ms         3.97%     885.982ms      13.843ms            64  
+                                              aten::pad         0.01%       2.417ms         1.79%     411.560ms     271.120us       0.000us         0.00%     837.997ms     552.040us          1518  
+                                    mod::stage2.patch_2         0.00%     504.482us         0.39%      88.879ms       5.555ms       0.000us         0.00%     831.734ms      51.983ms            16  
+                               mod::stage2.patch_2.conv         0.00%     599.809us         0.38%      88.374ms       5.523ms       0.000us         0.00%     831.734ms      51.983ms            16  
+                             mod::stage2.final_blocks.1         0.06%      14.127ms         3.55%     815.711ms      50.982ms       0.000us         0.00%     826.077ms      51.630ms            16  
+                               mod::stage2.pre_blocks.1         0.00%       0.000us         0.00%       0.000us       0.000us     806.735ms         3.62%     806.735ms      50.421ms            16  
+                             mod::stage2.final_blocks.1         0.00%       0.000us         0.00%       0.000us       0.000us     803.832ms         3.61%     803.832ms      50.239ms            16  
+                               mod::stage2.pre_blocks.1         0.09%      20.312ms         1.10%     253.362ms      15.835ms       0.000us         0.00%     803.799ms      50.237ms            16  
+                               mod::stage2.pre_blocks.3         0.00%       0.000us         0.00%       0.000us       0.000us     800.581ms         3.59%     800.581ms      50.036ms            16  
+                               mod::stage2.pre_blocks.3         0.05%      11.970ms         0.55%     126.836ms       7.927ms       0.000us         0.00%     799.703ms      49.981ms            16  
+                                             aten::roll         0.01%       2.383ms         0.34%      77.543ms     117.490us     264.486ms         1.19%     798.424ms       1.210ms           660  
+                               mod::stage2.pre_blocks.6         0.00%       0.000us         0.00%       0.000us       0.000us     778.844ms         3.49%     778.844ms      48.678ms            16  
+                               mod::stage2.pre_blocks.6         0.05%      10.496ms         0.17%      39.848ms       2.490ms       0.000us         0.00%     778.379ms      48.649ms            16  
+                             mod::stage2.final_blocks.0         0.05%      12.118ms         3.17%     728.157ms      45.510ms       0.000us         0.00%     770.607ms      48.163ms            16  
+void pytorch_flash::flash_fwd_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us     743.887ms         3.34%     743.887ms       2.755ms           270  
+                                              aten::mul         0.49%     112.766ms         3.71%     852.145ms      81.686us     651.455ms         2.92%     718.937ms      68.917us         10432  
+                                 aten::reflection_pad2d         0.04%       9.393ms         1.50%     343.602ms     279.806us     235.704ms         1.06%     707.626ms     576.242us          1228  
+                               mod::stage2.pre_blocks.7         0.21%      49.350ms         5.90%        1.357s      84.782ms       0.000us         0.00%     688.005ms      43.000ms            16  
+                                   mod::stage1.mid_16.1         0.16%      36.093ms         2.80%     643.570ms     214.523ms       0.000us         0.00%     655.870ms     218.623ms             3  
+                       Memcpy HtoD (Pageable -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us     622.264ms         2.79%     622.264ms     679.328us           916  
+                               mod::stage2.pre_blocks.7         0.00%       0.000us         0.00%       0.000us       0.000us     608.196ms         2.73%     608.196ms      38.012ms            16  
+                             mod::stage2.final_blocks.0         0.00%       0.000us         0.00%       0.000us       0.000us     604.051ms         2.71%     604.051ms      37.753ms            16  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     580.975ms         2.61%     580.975ms      67.274us          8636  
+                                   mod::stage1.mid_16.0         0.14%      31.943ms         3.35%     769.807ms     256.602ms       0.000us         0.00%     576.068ms     192.023ms             3  
+                                mod::foundations.cradio         0.07%      16.570ms         0.25%      56.725ms      14.181ms       0.000us         0.00%     535.288ms     133.822ms             4  
+                                              aten::add         0.11%      25.563ms         1.18%     271.117ms      68.637us     483.291ms         2.17%     522.738ms     132.339us          3950  
+                               mod::stage2.pre_blocks.5         0.00%       0.000us         0.00%       0.000us       0.000us     518.264ms         2.32%     518.264ms      32.391ms            16  
+                               mod::stage2.pre_blocks.2         0.00%       0.000us         0.00%       0.000us       0.000us     517.850ms         2.32%     517.850ms      32.366ms            16  
+                               mod::stage2.pre_blocks.5         0.06%      12.869ms         0.21%      48.025ms       3.002ms       0.000us         0.00%     517.672ms      32.355ms            16  
+                               mod::stage2.pre_blocks.2         0.07%      16.565ms         0.22%      50.360ms       3.148ms       0.000us         0.00%     517.260ms      32.329ms            16  
+                                 aten::conv_transpose2d         0.00%     142.718us         0.03%       7.059ms     172.170us       0.000us         0.00%     501.545ms      12.233ms            41  
+                                   mod::stage1.mid_16.1         0.00%       0.000us         0.00%       0.000us       0.000us     492.186ms         2.21%     492.186ms     164.062ms             3  
+void at::native::(anonymous namespace)::vectorized_l...         0.00%       0.000us         0.00%       0.000us       0.000us     491.844ms         2.21%     491.844ms     297.726us          1652  
+                                   mod::stage1.mid_16.0         0.00%       0.000us         0.00%       0.000us       0.000us     486.427ms         2.18%     486.427ms     162.142ms             3  
+                                              aten::cat         0.61%     139.241ms         1.87%     429.083ms     117.332us     383.682ms         1.72%     443.759ms     121.345us          3657  
+                                   mod::stage1.dec_16.2         0.08%      17.571ms         1.58%     362.600ms     120.867ms       0.000us         0.00%     413.970ms     137.990ms             3  
+                                            aten::stack         0.05%      11.105ms         1.76%     404.347ms     137.346us       0.000us         0.00%     401.471ms     136.369us          2944  
+                                   mod::stage1.mid_16.2         0.08%      17.887ms         0.99%     227.150ms      75.717ms       0.000us         0.00%     400.955ms     133.652ms             3  
+                                   mod::stage1.mid_16.3         0.09%      20.028ms         1.09%     249.407ms      83.136ms       0.000us         0.00%     395.553ms     131.851ms             3  
+                                   mod::stage1.dec_16.3         0.08%      17.770ms         1.21%     278.938ms      92.979ms       0.000us         0.00%     393.341ms     131.114ms             3  
+                                   mod::stage1.dec_16.5         0.09%      19.568ms         0.42%      97.523ms      32.508ms       0.000us         0.00%     379.047ms     126.349ms             3  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     377.841ms         1.69%     377.841ms      50.292us          7513  
+                                   mod::stage1.dec_16.1         0.09%      20.195ms         1.91%     439.656ms     146.552ms       0.000us         0.00%     366.556ms     122.185ms             3  
+                                   mod::stage1.dec_16.0         0.08%      17.410ms         1.95%     448.111ms     149.370ms       0.000us         0.00%     353.476ms     117.825ms             3  
+                                         cuLaunchKernel         0.15%      35.005ms         5.56%        1.277s     209.538us       0.000us         0.00%     341.873ms      56.082us          6096  
+void at::native::(anonymous namespace)::vectorized_l...         0.00%       0.000us         0.00%       0.000us       0.000us     327.362ms         1.47%     327.362ms     418.087us           783  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 22.982s
+Self CUDA time total: 22.293s

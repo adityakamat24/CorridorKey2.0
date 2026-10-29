@@ -1,0 +1,2 @@
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+hair_detail                  24  8.30e-05  7.81e-03  6.09e-05  7.81e-03  2.92e-05  1.47e-04  20,22,21,12,0

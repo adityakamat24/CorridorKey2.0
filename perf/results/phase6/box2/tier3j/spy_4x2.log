@@ -1,0 +1,42 @@
+py-spy> Sampling process 100 times a second. Press Control-C to exit.
+
+py-spy> 1.03s behind in sampling, results may be inaccurate. Try reducing the sampling rate
+Loading CorridorKey v2 runtime weights: /root/ck/weights/corridorkey_v2.safetensors
+[RVM] loaded /root/ck/vfms/rvm/pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from /root/ck/weights/foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+  probed 32 frames from /root/tos/04_5h @ 4096x2176 (native 4096x2160, fps 24.00, exr_linear=True, pad=(0, 0, 8, 8))
+    RVM continuous prepass: T=32, chunk=4, input=1024x544, grid=64x34
+    frozen VFM prepass: T=32, grid=64x34, chunk=4
+  Activation arena: 2.0 GB reserved as one block
+    Hann stage1: chunk=4, stride=2, windows=15, baton_grid=256x136
+      window 1/15 [0:4]
+      window 2/15 [2:6]
+      window 3/15 [4:8]
+      window 4/15 [6:10]
+      window 5/15 [8:12]
+      window 6/15 [10:14]
+      window 7/15 [12:16]
+      window 8/15 [14:18]
+      window 9/15 [16:20]
+      window 10/15 [18:22]
+      window 11/15 [20:24]
+      window 12/15 [22:26]
+      window 13/15 [24:28]
+      window 14/15 [26:30]
+      window 15/15 [28:32]
+  wrote 2 output video(s) for 04_5h (32 frames @ 4096x2160)
+[bench] run 1/1: 84.36s, peak reserved 3.08 GiB
+  probed 32 frames from /root/tos/04_5h @ 4096x2176 (native 4096x2160, fps 24.00, exr_linear=True, pad=(0, 0, 8, 8))
+[bench] median total 84.36s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+  setup                  0.68s  peak alloc   1.10  reserved   1.39 GiB  sm 2482.0
+  prepass               11.23s  peak alloc   1.90  reserved   2.38 GiB  sm 2475
+  after_prepass          0.89s  peak alloc   2.93  reserved   3.07 GiB  sm 2482.0
+  stage1                23.84s  peak alloc   1.94  reserved   3.08 GiB  sm 2475.0
+  after_stage1           0.00s  peak alloc   0.89  reserved   1.02 GiB  sm None
+  stage2                28.04s  peak alloc   2.67  reserved   3.03 GiB  sm 2482
+  encode_tail           19.68s  peak alloc   0.39  reserved   3.03 GiB  sm 2482.0
+
+py-spy> Stopped sampling because process exited
+py-spy> Wrote raw flamegraph data to '/root/tier3j/spy_4x2.txt'. Samples: 47673 Errors: 0
+py-spy> You can use the flamegraph.pl script from https://github.com/brendangregg/flamegraph to generate a SVG

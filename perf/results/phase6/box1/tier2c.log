@@ -1,0 +1,5 @@
+[20:21:54] lossless_qp0_t2 rc=0 {"tag": "lossless_qp0_t2", "rc": 0, "encode_s": 134.4, "fps": 0.89, "psnr": "average:65.133175", "mb": 1775}
+[20:23:20] lossless_qp0_t4 rc=0 {"tag": "lossless_qp0_t4", "rc": 0, "encode_s": 71.8, "fps": 1.67, "psnr": "average:65.133175", "mb": 1775}
+[20:23:52] nvenc_hevc444_lossless rc=0 {"tag": "nvenc_hevc444_lossless", "rc": 0, "encode_s": 17.9, "fps": 6.72, "psnr": "average:57.550660", "mb": 1903}
+[20:23:53] nvenc_h264_444_lossless rc=1 {"tag": "nvenc_h264_444_lossless", "rc": 1, "encode_s": 0.5, "fps": 221.85, "psnr": "", "mb": 0}
+[20:23:53] tier2c done

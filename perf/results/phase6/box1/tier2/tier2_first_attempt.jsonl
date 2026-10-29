@@ -1,0 +1,2 @@
+{"tag": "warmup", "rc": 0, "wall_s": 21.2, "nvidia_smi_max_mib": 8885, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "opt_hair_detail", "rc": 0, "wall_s": 32.7, "nvidia_smi_max_mib": 9185, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}

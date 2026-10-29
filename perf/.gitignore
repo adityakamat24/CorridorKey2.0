@@ -1,0 +1,8 @@
+# Large or binary perf artifacts stay local.
+results/**/*.gif
+results/mem/
+out/
+logs/
+*.nsys-rep
+*.sqlite
+results/**/trace.json

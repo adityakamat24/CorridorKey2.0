@@ -1,0 +1,27 @@
+peak allocated 3.413 GiB across 546 blocks
+      MiB  blocks  site
+    884.4     520  runtime.py:975 run_inference
+    480.0       1  blocks.py:1709 _forward_lean
+    320.0       1  blocks.py:2699 _cyclic_shift_3d
+    320.0       1  blocks.py:1713 _forward_lean
+    270.0       1  blocks.py:3058 forward
+    202.5       1  runtime.py:614 hann_stage1_stream
+    192.0       1  blocks.py:1721 _forward_lean
+    135.0       1  blocks.py:3282 forward
+    128.0       1  blocks.py:1699 take
+    128.0       2  rope.py:93 apply_rotary
+     67.5       1  runtime.py:615 hann_stage1_stream
+     64.0       1  blocks.py:916 _sdpa_with_region_groups
+     48.0       1  blocks.py:923 _sdpa_with_region_groups
+     48.0       1  blocks.py:924 _sdpa_with_region_groups
+     48.0       1  blocks.py:925 _sdpa_with_region_groups
+     48.0       1  blocks.py:922 _sdpa_with_region_groups
+     38.0       1  runtime.py:632 hann_stage1_stream
+     25.3       1  runtime.py:630 hann_stage1_stream
+     25.3       1  blocks.py:3199 forward
+     12.7       1  runtime.py:636 hann_stage1_stream
+      9.1       2  rvm.py:142 forward
+      0.5       1  rope.py:243 get_cos_sin
+      0.5       1  rope.py:244 get_cos_sin
+      0.0       1  blocks.py:909 _batched_windows
+      0.0       1  runtime.py:616 hann_stage1_stream

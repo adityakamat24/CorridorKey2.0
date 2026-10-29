@@ -1,0 +1,152 @@
+{
+  "hw": [
+    1152,
+    1920
+  ],
+  "rows": [
+    {
+      "frames": 1,
+      "mode": "default",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.763502597808838,
+      "peak_gib": 2.8014612197875977,
+      "forward_extra_gib": 1.0379586219787598
+    },
+    {
+      "frames": 1,
+      "mode": "frozen",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.795179843902588,
+      "peak_gib": 2.033219814300537,
+      "forward_extra_gib": 0.23803997039794922,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 1,
+      "mode": "cache_off",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.795179843902588,
+      "peak_gib": 2.033219814300537,
+      "forward_extra_gib": 0.23803997039794922,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 1,
+      "mode": "bf16_linconv",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 0.9442992210388184,
+      "peak_gib": 1.1529498100280762,
+      "forward_extra_gib": 0.2086505889892578,
+      "max_abs_diff_baton": 0.05567169189453125,
+      "max_abs_diff_aux": 0.01171875
+    },
+    {
+      "frames": 1,
+      "mode": "bf16_frozen",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 0.9442992210388184,
+      "peak_gib": 1.1529498100280762,
+      "forward_extra_gib": 0.2086505889892578,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 5,
+      "mode": "default",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.8558964729309082,
+      "peak_gib": 3.5435733795166016,
+      "forward_extra_gib": 1.6876769065856934
+    },
+    {
+      "frames": 5,
+      "mode": "frozen",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.9794926643371582,
+      "peak_gib": 3.022430896759033,
+      "forward_extra_gib": 1.042938232421875,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 5,
+      "mode": "cache_off",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.9794926643371582,
+      "peak_gib": 3.022430896759033,
+      "forward_extra_gib": 1.042938232421875,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 5,
+      "mode": "bf16_linconv",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 1.127683162689209,
+      "peak_gib": 2.170621395111084,
+      "forward_extra_gib": 1.042938232421875,
+      "max_abs_diff_baton": 0.0736083984375,
+      "max_abs_diff_aux": 0.009765625
+    },
+    {
+      "frames": 5,
+      "mode": "bf16_frozen",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 1.127683162689209,
+      "peak_gib": 2.170621395111084,
+      "forward_extra_gib": 1.042938232421875,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 8,
+      "mode": "default",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 1.9187378883361816,
+      "peak_gib": 4.12202262878418,
+      "forward_extra_gib": 2.203284740447998
+    },
+    {
+      "frames": 8,
+      "mode": "frozen",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 2.1150269508361816,
+      "peak_gib": 3.785187244415283,
+      "forward_extra_gib": 1.6701602935791016,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 8,
+      "mode": "cache_off",
+      "param_gib": 1.7270736992359161,
+      "allocated_before_gib": 2.1150269508361816,
+      "peak_gib": 3.785187244415283,
+      "forward_extra_gib": 1.6701602935791016,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    },
+    {
+      "frames": 8,
+      "mode": "bf16_linconv",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 1.265183925628662,
+      "peak_gib": 2.9353442192077637,
+      "forward_extra_gib": 1.6701602935791016,
+      "max_abs_diff_baton": 0.06982421875,
+      "max_abs_diff_aux": 0.0087890625
+    },
+    {
+      "frames": 8,
+      "mode": "bf16_frozen",
+      "param_gib": 0.8637116104364395,
+      "allocated_before_gib": 1.265183925628662,
+      "peak_gib": 2.9353442192077637,
+      "forward_extra_gib": 1.6701602935791016,
+      "max_abs_diff_baton": 0.0,
+      "max_abs_diff_aux": 0.0
+    }
+  ]
+}

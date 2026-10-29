@@ -1,0 +1,85 @@
+{
+  "hw": [
+    1152,
+    1920
+  ],
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "rows": [
+    {
+      "candidate": "baseline",
+      "frames": 8,
+      "peak_gib": 2.1309828758239746,
+      "s": 0.3254238246008754
+    },
+    {
+      "candidate": "nobf16",
+      "frames": 8,
+      "peak_gib": 2.158572196960449,
+      "s": 0.3432419626042247,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "lm1",
+      "frames": 8,
+      "peak_gib": 2.1309828758239746,
+      "s": 0.3169079748913646,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "qkv1",
+      "frames": 8,
+      "peak_gib": 2.1309828758239746,
+      "s": 0.32580641098320484,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "lm1qkv1",
+      "frames": 8,
+      "peak_gib": 2.1309828758239746,
+      "s": 0.31921593379229307,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "baseline",
+      "frames": 16,
+      "peak_gib": 3.266618251800537,
+      "s": 0.7210877612233162
+    },
+    {
+      "candidate": "nobf16",
+      "frames": 16,
+      "peak_gib": 3.4280576705932617,
+      "s": 0.7582409679889679,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "lm1",
+      "frames": 16,
+      "peak_gib": 3.266618251800537,
+      "s": 0.7046340759843588,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "qkv1",
+      "frames": 16,
+      "peak_gib": 3.060380458831787,
+      "s": 0.7261808337643743,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "lm1qkv1",
+      "frames": 16,
+      "peak_gib": 3.060380458831787,
+      "s": 0.7044286569580436,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+GPU span 15.33 s, busy 7.84 s (51.1%), 680 gaps >= 200 us totalling 6.75 s
+
+idle time by CPU op in flight (top 25):
+     5.634 s  <no CPU op>
+     0.203 s  aten::copy_
+     0.143 s  aten::cudnn_convolution_transpose
+     0.135 s  aten::mm
+     0.122 s  aten::cudnn_convolution
+     0.102 s  aten::cat
+     0.082 s  aten::index_select
+     0.049 s  aten::pow
+     0.021 s  aten::index
+     0.020 s  aten::clamp
+     0.019 s  aten::addmm
+     0.018 s  aten::gather
+     0.017 s  aten::sum
+     0.015 s  aten::sub
+     0.014 s  aten::div
+     0.014 s  aten::_flash_attention_forward
+     0.013 s  mod::foundations.rvm.rnn_core
+     0.012 s  aten::neg
+     0.011 s  aten::empty_strided
+     0.008 s  aten::sigmoid
+     0.008 s  aten::mul
+     0.008 s  aten::gelu
+     0.008 s  aten::le
+     0.007 s  aten::fill_
+     0.007 s  aten::native_layer_norm

@@ -1,0 +1,14 @@
+Loading CorridorKey v2 runtime weights: /root/ck/weights/corridorkey_v2.safetensors
+[RVM] loaded /root/ck/vfms/rvm/pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from /root/ck/weights/foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+  probed 24 frames from test_clips/converge200_1080 @ 1920x1152 (native 1920x1080, fps 30.00, exr_linear=False, pad=(0, 0, 36, 36))
+    RVM continuous prepass: T=24, chunk=8, input=480x288, grid=30x18
+    frozen VFM prepass: T=24, grid=30x18, chunk=4
+    Hann stage1: chunk=8, stride=4, windows=5, baton_grid=120x72
+      window 1/5 [0:8]
+      window 2/5 [4:12]
+      window 3/5 [8:16]
+      window 4/5 [12:20]
+      window 5/5 [16:24]
+  wrote 2 output video(s) for converge200_1080 (24 frames @ 1920x1080)

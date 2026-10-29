@@ -1,0 +1,9 @@
+== automatic settings (80/40, normal)
+arch/logs/t_opt.log: Tried to allocate 23.73 GiB of 31.73 GiB; corridorkey/blocks.py:2714 forward <- corridorkey/blocks.py:3043 forward <- corridorkey/stage1.py:570 _ckpt_block
+    Auto VRAM: 31.4 GB available at 1280x1152 -> hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 5.1 GB)
+arch/logs/t_opt2.log: Tried to allocate 23.73 GiB of 31.73 GiB; corridorkey/blocks.py:2714 forward <- corridorkey/blocks.py:3043 forward <- corridorkey/stage1.py:570 _ckpt_block
+    Auto VRAM: 31.4 GB available at 1280x1152 -> hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 5.1 GB)
+arch/logs/t_orig.log: Tried to allocate 23.73 GiB of 31.73 GiB; corridorkey/blocks.py:2714 forward <- corridorkey/blocks.py:3043 forward <- corridorkey/stage1.py:570 _ckpt_block
+    Auto VRAM: 31.4 GB available at 1280x1152 -> hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.1 GB)
+arch/logs/t_orig2.log: Tried to allocate 23.73 GiB of 31.73 GiB; corridorkey/blocks.py:2714 forward <- corridorkey/blocks.py:3043 forward <- corridorkey/stage1.py:570 _ckpt_block
+    Auto VRAM: 31.4 GB available at 1280x1152 -> hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.1 GB)

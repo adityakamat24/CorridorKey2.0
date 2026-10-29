@@ -1,0 +1,342 @@
+{
+  "label": "laptop 1080p 40/20 fastattn",
+  "argv": [
+    "perf\\bench.py",
+    "--bf16_weights",
+    "--lean_activations",
+    "--prefetch_frames",
+    "--cache_region_indices",
+    "--activation_arena",
+    "--input",
+    "test_clips\\converge200_1080",
+    "--num_frames",
+    "48",
+    "--hann_chunk",
+    "40",
+    "--hann_stride",
+    "20",
+    "--low_vram",
+    "--warmup",
+    "1",
+    "--repeats",
+    "1",
+    "--temp_dir",
+    "D:\\corridor key\\laptop_runs\\tmp_bench",
+    "--fast_attention",
+    "--label",
+    "laptop 1080p 40/20 fastattn",
+    "--out",
+    "System.Collections.Hashtable\\laptop_bench_1080_40x20_fastattn.json"
+  ],
+  "config": {
+    "hann_chunk": 40,
+    "hann_stride": 20,
+    "carry_hint": true,
+    "hint_quality": 0.95,
+    "carry_hint_quality": 0.95,
+    "shape_quantum": 128,
+    "model_scale": 1.0,
+    "num_frames": 48,
+    "start_mode": "begin",
+    "seed": 0,
+    "low_vram": true,
+    "auto_vram": false,
+    "auto_vram_optimized": false,
+    "low_vram_foundation_chunk": 4,
+    "low_vram_mlp_chunk_tokens": 65536,
+    "low_vram_enc_frame_chunk": 1,
+    "low_vram_swin_window_batch": 16,
+    "low_vram_full_attn_query_chunk_tokens": 2048,
+    "stage2_batch": 1,
+    "outputs": [
+      "alpha",
+      "fg"
+    ],
+    "temp_dir": "D:\\corridor key\\laptop_runs\\tmp_bench",
+    "linear_brightness": 1.0,
+    "linear_contrast": 1.0,
+    "linear_contrast_pivot": 0.18,
+    "frame_dir_fps": 30.0,
+    "frame_dir_linear": false,
+    "cutout_linear": false,
+    "despill_strength": 0.5,
+    "output_format": "video",
+    "exr_dtype": "half",
+    "lean_activations": true,
+    "prefetch_frames": true,
+    "cache_region_indices": true,
+    "activation_arena": true,
+    "cuda_graph_stage2": false,
+    "fast_attention": true
+  },
+  "sdpa": "default",
+  "mem_cap_gib": null,
+  "weights": "bf16_linear_conv+frozen",
+  "env": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.13",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "alloc_conf": null,
+    "nvml_idle": {
+      "t": 699.3300948,
+      "phase": "idle",
+      "mem_used": 157286400,
+      "sm_mhz": 1425,
+      "mem_mhz": 7151,
+      "gpu_util": 0,
+      "power_w": 23.476,
+      "temp_c": 76
+    }
+  },
+  "model_shape_hw": [
+    1152,
+    1920
+  ],
+  "vram_table_estimate_gib": 11.367305736434108,
+  "load_s": 18.51459179999995,
+  "summary": {
+    "measured_runs": 1,
+    "total_s_median": 91.63540740000008,
+    "total_s_all": [
+      91.635
+    ],
+    "peak_allocated_gib": 4.491394519805908,
+    "peak_reserved_gib": 4.70703125,
+    "peak_owner_phase": "stage1",
+    "stage1_window_ms_median": 14993.77099609375,
+    "stage2_forward_ms_per_frame": 772.277759552002,
+    "phases": {
+      "setup": {
+        "wall_s": 0.23133899999993446,
+        "wall_s_all": [
+          0.231
+        ],
+        "peak_allocated_gib": 1.1288542747497559,
+        "peak_reserved_gib": 1.15625,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "prepass": {
+        "wall_s": 4.109020100000066,
+        "wall_s_all": [
+          4.109
+        ],
+        "peak_allocated_gib": 1.4267396926879883,
+        "peak_reserved_gib": 1.626953125,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "after_prepass": {
+        "wall_s": 0.538174300000037,
+        "wall_s_all": [
+          0.538
+        ],
+        "peak_allocated_gib": 4.491394519805908,
+        "peak_reserved_gib": 4.703125,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "stage1": {
+        "wall_s": 39.730858799999965,
+        "wall_s_all": [
+          39.731
+        ],
+        "peak_allocated_gib": 4.031351089477539,
+        "peak_reserved_gib": 4.70703125,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "after_stage1": {
+        "wall_s": 0.0006587999999965177,
+        "wall_s_all": [
+          0.001
+        ],
+        "peak_allocated_gib": 0.8860554695129395,
+        "peak_reserved_gib": 1.095703125,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "stage2": {
+        "wall_s": 42.26690550000001,
+        "wall_s_all": [
+          42.267
+        ],
+        "peak_allocated_gib": 0.9907312393188477,
+        "peak_reserved_gib": 1.169921875,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "encode_tail": {
+        "wall_s": 4.769439700000021,
+        "wall_s_all": [
+          4.769
+        ],
+        "peak_allocated_gib": 0.3854207992553711,
+        "peak_reserved_gib": 1.169921875,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      }
+    }
+  },
+  "runs": [
+    {
+      "warmup": true,
+      "total_s": 121.34944780000001,
+      "frames": 48,
+      "phases": [
+        {
+          "phase": "setup",
+          "allocated_start_gib": 1.1280951499938965,
+          "wall_s": 0.28468899999995756,
+          "peak_allocated_gib": 1.1280951499938965,
+          "peak_reserved_gib": 1.359375,
+          "allocated_end_gib": 1.1280951499938965,
+          "reserved_end_gib": 1.359375
+        },
+        {
+          "phase": "prepass",
+          "allocated_start_gib": 1.1280951499938965,
+          "wall_s": 7.089557600000035,
+          "peak_allocated_gib": 1.4354181289672852,
+          "peak_reserved_gib": 1.748046875,
+          "allocated_end_gib": 1.1372809410095215,
+          "reserved_end_gib": 1.359375
+        },
+        {
+          "phase": "after_prepass",
+          "allocated_start_gib": 1.1372809410095215,
+          "wall_s": 0.5301299999999856,
+          "peak_allocated_gib": 4.491394519805908,
+          "peak_reserved_gib": 4.625,
+          "allocated_end_gib": 0.8858194351196289,
+          "reserved_end_gib": 4.625
+        },
+        {
+          "phase": "stage1",
+          "allocated_start_gib": 0.8858194351196289,
+          "wall_s": 67.95821950000004,
+          "peak_allocated_gib": 4.031351089477539,
+          "peak_reserved_gib": 4.62890625,
+          "allocated_end_gib": 0.8860554695129395,
+          "reserved_end_gib": 1.017578125
+        },
+        {
+          "phase": "after_stage1",
+          "allocated_start_gib": 0.8860554695129395,
+          "wall_s": 0.0005297999999811509,
+          "peak_allocated_gib": 0.8860554695129395,
+          "peak_reserved_gib": 1.017578125,
+          "allocated_end_gib": 0.8860554695129395,
+          "reserved_end_gib": 1.017578125
+        },
+        {
+          "phase": "stage2",
+          "allocated_start_gib": 0.8860554695129395,
+          "wall_s": 42.157089499999984,
+          "peak_allocated_gib": 0.9907312393188477,
+          "peak_reserved_gib": 1.169921875,
+          "allocated_end_gib": 0.3854207992553711,
+          "reserved_end_gib": 1.169921875
+        },
+        {
+          "phase": "encode_tail",
+          "allocated_start_gib": 0.3854207992553711,
+          "wall_s": 3.3306576999999606,
+          "peak_allocated_gib": 0.3854207992553711,
+          "peak_reserved_gib": 1.169921875,
+          "allocated_end_gib": 0.3854207992553711,
+          "reserved_end_gib": 0.43359375
+        }
+      ],
+      "oom": null,
+      "stage1_windows_ms": [
+        32281.671875,
+        24983.900390625
+      ],
+      "stage2_forward_ms_total": 37906.43933105469,
+      "phase_before_encode": "stage2",
+      "stage2_forwards": 48
+    },
+    {
+      "warmup": false,
+      "total_s": 91.63540740000008,
+      "frames": 48,
+      "phases": [
+        {
+          "phase": "setup",
+          "allocated_start_gib": 1.1288542747497559,
+          "wall_s": 0.23133899999993446,
+          "peak_allocated_gib": 1.1288542747497559,
+          "peak_reserved_gib": 1.15625,
+          "allocated_end_gib": 1.1286025047302246,
+          "reserved_end_gib": 1.15625
+        },
+        {
+          "phase": "prepass",
+          "allocated_start_gib": 1.1286025047302246,
+          "wall_s": 4.109020100000066,
+          "peak_allocated_gib": 1.4267396926879883,
+          "peak_reserved_gib": 1.626953125,
+          "allocated_end_gib": 1.1286025047302246,
+          "reserved_end_gib": 1.158203125
+        },
+        {
+          "phase": "after_prepass",
+          "allocated_start_gib": 1.1286025047302246,
+          "wall_s": 0.538174300000037,
+          "peak_allocated_gib": 4.491394519805908,
+          "peak_reserved_gib": 4.703125,
+          "allocated_end_gib": 0.8858194351196289,
+          "reserved_end_gib": 4.703125
+        },
+        {
+          "phase": "stage1",
+          "allocated_start_gib": 0.8858194351196289,
+          "wall_s": 39.730858799999965,
+          "peak_allocated_gib": 4.031351089477539,
+          "peak_reserved_gib": 4.70703125,
+          "allocated_end_gib": 0.8860554695129395,
+          "reserved_end_gib": 1.095703125
+        },
+        {
+          "phase": "after_stage1",
+          "allocated_start_gib": 0.8860554695129395,
+          "wall_s": 0.0006587999999965177,
+          "peak_allocated_gib": 0.8860554695129395,
+          "peak_reserved_gib": 1.095703125,
+          "allocated_end_gib": 0.8860554695129395,
+          "reserved_end_gib": 1.095703125
+        },
+        {
+          "phase": "stage2",
+          "allocated_start_gib": 0.8860554695129395,
+          "wall_s": 42.26690550000001,
+          "peak_allocated_gib": 0.9907312393188477,
+          "peak_reserved_gib": 1.169921875,
+          "allocated_end_gib": 0.3854207992553711,
+          "reserved_end_gib": 1.169921875
+        },
+        {
+          "phase": "encode_tail",
+          "allocated_start_gib": 0.3854207992553711,
+          "wall_s": 4.769439700000021,
+          "peak_allocated_gib": 0.3854207992553711,
+          "peak_reserved_gib": 1.169921875,
+          "allocated_end_gib": 0.3854207992553711,
+          "reserved_end_gib": 0.43359375
+        }
+      ],
+      "oom": null,
+      "stage1_windows_ms": [
+        14702.77734375,
+        15284.7646484375
+      ],
+      "stage2_forward_ms_total": 37069.332458496094,
+      "phase_before_encode": "stage2",
+      "stage2_forwards": 48
+    }
+  ]
+}

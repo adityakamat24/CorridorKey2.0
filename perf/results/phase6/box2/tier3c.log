@@ -1,0 +1,19 @@
+[21:25:17] code: gpu_prep refs infer.py:2 corridorkey/runtime.py:4 
+[21:30:43] opt42_tos rc=0 {"tag": "opt42_tos", "rc": 0, "wall_s": 324.7, "nvidia_smi_max_mib": 3273} | Hann stage1: chunk=4, stride=2
+[21:35:27] fast42_tos rc=0 {"tag": "fast42_tos", "rc": 0, "wall_s": 284.0, "nvidia_smi_max_mib": 3273} | Hann stage1: chunk=4, stride=2
+[21:39:45] best42_tos rc=0 {"tag": "best42_tos", "rc": 0, "wall_s": 257.6, "nvidia_smi_max_mib": 3273} | Hann stage1: chunk=4, stride=2
+[21:45:10] opt84_tos rc=0 {"tag": "opt84_tos", "rc": 0, "wall_s": 325.7, "nvidia_smi_max_mib": 4105} | Hann stage1: chunk=8, stride=4
+[21:50:02] fast84_tos rc=0 {"tag": "fast84_tos", "rc": 0, "wall_s": 292.1, "nvidia_smi_max_mib": 4105} | Hann stage1: chunk=8, stride=4
+[21:54:21] best84_tos rc=0 {"tag": "best84_tos", "rc": 0, "wall_s": 258.5, "nvidia_smi_max_mib": 4085} | Hann stage1: chunk=8, stride=4
+[21:59:08] bestauto_tos rc=0 {"tag": "bestauto_tos", "rc": 0, "wall_s": 287.0, "nvidia_smi_max_mib": 11561} | hann_chunk=40, hann_stride=20, low_vram=True
+[22:00:11] orig_hair_detail rc=0 {"tag": "orig_hair_detail", "rc": 0, "wall_s": 60.9, "nvidia_smi_max_mib": 12271} | hann_chunk=48, hann_stride=24, low_vram=True
+[22:00:41] opt_hair_detail rc=0 {"tag": "opt_hair_detail", "rc": 0, "wall_s": 30.0, "nvidia_smi_max_mib": 9161} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:01:08] fast_hair_detail rc=0 {"tag": "fast_hair_detail", "rc": 0, "wall_s": 27.7, "nvidia_smi_max_mib": 9161} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:01:33] best_hair_detail rc=0 {"tag": "best_hair_detail", "rc": 0, "wall_s": 24.8, "nvidia_smi_max_mib": 9161} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:02:12] orig_motion_blur rc=0 {"tag": "orig_motion_blur", "rc": 0, "wall_s": 38.5, "nvidia_smi_max_mib": 12339} | hann_chunk=80, hann_stride=40, low_vram=True
+[22:02:33] opt_motion_blur rc=0 {"tag": "opt_motion_blur", "rc": 0, "wall_s": 20.4, "nvidia_smi_max_mib": 8859} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:02:52] fast_motion_blur rc=0 {"tag": "fast_motion_blur", "rc": 0, "wall_s": 19.4, "nvidia_smi_max_mib": 8859} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:03:09] best_motion_blur rc=0 {"tag": "best_motion_blur", "rc": 0, "wall_s": 17.1, "nvidia_smi_max_mib": 8859} | hann_chunk=80, hann_stride=40, low_vram=False
+[22:15:14] orig84_tos rc=0 {"tag": "orig84_tos", "rc": 0, "wall_s": 724.3, "nvidia_smi_max_mib": 11625} | Hann stage1: chunk=8, stride=4
+[22:19:32] best42b_tos rc=0 {"tag": "best42b_tos", "rc": 0, "wall_s": 257.7, "nvidia_smi_max_mib": 3273} | Hann stage1: chunk=4, stride=2
+[22:19:32] tier3c done

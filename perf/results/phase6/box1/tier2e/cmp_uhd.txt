@@ -1,0 +1,2 @@
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+04_5h                        16  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0,1,2,3,4

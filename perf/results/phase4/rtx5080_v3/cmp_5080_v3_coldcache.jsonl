@@ -1,0 +1,2 @@
+{"tag": "warmup", "rc": 0, "wall_s": 41.9, "nvidia_smi_max_mib": 8880, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)", "torch_peaks": "7.808 GiB, peak reserved 8.322 GiB, budget 12.00 GiB"}
+{"tag": "orig_hair_detail", "rc": 0, "wall_s": 79.7, "nvidia_smi_max_mib": 12264, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.2 GB)", "torch_peaks": "9.937 GiB, peak reserved 11.629 GiB, budget 12.00 GiB"}

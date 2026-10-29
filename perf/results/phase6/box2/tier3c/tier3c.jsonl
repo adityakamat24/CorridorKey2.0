@@ -1,0 +1,17 @@
+{"tag": "opt42_tos", "rc": 0, "wall_s": 324.7, "nvidia_smi_max_mib": 3273}
+{"tag": "fast42_tos", "rc": 0, "wall_s": 284.0, "nvidia_smi_max_mib": 3273}
+{"tag": "best42_tos", "rc": 0, "wall_s": 257.6, "nvidia_smi_max_mib": 3273}
+{"tag": "opt84_tos", "rc": 0, "wall_s": 325.7, "nvidia_smi_max_mib": 4105}
+{"tag": "fast84_tos", "rc": 0, "wall_s": 292.1, "nvidia_smi_max_mib": 4105}
+{"tag": "best84_tos", "rc": 0, "wall_s": 258.5, "nvidia_smi_max_mib": 4085}
+{"tag": "bestauto_tos", "rc": 0, "wall_s": 287.0, "nvidia_smi_max_mib": 11561}
+{"tag": "orig_hair_detail", "rc": 0, "wall_s": 60.9, "nvidia_smi_max_mib": 12271}
+{"tag": "opt_hair_detail", "rc": 0, "wall_s": 30.0, "nvidia_smi_max_mib": 9161}
+{"tag": "fast_hair_detail", "rc": 0, "wall_s": 27.7, "nvidia_smi_max_mib": 9161}
+{"tag": "best_hair_detail", "rc": 0, "wall_s": 24.8, "nvidia_smi_max_mib": 9161}
+{"tag": "orig_motion_blur", "rc": 0, "wall_s": 38.5, "nvidia_smi_max_mib": 12339}
+{"tag": "opt_motion_blur", "rc": 0, "wall_s": 20.4, "nvidia_smi_max_mib": 8859}
+{"tag": "fast_motion_blur", "rc": 0, "wall_s": 19.4, "nvidia_smi_max_mib": 8859}
+{"tag": "best_motion_blur", "rc": 0, "wall_s": 17.1, "nvidia_smi_max_mib": 8859}
+{"tag": "orig84_tos", "rc": 0, "wall_s": 724.3, "nvidia_smi_max_mib": 11625}
+{"tag": "best42b_tos", "rc": 0, "wall_s": 257.7, "nvidia_smi_max_mib": 3273}

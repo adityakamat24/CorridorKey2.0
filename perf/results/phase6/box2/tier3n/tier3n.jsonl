@@ -1,0 +1,10 @@
+{"tag": "opt_hair_detail_a", "rc": 0, "wall_s": 30.7}
+{"tag": "optgpu_hair_detail_a", "rc": 0, "wall_s": 26.5}
+{"tag": "opt_motion_blur_a", "rc": 0, "wall_s": 20.1}
+{"tag": "optgpu_motion_blur_a", "rc": 0, "wall_s": 18.1}
+{"tag": "opt_hair_detail_b", "rc": 0, "wall_s": 29.3}
+{"tag": "optgpu_hair_detail_b", "rc": 0, "wall_s": 26.8}
+{"tag": "opt_motion_blur_b", "rc": 0, "wall_s": 20.2}
+{"tag": "optgpu_motion_blur_b", "rc": 0, "wall_s": 18.0}
+{"tag": "opt42", "rc": 0, "wall_s": 303.8}
+{"tag": "optgpu42", "rc": 0, "wall_s": 273.3}

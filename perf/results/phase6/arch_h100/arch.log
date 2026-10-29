@@ -1,0 +1,17 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[05:30:59] setup: setup done
+[gpu] NVIDIA H100 PCIe sm_90 79.2 GiB, torch 2.9.1+cu128 cuda 12.8 flash attention True
+[05:31:24] probe rc=0: 7 clean lines
+[05:32:10] deterministic original rc=0
+[05:32:55] deterministic original 2 rc=0
+[05:33:27] deterministic optimized rc=0
+[05:33:28] deterministic cuDNN: original vs original 2: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:33:28] deterministic cuDNN: original vs optimized: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:34:14] default original rc=0
+[05:34:46] default optimized rc=0
+[05:34:46] default cuDNN: original vs optimized: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:35:13] timing orig rc=0 wall 26.4 s | hann_chunk=80, hann_stride=40, low_vram=False
+[05:35:31] timing opt rc=0 wall 17.7 s | hann_chunk=80, hann_stride=40, low_vram=False
+[05:35:57] timing orig2 rc=0 wall 26.4 s | hann_chunk=80, hann_stride=40, low_vram=False
+[05:36:15] timing opt2 rc=0 wall 17.7 s | hann_chunk=80, hann_stride=40, low_vram=False
+[05:36:15] arch done

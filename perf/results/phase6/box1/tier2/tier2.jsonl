@@ -1,0 +1,23 @@
+{"tag": "warmup", "rc": 0, "wall_s": 24.5, "nvidia_smi_max_mib": 8885, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "opt_hair_detail", "rc": 0, "wall_s": 30.2, "nvidia_smi_max_mib": 9185, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "optc_cold_hair_detail", "rc": 3, "wall_s": 352.7, "nvidia_smi_max_mib": 10133, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "optc_hair_detail", "rc": 3, "wall_s": 56.0, "nvidia_smi_max_mib": 10123, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "ckd_hair_detail", "rc": 0, "wall_s": 31.4, "nvidia_smi_max_mib": 9303, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)"}
+{"tag": "fast_hair_detail", "rc": 0, "wall_s": 28.2, "nvidia_smi_max_mib": 9185, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "fastc_hair_detail", "rc": 3, "wall_s": 55.8, "nvidia_smi_max_mib": 10123, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "opt2_hair_detail", "rc": 0, "wall_s": 30.3, "nvidia_smi_max_mib": 9185, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "optc2_hair_detail", "rc": 3, "wall_s": 56.0, "nvidia_smi_max_mib": 10123, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)"}
+{"tag": "opt_motion_blur", "rc": 0, "wall_s": 20.8, "nvidia_smi_max_mib": 8885, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "optc_cold_motion_blur", "rc": 3, "wall_s": 354.9, "nvidia_smi_max_mib": 12577, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "optc_motion_blur", "rc": 3, "wall_s": 97.7, "nvidia_smi_max_mib": 12509, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "ckd_motion_blur", "rc": 0, "wall_s": 22.2, "nvidia_smi_max_mib": 9303, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)"}
+{"tag": "fast_motion_blur", "rc": 0, "wall_s": 19.4, "nvidia_smi_max_mib": 8885, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "fastc_motion_blur", "rc": 3, "wall_s": 100.9, "nvidia_smi_max_mib": 12509, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "opt2_motion_blur", "rc": 0, "wall_s": 20.7, "nvidia_smi_max_mib": 8885, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "optc2_motion_blur", "rc": 3, "wall_s": 98.7, "nvidia_smi_max_mib": 12509, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)"}
+{"tag": "opt84L_tos", "rc": 0, "wall_s": 360.7, "nvidia_smi_max_mib": 4105, "auto": ""}
+{"tag": "optc_cold_tos", "rc": 0, "wall_s": 1079.0, "nvidia_smi_max_mib": 4789, "auto": ""}
+{"tag": "optc_tos", "rc": 0, "wall_s": 461.8, "nvidia_smi_max_mib": 4815, "auto": ""}
+{"tag": "ckd_tos", "rc": 0, "wall_s": 255.7, "nvidia_smi_max_mib": 7611, "auto": "hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 8.3 GB)"}
+{"tag": "fastc_tos", "rc": 143, "wall_s": 87.5, "nvidia_smi_max_mib": 4145, "auto": ""}
+{"tag": "fast84L_tos", "rc": 0, "wall_s": 298.3, "nvidia_smi_max_mib": 4105, "auto": ""}

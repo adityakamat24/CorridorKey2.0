@@ -1,0 +1,2 @@
+clip                     frames     a_mae     a_max  edge_mae  edge_max   fg_srgb   flicker  worst t
+smoke_1080                   48  7.93e-04  2.77e-01  4.71e-03  2.77e-01  2.73e-03  2.65e-04  44,45,46,43,47

@@ -1,0 +1,14 @@
+[01:34:41] header check: ToS half: True f32 half: False 
+[01:39:22] base42_a rc=0 {"tag": "base42_a", "rc": 0, "wall_s": 280.1} | peak reserved 2.803 GiB
+[01:43:33] sync42_a rc=0 {"tag": "sync42_a", "rc": 0, "wall_s": 251.4} | peak reserved 2.842 GiB
+[01:47:17] async42_a rc=0 {"tag": "async42_a", "rc": 0, "wall_s": 223.7} | peak reserved 2.842 GiB
+[01:51:40] base84_a rc=0 {"tag": "base84_a", "rc": 0, "wall_s": 262.6} | peak reserved 3.559 GiB
+[01:56:03] sync84_a rc=0 {"tag": "sync84_a", "rc": 0, "wall_s": 263.4} | peak reserved 3.637 GiB
+[01:59:58] async84_a rc=0 {"tag": "async84_a", "rc": 0, "wall_s": 235.4} | peak reserved 3.637 GiB
+[02:04:35] base42_b rc=0 {"tag": "base42_b", "rc": 0, "wall_s": 276.1} | peak reserved 2.803 GiB
+[02:08:46] sync42_b rc=0 {"tag": "sync42_b", "rc": 0, "wall_s": 251.7} | peak reserved 2.842 GiB
+[02:12:33] async42_b rc=0 {"tag": "async42_b", "rc": 0, "wall_s": 226.2} | peak reserved 2.842 GiB
+[02:16:55] base84_b rc=0 {"tag": "base84_b", "rc": 0, "wall_s": 262.2} | peak reserved 3.559 GiB
+[02:21:06] sync84_b rc=0 {"tag": "sync84_b", "rc": 0, "wall_s": 251.5} | peak reserved 3.637 GiB
+[02:25:02] async84_b rc=0 {"tag": "async84_b", "rc": 0, "wall_s": 236.1} | peak reserved 3.637 GiB
+[02:25:02] tier3l done

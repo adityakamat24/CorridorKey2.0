@@ -1,0 +1,183 @@
+{
+  "nvidia_smi_before_cuda_init": {
+    "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "driver_version": "616.56",
+    "memory.total": "6144",
+    "memory.used": "503",
+    "memory.free": "5492",
+    "clocks.sm": "210",
+    "clocks.max.sm": "2100",
+    "clocks.mem": "405",
+    "clocks.max.mem": "7001",
+    "temperature.gpu": "75",
+    "power.draw": "15.41",
+    "pstate": "P8",
+    "pcie.link.gen.current": "1",
+    "pcie.link.width.current": "8"
+  },
+  "platform": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.13",
+    "torch": "2.9.1+cu128",
+    "torch_cuda": "12.8",
+    "cudnn": 91002
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "capability": "sm_86",
+    "sm_count": 30,
+    "total_memory_gib": 6.0
+  },
+  "vram_after_cuda_init": {
+    "free_gib": 5.01,
+    "total_gib": 6.0,
+    "nvidia_smi": {
+      "memory.used": "599",
+      "memory.free": "5396"
+    }
+  },
+  "sdpa_flags": {
+    "flash": true,
+    "mem_efficient": true,
+    "cudnn": true,
+    "math": true
+  },
+  "sdpa_backends": {
+    "swin3d_16_T8_hd64": {
+      "flash": "unavailable: No available kernel. Aborting execution.",
+      "efficient": "ok",
+      "cudnn": "ok (max|diff| vs first ok = 9.77e-04)",
+      "math": "ok (max|diff| vs first ok = 9.77e-04)",
+      "default_dispatch_kernels": [
+        "_Z40fmha_cutlassF_bf16_aligned_64x64_rf_sm80N22PyTorchMemEffAttention15AttentionKernelIN7cutlass10bfloat16_tENS1_4arch4Sm80ELb1ELi64ELi64ELi64ELb1ELb1EE6ParamsE"
+      ]
+    },
+    "fullspatial_16_1080p_hd64": {
+      "flash": "unavailable: No available kernel. Aborting execution.",
+      "efficient": "ok",
+      "cudnn": "ok (max|diff| vs first ok = 2.44e-04)",
+      "math": "ok (max|diff| vs first ok = 4.88e-04)",
+      "default_dispatch_kernels": [
+        "_Z40fmha_cutlassF_bf16_aligned_64x64_rf_sm80N22PyTorchMemEffAttention15AttentionKernelIN7cutlass10bfloat16_tENS1_4arch4Sm80ELb1ELi64ELi64ELi64ELb1ELb1EE6ParamsE"
+      ]
+    },
+    "full3d_64_1080p_T8_hd96": {
+      "flash": "unavailable: No available kernel. Aborting execution.",
+      "efficient": "ok",
+      "cudnn": "ok (max|diff| vs first ok = 9.77e-04)",
+      "math": "ok (max|diff| vs first ok = 9.77e-04)",
+      "default_dispatch_kernels": [
+        "_Z41fmha_cutlassF_bf16_aligned_64x128_rf_sm80N22PyTorchMemEffAttention15AttentionKernelIN7cutlass10bfloat16_tENS1_4arch4Sm80ELb1ELi64ELi128ELi128ELb1ELb1EE6ParamsE"
+      ]
+    }
+  },
+  "stored": {
+    "checkpoint:stage1": {
+      "tensors": 512,
+      "elements": 463607816,
+      "bytes": 1854431264,
+      "dtypes": {
+        "F32": 463607816
+      }
+    },
+    "checkpoint:stage2": {
+      "tensors": 226,
+      "elements": 201796420,
+      "bytes": 807185680,
+      "dtypes": {
+        "F32": 201796420
+      }
+    },
+    "vfms:cradio(model.safetensors)": {
+      "tensors": 330,
+      "elements": 431237240,
+      "bytes": 1724948968,
+      "dtypes": {
+        "I64": 2,
+        "F32": 431237238
+      }
+    },
+    "vfms:moge(model.pt)": {
+      "tensors": 337,
+      "elements": 104743598,
+      "bytes": 418974392,
+      "dtypes": {
+        "float32": 104743598
+      }
+    },
+    "vfms:rvm(npz)": {
+      "tensors": 525,
+      "elements": 67480448,
+      "bytes": 269921792,
+      "dtypes": {
+        "float32": 67480448
+      }
+    }
+  },
+  "checkpoint_metadata": {
+    "format": "corridorkey_v2_runtime_checkpoint",
+    "metadata": {
+      "public_model_name": "CorridorKey v2",
+      "pre_recurrence": true,
+      "shape_quantum": 128,
+      "required_vfms": [
+        "C-RADIOv4-SO400M",
+        "MoGe-2-ViT-B",
+        "RVM-small"
+      ]
+    },
+    "model_config": {
+      "d_16": 512,
+      "d_64": 1536,
+      "d_stage2": 1280,
+      "n_enc_16": 2,
+      "n_body_64": 10,
+      "n_dec_16": 6,
+      "num_heads_16": 8,
+      "num_heads_64": 16,
+      "num_heads_stage2": 16,
+      "window_HW": 16,
+      "window_size_stage2": 16,
+      "stage1_local_mix_kernel": 7,
+      "stage1_local_mix_init_std": null,
+      "stage1_body64_local_mix_kernel": 7,
+      "stage1_body64_local_mix_init_std": null,
+      "stage1_body64_mlp_hidden": null,
+      "stage1_body64_direct_concat": false,
+      "stage1_recurrent_64_sites": [],
+      "stage1_hint_adaln_blocks": 2,
+      "stage1_mid_16_blocks": 4,
+      "n_blocks_stage2": 10,
+      "n_final_blocks_stage2": 2,
+      "stage2_local_mix_kernel": 7,
+      "stage2_local_mix_init_std": null,
+      "refine4_blocks": 0,
+      "refine4_width": 96,
+      "refine4_token_channels": 48,
+      "refine4_kernel": 7,
+      "refine4_expansion": 2.0,
+      "mlp_mult": 2.5,
+      "mlp_dw_kernel": 0,
+      "qkv_dw_kernel": 7,
+      "qkv_dw_fraction": 0.25,
+      "use_moge": true,
+      "use_cradio": true,
+      "cradio_repo": "vfms/cradio/C-RADIOv4-SO400M",
+      "moge_checkpoint": "vfms/moge/model.pt",
+      "rvm_variant": "small",
+      "rvm_ckpt": "vfms/rvm/pretrain_rvm_small16_256_204031069.npz",
+      "gradient_checkpoint": false,
+      "overlap_patchify": false,
+      "overlap_mult": 2,
+      "depatch_fourier_features": 0,
+      "depatch_fourier_kernel": 3,
+      "enable_mae_mask_tokens": false,
+      "bottleneck_head_stride": 8,
+      "rope_shift_coords": null,
+      "rope_jitter_coords": null,
+      "rope_rescale_coords": null,
+      "rope_base": 100.0,
+      "foundation_stats_path": "weights/foundation_stats.pt"
+    }
+  }
+}

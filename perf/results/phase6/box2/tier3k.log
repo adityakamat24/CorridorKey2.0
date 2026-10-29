@@ -1,0 +1,13 @@
+[01:00:01] base_84: [bench] median total 154.04s; peak reserved 3.11 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021 [rss] child max RSS 11.72 GiB, rc 0
+    setup 0.6s  prepass 12.3s  after_prepass 0.7s  stage1 58.7s  stage2 56.5s  encode_tail 25.3s
+[01:02:43] sync_84: [bench] median total 154.88s; peak reserved 3.11 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021 [rss] child max RSS 12.22 GiB, rc 0
+    setup 0.5s  prepass 13.5s  after_prepass 0.7s  stage1 56.6s  stage2 59.0s  encode_tail 24.6s
+[01:05:43] async_84: [bench] median total 171.94s; peak reserved 3.65 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021 [rss] child max RSS 13.13 GiB, rc 0
+    setup 0.5s  prepass 13.2s  after_prepass 0.7s  stage1 47.5s  stage2 85.1s  encode_tail 24.8s
+[01:08:11] async_reg_84: [bench] median total 139.40s; peak reserved 3.62 GiB (allocated 2.66) in stage1; table estimate 8.790615765237021 [rss] child max RSS 13.10 GiB, rc 0
+    setup 0.6s  prepass 13.5s  after_prepass 0.7s  stage1 46.5s  stage2 53.5s  encode_tail 24.7s
+[01:10:49] base_84b: [bench] median total 151.04s; peak reserved 3.11 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021 [rss] child max RSS 11.68 GiB, rc 0
+    setup 0.6s  prepass 12.5s  after_prepass 0.7s  stage1 58.8s  stage2 54.3s  encode_tail 24.3s
+[01:14:24] async_84b: [bench] median total 207.12s; peak reserved 3.65 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021 [rss] child max RSS 13.16 GiB, rc 0
+    setup 0.5s  prepass 13.5s  after_prepass 0.7s  stage1 47.6s  stage2 119.8s  encode_tail 24.9s
+[01:14:24] tier3k done

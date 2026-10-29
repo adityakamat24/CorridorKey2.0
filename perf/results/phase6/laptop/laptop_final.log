@@ -1,0 +1,4 @@
+[21:11:16] default rc=0
+[21:13:16] --optimized (now with --gpu_prep --async_baton) rc=0
+[21:13:18] hair_1080 8/4 carry hint on, default vs --optimized: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[21:13:18] laptop final done

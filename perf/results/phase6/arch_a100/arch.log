@@ -1,0 +1,16 @@
+[05:55:20] setup: setup done
+[gpu] NVIDIA A100-SXM4-40GB sm_80 39.5 GiB, torch 2.9.1+cu128 cuda 12.8 flash attention True
+[05:55:39] probe rc=0: 7 clean lines
+[05:56:24] deterministic original rc=0
+[05:57:07] deterministic original 2 rc=0
+[05:57:39] deterministic optimized rc=0
+[05:57:39] deterministic cuDNN: original vs original 2: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:57:40] deterministic cuDNN: original vs optimized: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:58:22] default original rc=0
+[05:58:54] default optimized rc=0
+[05:58:55] default cuDNN: original vs optimized: 48 files in ref, 48 in cand: 48 identical, 0 differ, 0 on one side only
+[05:59:21] timing orig rc=0 wall 26.5 s | hann_chunk=80, hann_stride=40, low_vram=False
+[05:59:38] timing opt rc=0 wall 16.5 s | hann_chunk=80, hann_stride=40, low_vram=False
+[06:00:05] timing orig2 rc=0 wall 26.8 s | hann_chunk=80, hann_stride=40, low_vram=False
+[06:00:21] timing opt2 rc=0 wall 16.6 s | hann_chunk=80, hann_stride=40, low_vram=False
+[06:00:21] arch done

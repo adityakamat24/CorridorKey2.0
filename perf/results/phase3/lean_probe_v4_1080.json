@@ -1,0 +1,123 @@
+{
+  "hw": [
+    1152,
+    1920
+  ],
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "rows": [
+    {
+      "candidate": "baseline",
+      "frames": 8,
+      "peak_gib": 1.9710721969604492,
+      "s": 0.3136648125946522
+    },
+    {
+      "candidate": "noinplace",
+      "frames": 8,
+      "peak_gib": 1.9991469383239746,
+      "s": 0.3161395415663719,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nobf16",
+      "frames": 8,
+      "peak_gib": 2.159548759460449,
+      "s": 0.3320333417505026,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nochunk",
+      "frames": 8,
+      "peak_gib": 2.0778517723083496,
+      "s": 0.3265353674069047,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "v1",
+      "frames": 8,
+      "peak_gib": 2.158572196960449,
+      "s": 0.33691447135061026,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "baseline",
+      "frames": 16,
+      "peak_gib": 3.0530576705932617,
+      "s": 0.6963694132864475
+    },
+    {
+      "candidate": "noinplace",
+      "frames": 16,
+      "peak_gib": 3.0530576705932617,
+      "s": 0.7004911107942462,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nobf16",
+      "frames": 16,
+      "peak_gib": 3.4280576705932617,
+      "s": 0.7332977661862969,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nochunk",
+      "frames": 16,
+      "peak_gib": 3.266618251800537,
+      "s": 0.7234652927145362,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "v1",
+      "frames": 16,
+      "peak_gib": 3.4280576705932617,
+      "s": 0.7636470627039671,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "baseline",
+      "frames": 24,
+      "peak_gib": 4.137652397155762,
+      "s": 1.141874092631042
+    },
+    {
+      "candidate": "noinplace",
+      "frames": 24,
+      "peak_gib": 4.136675834655762,
+      "s": 1.1420967150479555,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nobf16",
+      "frames": 24,
+      "peak_gib": 4.700152397155762,
+      "s": 1.1964544607326388,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "nochunk",
+      "frames": 24,
+      "peak_gib": 4.457505702972412,
+      "s": 1.180414973758161,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "candidate": "v1",
+      "frames": 24,
+      "peak_gib": 4.700152397155762,
+      "s": 1.241299606859684,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ]
+}

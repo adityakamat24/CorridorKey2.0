@@ -1,0 +1,22 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[04:56:27] setup: setup done
+[04:56:36] tos frames: 12
+[gpu] NVIDIA GeForce RTX 4090, 580.105.08
+[04:58:02] hair_detail original rc=0
+[04:58:54] hair_detail optimized rc=0
+[04:58:56] hair_detail original vs optimized: 48 files in ref, 48 in cand: 0 identical, 48 differ, 0 on one side only
+[05:00:27] smoke original rc=0
+[05:01:30] smoke optimized rc=0
+[05:01:32] smoke original vs optimized: 48 files in ref, 48 in cand: 0 identical, 48 differ, 0 on one side only
+[05:03:10] motion_blur original rc=0
+[05:04:23] motion_blur optimized rc=0
+[05:04:24] motion_blur original vs optimized: 48 files in ref, 48 in cand: 0 identical, 48 differ, 0 on one side only
+[05:09:56] tos original rc=0
+[05:12:06] tos optimized rc=0
+[05:12:14] tos original vs optimized: 24 files in ref, 24 in cand: 0 identical, 24 differ, 0 on one side only
+[05:15:30] stills rc=0
+hair_detail {'frames': 24, 'alpha_values_differing': 807115, 'pixels_per_frame': 1382400, 'still_frame': 12, 'crop_yx': [544, 47, 270], 'size': [1280, 1080]}
+smoke {'frames': 24, 'alpha_values_differing': 454610, 'pixels_per_frame': 1382400, 'still_frame': 12, 'crop_yx': [500, 396, 270], 'size': [1280, 1080]}
+motion_blur {'frames': 24, 'alpha_values_differing': 375433, 'pixels_per_frame': 1382400, 'still_frame': 12, 'crop_yx': [712, 456, 270], 'size': [1280, 1080]}
+tos {'frames': 12, 'alpha_values_differing': 185812, 'pixels_per_frame': 8847360, 'still_frame': 6, 'crop_yx': [0, 2322, 540], 'size': [4096, 2160]}
+[05:15:30] show done

@@ -1,0 +1,8 @@
+torch 2.9.1+cu128, Quadro RTX 6000, numpy 1.26.4
+png8             CPU scalar loops vs vectorized: 0 mismatches
+half linear      CPU scalar loops vs vectorized: 0 mismatches
+half display     CPU scalar loops vs vectorized: 0 mismatches
+png8             display mismatches          0  model mismatches          0
+png8 odd size    display mismatches          0  model mismatches          0
+half linear      display mismatches          0  model mismatches          0
+half display     display mismatches          0  model mismatches          0

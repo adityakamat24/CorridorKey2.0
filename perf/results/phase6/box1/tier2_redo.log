@@ -1,0 +1,43 @@
+[20:24:43] warmup rc=0 wall=24.5s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:25:14] opt_hair_detail rc=0 wall=30.2s smi=9185MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:31:06] optc_cold_hair_detail rc=3 wall=352.7s smi=10133MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:32:02] optc_hair_detail rc=3 wall=56.0s smi=10123MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:32:34] ckd_hair_detail rc=0 wall=31.4s smi=9303MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)
+[20:33:02] fast_hair_detail rc=0 wall=28.2s smi=9185MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:33:58] fastc_hair_detail rc=3 wall=55.8s smi=10123MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:34:28] opt2_hair_detail rc=0 wall=30.3s smi=9185MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:35:24] optc2_hair_detail rc=3 wall=56.0s smi=10123MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[20:35:46] opt_motion_blur rc=0 wall=20.8s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:41:41] optc_cold_motion_blur rc=3 wall=354.9s smi=12577MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:43:19] optc_motion_blur rc=3 wall=97.7s smi=12509MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:43:41] ckd_motion_blur rc=0 wall=22.2s smi=9303MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)
+[20:44:01] fast_motion_blur rc=0 wall=19.4s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:45:42] fastc_motion_blur rc=3 wall=100.9s smi=12509MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:46:02] opt2_motion_blur rc=0 wall=20.7s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:47:41] optc2_motion_blur rc=3 wall=98.7s smi=12509MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[20:53:45] opt84L_tos rc=0 wall=360.7s smi=4105MiB | 
+[21:11:44] optc_cold_tos rc=0 wall=1079.0s smi=4789MiB | 
+[21:19:25] optc_tos rc=0 wall=461.8s smi=4815MiB | 
+[21:23:41] ckd_tos rc=0 wall=255.7s smi=7611MiB | hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 8.3 GB)
+Terminated
+[21:25:09] fastc_tos rc=143 wall=87.5s smi=4145MiB | 
+[21:30:07] fast84L_tos rc=0 wall=298.3s smi=4105MiB | 
+[21:35:31] bench 4K 8/4: [bench] median total 306.09s; peak reserved 3.19 GiB (allocated 2.93) in prepass; table estimate 8.790615765237021
+    load 7.14 s
+    setup                0.66 s   SM median   2482 MHz   peak reserved 1.38 GiB
+    prepass             41.75 s   SM median   2482 MHz   peak reserved 3.19 GiB
+    after_prepass        0.69 s   SM median   2482 MHz   peak reserved 3.06 GiB
+    stage1             120.17 s   SM median   2482 MHz   peak reserved 3.07 GiB
+    after_stage1         0.00 s   SM median      0 MHz   peak reserved 1.02 GiB
+    stage2             116.39 s   SM median   2482 MHz   peak reserved 3.03 GiB
+    encode_tail         26.44 s   SM median   2482 MHz   peak reserved 3.03 GiB
+[21:41:03] bench 4K 4/2: [bench] median total 319.83s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+    load 5.98 s
+    setup                0.55 s   SM median   2482 MHz   peak reserved 1.38 GiB
+    prepass             40.70 s   SM median   2482 MHz   peak reserved 1.98 GiB
+    after_prepass        0.67 s   SM median   2482 MHz   peak reserved 3.06 GiB
+    stage1             122.53 s   SM median   2482 MHz   peak reserved 3.08 GiB
+    after_stage1         0.00 s   SM median      0 MHz   peak reserved 1.02 GiB
+    stage2             128.90 s   SM median   2482 MHz   peak reserved 3.03 GiB
+    encode_tail         26.48 s   SM median   2482 MHz   peak reserved 3.03 GiB
+[21:41:04] redo done

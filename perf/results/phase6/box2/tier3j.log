@@ -1,0 +1,3 @@
+[00:57:18] spy rc=0: [bench] median total 84.36s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+{'setup': 0.68, 'prepass': 11.23, 'after_prepass': 0.89, 'stage1': 23.84, 'after_stage1': 0.0, 'stage2': 28.04, 'encode_tail': 19.68}
+[00:57:18] tier3j done

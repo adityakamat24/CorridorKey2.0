@@ -1,0 +1,1 @@
+/opt/conda/bin/python /root/ck/infer.py --input /root/ck/test_clips/hair_1080 --output_dir /root/ck/perf/out/trial/hair_1080 --output_format exr --exr_dtype float --outputs alpha fg --hann_chunk 8 --hann_stride 4 --low_vram --frame_dir_fps 30 --temp_dir /root/ck/perf/out/_tmp/trial

@@ -1,0 +1,14 @@
+[01:14:33] probe rc=0
+    torch 2.9.1+cu128, NVIDIA GeForce RTX 5080, numpy 1.26.4
+    png8             display mismatches          0  model mismatches          0
+    png8 odd size    display mismatches          0  model mismatches          0
+    half linear      display mismatches          0  model mismatches          0
+    half display     display mismatches          0  model mismatches          0
+[01:15:59] f32 clip: 16 frames, 424673266 values outside half precision, reread dtype float32, still outside half: 26542079
+[01:17:57] tos_f32 default rc=0 in 118 s
+[01:19:14] tos_f32 new rc=0 in 77 s
+[01:19:16] tos_f32 default vs --optimized --gpu_prep --async_baton: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[01:21:00] 04_5h default rc=0 in 104 s
+[01:22:13] 04_5h new rc=0 in 73 s
+[01:22:15] 04_5h default vs --optimized --gpu_prep --async_baton: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[01:22:15] tier3g2 done

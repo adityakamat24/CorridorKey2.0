@@ -1,0 +1,33 @@
+[23:43:50] bench 4K 8/4 cpu prep: [bench] median total 91.60s; peak reserved 3.07 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021
+    setup                0.53 s   peak reserved 1.41 GiB
+    prepass             15.28 s   peak reserved 2.03 GiB
+    after_prepass        0.68 s   peak reserved 3.06 GiB
+    stage1              28.31 s   peak reserved 3.07 GiB
+    after_stage1         0.00 s   peak reserved 1.02 GiB
+    stage2              26.61 s   peak reserved 3.03 GiB
+    encode_tail         20.19 s   peak reserved 3.03 GiB
+[23:45:18] bench 4K 8/4 gpu prep: [bench] median total 82.11s; peak reserved 3.11 GiB (allocated 2.93) in stage1; table estimate 8.790615765237021
+    setup                0.57 s   peak reserved 1.41 GiB
+    prepass              6.68 s   peak reserved 2.64 GiB
+    after_prepass        0.68 s   peak reserved 3.11 GiB
+    stage1              28.18 s   peak reserved 3.11 GiB
+    after_stage1         0.00 s   peak reserved 1.07 GiB
+    stage2              26.67 s   peak reserved 3.03 GiB
+    encode_tail         19.33 s   peak reserved 3.03 GiB
+[23:46:54] bench 4K 4/2 cpu prep: [bench] median total 88.73s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+    setup                0.54 s   peak reserved 1.39 GiB
+    prepass             12.45 s   peak reserved 2.10 GiB
+    after_prepass        0.71 s   peak reserved 3.06 GiB
+    stage1              28.06 s   peak reserved 3.08 GiB
+    after_stage1         0.00 s   peak reserved 1.02 GiB
+    stage2              26.77 s   peak reserved 3.03 GiB
+    encode_tail         20.20 s   peak reserved 3.03 GiB
+[23:48:23] bench 4K 4/2 gpu prep: [bench] median total 82.59s; peak reserved 3.08 GiB (allocated 2.93) in stage1; table estimate 5.458474329571106
+    setup                0.55 s   peak reserved 1.38 GiB
+    prepass              6.72 s   peak reserved 2.38 GiB
+    after_prepass        0.69 s   peak reserved 3.07 GiB
+    stage1              28.05 s   peak reserved 3.08 GiB
+    after_stage1         0.00 s   peak reserved 1.02 GiB
+    stage2              26.79 s   peak reserved 3.03 GiB
+    encode_tail         19.79 s   peak reserved 3.03 GiB
+[23:48:23] tier2i done

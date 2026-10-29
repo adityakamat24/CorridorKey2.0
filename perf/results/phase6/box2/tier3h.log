@@ -1,0 +1,5 @@
+[00:21:39] base42_a rc=0 {"tag": "base42_a", "rc": 0, "wall_s": 257.2} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:26:24] final42_a rc=0 {"tag": "final42_a", "rc": 0, "wall_s": 284.9} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:30:44] base42_b rc=0 {"tag": "base42_b", "rc": 0, "wall_s": 260.1} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:35:59] final42_b rc=0 {"tag": "final42_b", "rc": 0, "wall_s": 315.6} | peak allocated 2.664 GiB, peak reserved 2.803 GiB, budget 12.00 GiB
+[00:35:59] tier3h done

@@ -1,0 +1,4 @@
+[23:04:35] py-spy py-spy 0.4.2
+[23:06:19] spy 4K 4/2 rc=0: [bench] median total 95.70s; peak reserved 3.29 GiB (allocated 2.93) in prepass; table estimate 5.458474329571106
+[23:07:56] spy 4K 8/4 rc=0: [bench] median total 88.67s; peak reserved 4.08 GiB (allocated 3.00) in prepass; table estimate 8.790615765237021
+[23:07:56] tier3e done

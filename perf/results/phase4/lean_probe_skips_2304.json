@@ -1,0 +1,45 @@
+{
+  "hw": [
+    2304,
+    3840
+  ],
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "rows": [
+    {
+      "candidate": "baseline",
+      "frames": 24,
+      "peak_gib": 5.796159744262695,
+      "s": 9.282705147750676
+    },
+    {
+      "candidate": "noinplace",
+      "frames": 24,
+      "peak_gib": 6.434464931488037,
+      "s": 9.19473587628454,
+      "bitwise_equal": false,
+      "max_abs_diff": 0.01171875,
+      "equal_by_output": {
+        "baton": true,
+        "aux": false
+      }
+    },
+    {
+      "candidate": "baseline",
+      "frames": 48,
+      "peak_gib": 11.011919021606445,
+      "s": 24.395325919613242
+    },
+    {
+      "candidate": "noinplace",
+      "frames": 48,
+      "peak_gib": 11.996293544769287,
+      "s": 24.128442798741162,
+      "bitwise_equal": false,
+      "max_abs_diff": 0.015625,
+      "equal_by_output": {
+        "baton": true,
+        "aux": false
+      }
+    }
+  ]
+}

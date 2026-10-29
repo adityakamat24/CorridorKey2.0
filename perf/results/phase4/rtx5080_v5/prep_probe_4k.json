@@ -1,0 +1,34 @@
+{
+  "input": "/root/tos/04_5h",
+  "shape_hw": [
+    2176,
+    4096
+  ],
+  "torch_threads": 8,
+  "steps_ms": {
+    "decode": 92.51222293823957,
+    "maximum": 16.719403211027384,
+    "linear_to_srgb": 310.0060108117759,
+    "clip": 16.63860399276018,
+    "pad": 27.55377721041441,
+    "to_bf16": 6.1285970732569695,
+    "linear_to_asinh": 182.1338450536132,
+    "foundation_view_total": 489.88884035497904,
+    "model_view_total": 295.4173609614372,
+    "all_views_total": 678.0980010516942
+  },
+  "rates": {
+    "4": {
+      "foundation_fps": 2.551201960466146,
+      "model_view_fps": 9.237806424414112
+    },
+    "8": {
+      "foundation_fps": 2.736622047652031,
+      "model_view_fps": 11.419906687205346
+    },
+    "12": {
+      "foundation_fps": 2.6486617839543847,
+      "model_view_fps": 11.680751806324567
+    }
+  }
+}

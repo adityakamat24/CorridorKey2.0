@@ -1,0 +1,15 @@
+{"tag": "hair_detail_lossless", "rc": 0, "wall_s": 32.7, "mb": 98}
+{"tag": "hair_detail_default", "rc": 0, "wall_s": 30.3, "mb": 5}
+{"tag": "hair_detail_la10", "rc": 0, "wall_s": 28.2, "mb": 5}
+{"tag": "hair_detail_la0", "rc": 0, "wall_s": 27.6, "mb": 10}
+{"tag": "hair_detail_default2", "rc": 0, "wall_s": 30.2, "mb": 5}
+{"tag": "motion_blur_lossless", "rc": 0, "wall_s": 19.0, "mb": 29}
+{"tag": "motion_blur_default", "rc": 0, "wall_s": 20.6, "mb": 1}
+{"tag": "motion_blur_la10", "rc": 0, "wall_s": 19.5, "mb": 1}
+{"tag": "motion_blur_la0", "rc": 0, "wall_s": 19.4, "mb": 3}
+{"tag": "motion_blur_default2", "rc": 0, "wall_s": 20.7, "mb": 1}
+{"tag": "tos_lossless", "rc": 0, "wall_s": 312.8, "mb": 1219}
+{"tag": "tos_default", "rc": 0, "wall_s": 355.4, "mb": 155}
+{"tag": "tos_la10", "rc": 0, "wall_s": 311.8, "mb": 153}
+{"tag": "tos_la0", "rc": 0, "wall_s": 302.6, "mb": 191}
+{"tag": "tos_default2", "rc": 0, "wall_s": 319.0, "mb": 155}

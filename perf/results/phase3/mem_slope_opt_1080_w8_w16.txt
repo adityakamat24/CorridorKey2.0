@@ -1,0 +1,27 @@
+peak A 2.143 GiB, peak B 3.413 GiB, delta 1.270 GiB = 162.6 MiB/frame
+ MiB/frame     A MiB     B MiB  site
+      30.0     240.0     480.0  blocks.py:1709 _forward_lean
+      20.0     160.0     320.0  blocks.py:1713 _forward_lean
+      20.0     160.0     320.0  blocks.py:2699 _cyclic_shift_3d
+      16.9     135.0     270.0  blocks.py:3058 forward
+      12.7     101.2     202.5  runtime.py:614 hann_stage1_stream
+      12.0      96.0     192.0  blocks.py:1721 _forward_lean
+       8.4      67.5     135.0  blocks.py:3282 forward
+       8.0      64.0     128.0  rope.py:93 apply_rotary
+       8.0      64.0     128.0  blocks.py:1699 take
+       4.2      33.8      67.5  runtime.py:615 hann_stage1_stream
+       4.0      32.0      64.0  blocks.py:916 _sdpa_with_region_groups
+       3.0      24.0      48.0  blocks.py:923 _sdpa_with_region_groups
+       3.0      24.0      48.0  blocks.py:925 _sdpa_with_region_groups
+       3.0      24.0      48.0  blocks.py:922 _sdpa_with_region_groups
+       3.0      24.0      48.0  blocks.py:924 _sdpa_with_region_groups
+       2.4      19.0      38.0  runtime.py:632 hann_stage1_stream
+       1.6      12.7      25.3  blocks.py:3199 forward
+       1.6      12.7      25.3  runtime.py:630 hann_stage1_stream
+       0.8       6.3      12.7  runtime.py:636 hann_stage1_stream
+       0.0       0.2       0.5  rope.py:244 get_cos_sin
+       0.0       0.2       0.5  rope.py:243 get_cos_sin
+       0.0       0.0       0.0  runtime.py:616 hann_stage1_stream
+       0.0       9.1       9.1  rvm.py:142 forward
+       0.0     884.4     884.4  runtime.py:975 run_inference
+       0.0       0.0       0.0  blocks.py:909 _batched_windows

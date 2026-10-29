@@ -1,0 +1,34 @@
+[21:41:55] hair_detail_lossless rc=0 {"tag": "hair_detail_lossless", "rc": 0, "wall_s": 32.7, "mb": 98}
+[21:42:26] hair_detail_default rc=0 {"tag": "hair_detail_default", "rc": 0, "wall_s": 30.3, "mb": 5}
+[21:42:54] hair_detail_la10 rc=0 {"tag": "hair_detail_la10", "rc": 0, "wall_s": 28.2, "mb": 5}
+[21:43:21] hair_detail_la0 rc=0 {"tag": "hair_detail_la0", "rc": 0, "wall_s": 27.6, "mb": 10}
+[21:43:52] hair_detail_default2 rc=0 {"tag": "hair_detail_default2", "rc": 0, "wall_s": 30.2, "mb": 5}
+[21:43:53] psnr hair_detail_default alpha vs lossless: average:54.164650
+[21:43:55] psnr hair_detail_default fg vs lossless: average:48.395611
+[21:43:57] psnr hair_detail_la10 alpha vs lossless: average:54.034089
+[21:43:59] psnr hair_detail_la10 fg vs lossless: average:48.387842
+[21:44:01] psnr hair_detail_la0 alpha vs lossless: average:56.931348
+[21:44:02] psnr hair_detail_la0 fg vs lossless: average:50.306233
+[21:44:21] motion_blur_lossless rc=0 {"tag": "motion_blur_lossless", "rc": 0, "wall_s": 19.0, "mb": 29}
+[21:44:42] motion_blur_default rc=0 {"tag": "motion_blur_default", "rc": 0, "wall_s": 20.6, "mb": 1}
+[21:45:02] motion_blur_la10 rc=0 {"tag": "motion_blur_la10", "rc": 0, "wall_s": 19.5, "mb": 1}
+[21:45:21] motion_blur_la0 rc=0 {"tag": "motion_blur_la0", "rc": 0, "wall_s": 19.4, "mb": 3}
+[21:45:42] motion_blur_default2 rc=0 {"tag": "motion_blur_default2", "rc": 0, "wall_s": 20.7, "mb": 1}
+[21:45:43] psnr motion_blur_default alpha vs lossless: average:58.132227
+[21:45:44] psnr motion_blur_default fg vs lossless: average:49.435364
+[21:45:45] psnr motion_blur_la10 alpha vs lossless: average:58.081652
+[21:45:47] psnr motion_blur_la10 fg vs lossless: average:49.401428
+[21:45:48] psnr motion_blur_la0 alpha vs lossless: average:61.974519
+[21:45:49] psnr motion_blur_la0 fg vs lossless: average:51.627745
+[21:51:02] tos_lossless rc=0 {"tag": "tos_lossless", "rc": 0, "wall_s": 312.8, "mb": 1219}
+[21:56:57] tos_default rc=0 {"tag": "tos_default", "rc": 0, "wall_s": 355.4, "mb": 155}
+[22:02:09] tos_la10 rc=0 {"tag": "tos_la10", "rc": 0, "wall_s": 311.8, "mb": 153}
+[22:07:12] tos_la0 rc=0 {"tag": "tos_la0", "rc": 0, "wall_s": 302.6, "mb": 191}
+[22:12:31] tos_default2 rc=0 {"tag": "tos_default2", "rc": 0, "wall_s": 319.0, "mb": 155}
+[22:12:46] psnr tos_default alpha vs lossless: average:56.887072
+[22:13:03] psnr tos_default fg vs lossless: average:43.275111
+[22:13:18] psnr tos_la10 alpha vs lossless: average:56.812353
+[22:13:36] psnr tos_la10 fg vs lossless: average:43.248161
+[22:13:51] psnr tos_la0 alpha vs lossless: average:59.234651
+[22:14:08] psnr tos_la0 fg vs lossless: average:44.070879
+[22:14:08] tier2d done

@@ -1,0 +1,346 @@
+{
+  "label": "1080p w14 all expandable",
+  "argv": [
+    "perf/bench.py",
+    "--sdpa",
+    "efficient",
+    "--mem_cap_gib",
+    "5.0",
+    "--bf16_weights",
+    "--lean_activations",
+    "--prefetch_frames",
+    "--input",
+    "test_clips/converge_1080",
+    "--hann_chunk",
+    "14",
+    "--hann_stride",
+    "7",
+    "--low_vram",
+    "--num_frames",
+    "28",
+    "--repeats",
+    "1",
+    "--warmup",
+    "0",
+    "--label",
+    "1080p w14 all expandable",
+    "--out",
+    "perf/results/phase3/sweep2_1080_w14_expandable.json"
+  ],
+  "config": {
+    "hann_chunk": 14,
+    "hann_stride": 7,
+    "carry_hint": true,
+    "hint_quality": 0.95,
+    "carry_hint_quality": 0.95,
+    "shape_quantum": 128,
+    "model_scale": 1.0,
+    "num_frames": 28,
+    "start_mode": "begin",
+    "seed": 0,
+    "low_vram": true,
+    "auto_vram": false,
+    "low_vram_foundation_chunk": 4,
+    "low_vram_mlp_chunk_tokens": 65536,
+    "low_vram_enc_frame_chunk": 1,
+    "low_vram_swin_window_batch": 16,
+    "low_vram_full_attn_query_chunk_tokens": 2048,
+    "stage2_batch": 1,
+    "outputs": [
+      "alpha",
+      "fg"
+    ],
+    "temp_dir": "/root/ck/perf/out/_tmp/bench",
+    "linear_brightness": 1.0,
+    "linear_contrast": 1.0,
+    "linear_contrast_pivot": 0.18,
+    "frame_dir_fps": 30.0,
+    "frame_dir_linear": false,
+    "cutout_linear": false,
+    "despill_strength": 0.5,
+    "output_format": "video",
+    "exr_dtype": "half",
+    "lean_activations": true,
+    "prefetch_frames": true
+  },
+  "sdpa": "efficient",
+  "mem_cap_gib": 5.0,
+  "weights": "bf16_linear_conv+frozen",
+  "env": {
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "alloc_conf": "expandable_segments:True",
+    "nvml_idle": {
+      "t": 3955968.892571323,
+      "phase": "idle",
+      "mem_used": 395444224,
+      "sm_mhz": 1792,
+      "mem_mhz": 7501,
+      "gpu_util": 0,
+      "power_w": 48.78,
+      "temp_c": 50
+    }
+  },
+  "model_shape_hw": [
+    1152,
+    1920
+  ],
+  "vram_table_estimate_gib": 5.460361337209303,
+  "load_s": 7.095714836847037,
+  "summary": {
+    "measured_runs": 1,
+    "total_s_median": 36.511093558743596,
+    "total_s_all": [
+      36.511
+    ],
+    "peak_allocated_gib": 3.0953845977783203,
+    "peak_reserved_gib": 3.71484375,
+    "peak_owner_phase": "stage1",
+    "stage1_window_ms_median": 3319.2080078125,
+    "stage2_forward_ms_per_frame": 501.9329724993025,
+    "phases": {
+      "setup": {
+        "wall_s": 0.10411861632019281,
+        "wall_s_all": [
+          0.104
+        ],
+        "peak_allocated_gib": 1.098207950592041,
+        "peak_reserved_gib": 1.171875,
+        "nvml_mem_used_max_gib": 1.6651611328125,
+        "sm_mhz_median": 1792
+      },
+      "rvm": {
+        "wall_s": 2.429892325773835,
+        "wall_s_all": [
+          2.43
+        ],
+        "peak_allocated_gib": 1.4045238494873047,
+        "peak_reserved_gib": 1.484375,
+        "nvml_mem_used_max_gib": 1.9952392578125,
+        "sm_mhz_median": 1792.0
+      },
+      "after_rvm": {
+        "wall_s": 0.00044450629502534866,
+        "wall_s_all": [
+          0.0
+        ],
+        "peak_allocated_gib": 1.107119083404541,
+        "peak_reserved_gib": 1.171875,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "foundations": {
+        "wall_s": 2.5780558809638023,
+        "wall_s_all": [
+          2.578
+        ],
+        "peak_allocated_gib": 1.2412333488464355,
+        "peak_reserved_gib": 1.30859375,
+        "nvml_mem_used_max_gib": 1.8194580078125,
+        "sm_mhz_median": 1957
+      },
+      "after_foundations": {
+        "wall_s": 0.5561022046022117,
+        "wall_s_all": [
+          0.556
+        ],
+        "peak_allocated_gib": 1.107119083404541,
+        "peak_reserved_gib": 1.171875,
+        "nvml_mem_used_max_gib": 1.6827392578125,
+        "sm_mhz_median": 1957
+      },
+      "stage1": {
+        "wall_s": 13.764419033192098,
+        "wall_s_all": [
+          13.764
+        ],
+        "peak_allocated_gib": 3.0953845977783203,
+        "peak_reserved_gib": 3.71484375,
+        "nvml_mem_used_max_gib": 4.2276611328125,
+        "sm_mhz_median": 1942
+      },
+      "after_stage1": {
+        "wall_s": 0.00046903686597943306,
+        "wall_s_all": [
+          0.0
+        ],
+        "peak_allocated_gib": 0.8726358413696289,
+        "peak_reserved_gib": 0.876953125,
+        "nvml_mem_used_max_gib": null,
+        "sm_mhz_median": null
+      },
+      "stage2": {
+        "wall_s": 15.381512974388897,
+        "wall_s_all": [
+          15.382
+        ],
+        "peak_allocated_gib": 0.9854135513305664,
+        "peak_reserved_gib": 1.025390625,
+        "nvml_mem_used_max_gib": 1.5382080078125,
+        "sm_mhz_median": 1935
+      },
+      "encode_tail": {
+        "wall_s": 1.696356593631208,
+        "wall_s_all": [
+          1.696
+        ],
+        "peak_allocated_gib": 0.38489437103271484,
+        "peak_reserved_gib": 1.025390625,
+        "nvml_mem_used_max_gib": 1.5382080078125,
+        "sm_mhz_median": 1942.0
+      }
+    }
+  },
+  "runs": [
+    {
+      "warmup": false,
+      "total_s": 36.511093558743596,
+      "frames": 28,
+      "phases": [
+        {
+          "phase": "setup",
+          "allocated_start_gib": 1.098207950592041,
+          "wall_s": 0.10411861632019281,
+          "peak_allocated_gib": 1.098207950592041,
+          "peak_reserved_gib": 1.171875,
+          "allocated_end_gib": 1.098207950592041,
+          "reserved_end_gib": 1.171875,
+          "nvml_samples": 5,
+          "nvml_mem_used_max_gib": 1.6651611328125,
+          "sm_mhz_median": 1792,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 13.0,
+          "power_w_median": 41.461,
+          "temp_c_max": 48
+        },
+        {
+          "phase": "rvm",
+          "allocated_start_gib": 1.098207950592041,
+          "wall_s": 2.429892325773835,
+          "peak_allocated_gib": 1.4045238494873047,
+          "peak_reserved_gib": 1.484375,
+          "allocated_end_gib": 1.107119083404541,
+          "reserved_end_gib": 1.171875,
+          "nvml_samples": 118,
+          "nvml_mem_used_max_gib": 1.9952392578125,
+          "sm_mhz_median": 1792.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 5.915254237288136,
+          "power_w_median": 42.928,
+          "temp_c_max": 48
+        },
+        {
+          "phase": "after_rvm",
+          "allocated_start_gib": 1.107119083404541,
+          "wall_s": 0.00044450629502534866,
+          "peak_allocated_gib": 1.107119083404541,
+          "peak_reserved_gib": 1.171875,
+          "allocated_end_gib": 1.107119083404541,
+          "reserved_end_gib": 1.171875
+        },
+        {
+          "phase": "foundations",
+          "allocated_start_gib": 1.107119083404541,
+          "wall_s": 2.5780558809638023,
+          "peak_allocated_gib": 1.2412333488464355,
+          "peak_reserved_gib": 1.30859375,
+          "allocated_end_gib": 1.107119083404541,
+          "reserved_end_gib": 1.171875,
+          "nvml_samples": 125,
+          "nvml_mem_used_max_gib": 1.8194580078125,
+          "sm_mhz_median": 1957,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 32.232,
+          "power_w_median": 77.335,
+          "temp_c_max": 54
+        },
+        {
+          "phase": "after_foundations",
+          "allocated_start_gib": 1.107119083404541,
+          "wall_s": 0.5561022046022117,
+          "peak_allocated_gib": 1.107119083404541,
+          "peak_reserved_gib": 1.171875,
+          "allocated_end_gib": 0.8726358413696289,
+          "reserved_end_gib": 0.876953125,
+          "nvml_samples": 27,
+          "nvml_mem_used_max_gib": 1.6827392578125,
+          "sm_mhz_median": 1957,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 53.370370370370374,
+          "power_w_median": 83.898,
+          "temp_c_max": 53
+        },
+        {
+          "phase": "stage1",
+          "allocated_start_gib": 0.8726358413696289,
+          "wall_s": 13.764419033192098,
+          "peak_allocated_gib": 3.0953845977783203,
+          "peak_reserved_gib": 3.71484375,
+          "allocated_end_gib": 0.8726358413696289,
+          "reserved_end_gib": 0.876953125,
+          "nvml_samples": 675,
+          "nvml_mem_used_max_gib": 4.2276611328125,
+          "sm_mhz_median": 1942,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 76.71555555555555,
+          "power_w_median": 151.629,
+          "temp_c_max": 62
+        },
+        {
+          "phase": "after_stage1",
+          "allocated_start_gib": 0.8726358413696289,
+          "wall_s": 0.00046903686597943306,
+          "peak_allocated_gib": 0.8726358413696289,
+          "peak_reserved_gib": 0.876953125,
+          "allocated_end_gib": 0.8726358413696289,
+          "reserved_end_gib": 0.876953125
+        },
+        {
+          "phase": "stage2",
+          "allocated_start_gib": 0.8726358413696289,
+          "wall_s": 15.381512974388897,
+          "peak_allocated_gib": 0.9854135513305664,
+          "peak_reserved_gib": 1.025390625,
+          "allocated_end_gib": 0.38489437103271484,
+          "reserved_end_gib": 1.025390625,
+          "nvml_samples": 763,
+          "nvml_mem_used_max_gib": 1.5382080078125,
+          "sm_mhz_median": 1935,
+          "mem_mhz_median": 7301,
+          "gpu_util_mean": 90.43512450851901,
+          "power_w_median": 143.767,
+          "temp_c_max": 65
+        },
+        {
+          "phase": "encode_tail",
+          "allocated_start_gib": 0.38489437103271484,
+          "wall_s": 1.696356593631208,
+          "peak_allocated_gib": 0.38489437103271484,
+          "peak_reserved_gib": 1.025390625,
+          "allocated_end_gib": 0.38489437103271484,
+          "reserved_end_gib": 0.396484375,
+          "nvml_samples": 84,
+          "nvml_mem_used_max_gib": 1.5382080078125,
+          "sm_mhz_median": 1942.0,
+          "mem_mhz_median": 7301.0,
+          "gpu_util_mean": 25.928571428571427,
+          "power_w_median": 111.186,
+          "temp_c_max": 65
+        }
+      ],
+      "oom": null,
+      "stage1_windows_ms": [
+        3369.58251953125,
+        3306.13037109375,
+        3319.2080078125
+      ],
+      "stage2_forward_ms_total": 14054.123229980469,
+      "phase_before_encode": "stage2",
+      "stage2_forwards": 28
+    }
+  ]
+}

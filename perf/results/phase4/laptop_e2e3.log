@@ -1,0 +1,33 @@
+start 11:29:29, repo 8561377 perf: REPORT phase 5, correct the 4K and HD margins against CorridorKey Desktop
+pre-read 5044 MiB
+=== p3_shipped_1080 11:29:36 | gpu temp, sm MHz, used: 63, 210 MHz, 0 MiB | cpu before 5% | RAM free 10.3 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 1920x1152 -> hann_chunk=8, hann_stride=4, low_vram=True (estimated peak 4.1 GB)
+    Hann stage1: chunk=8, stride=4, windows=11, baton_grid=120x72
+[laptop] ok; peak allocated 4.118 GiB, peak reserved 4.746 GiB, wall 111.6 s
+=== p3_opt_1080 11:31:43 | gpu temp, sm MHz, used: 79, 307 MHz, 0 MiB | cpu before 3% | RAM free 10.5 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 1920x1152 -> hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)
+    Hann stage1: chunk=40, stride=20, windows=2, baton_grid=120x72
+[laptop] ok; peak allocated 4.491 GiB, peak reserved 4.629 GiB, wall 88.3 s
+=== p3_fast_1080 11:33:27 | gpu temp, sm MHz, used: 79, 210 MHz, 0 MiB | cpu before 2% | RAM free 10.5 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 1920x1152 -> hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)
+    Hann stage1: chunk=40, stride=20, windows=2, baton_grid=120x72
+[laptop] ok; peak allocated 4.491 GiB, peak reserved 4.629 GiB, wall 87.5 s
+=== p3_opt_1440 11:35:11 | gpu temp, sm MHz, used: 81, 337 MHz, 0 MiB | cpu before 3% | RAM free 10.5 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 2560x1536 -> hann_chunk=28, hann_stride=14, low_vram=True (estimated peak 3.8 GB)
+    Hann stage1: chunk=28, stride=14, windows=3, baton_grid=160x96
+[laptop] ok; peak allocated 4.238 GiB, peak reserved 4.377 GiB, wall 161.7 s
+=== p3_shipped_1440 11:38:09 | gpu temp, sm MHz, used: 78, 210 MHz, 0 MiB | cpu before 5% | RAM free 10.7 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 2560x1536 -> hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 3.9 GB)
+    Hann stage1: chunk=4, stride=2, windows=23, baton_grid=160x96
+[laptop] ok; peak allocated 3.848 GiB, peak reserved 4.238 GiB, wall 206.5 s
+=== p3_fast_1440 11:41:53 | gpu temp, sm MHz, used: 78, 210 MHz, 0 MiB | cpu before 3% | RAM free 10.8 GB | AC True
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+  Auto VRAM: 5.0 GB available at 2560x1536 -> hann_chunk=28, hann_stride=14, low_vram=True (estimated peak 3.8 GB)
+    Hann stage1: chunk=28, stride=14, windows=3, baton_grid=160x96
+[laptop] ok; peak allocated 4.238 GiB, peak reserved 4.377 GiB, wall 158.5 s
+e2e3 done 11:44:47

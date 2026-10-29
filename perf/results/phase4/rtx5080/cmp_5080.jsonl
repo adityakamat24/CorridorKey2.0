@@ -1,0 +1,15 @@
+{"tag": "orig_hair_detail", "rc": 0, "wall_s": 79.6, "nvidia_smi_max_mib": 12266, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.2 GB)", "torch_peaks": "9.937 GiB, peak reserved 11.629 GiB, budget 12.00 GiB"}
+{"tag": "opt_hair_detail", "rc": 0, "wall_s": 49.0, "nvidia_smi_max_mib": 9178, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)", "torch_peaks": "8.303 GiB, peak reserved 8.615 GiB, budget 12.00 GiB"}
+{"tag": "optsame_hair_detail", "rc": 0, "wall_s": 56.3, "nvidia_smi_max_mib": 4738, "auto": "", "torch_peaks": "4.060 GiB, peak reserved 4.279 GiB, budget 12.00 GiB"}
+{"tag": "orig_motion_blur", "rc": 0, "wall_s": 44.9, "nvidia_smi_max_mib": 12332, "auto": "hann_chunk=80, hann_stride=40, low_vram=True (estimated peak 9.5 GB)", "torch_peaks": "10.260 GiB, peak reserved 11.697 GiB, budget 12.00 GiB"}
+{"tag": "opt_motion_blur", "rc": 0, "wall_s": 26.5, "nvidia_smi_max_mib": 8878, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)", "torch_peaks": "7.808 GiB, peak reserved 8.322 GiB, budget 12.00 GiB"}
+{"tag": "optsame_motion_blur", "rc": 0, "wall_s": 29.0, "nvidia_smi_max_mib": 5278, "auto": "", "torch_peaks": "4.192 GiB, peak reserved 4.807 GiB, budget 12.00 GiB"}
+{"tag": "orig_smoke", "rc": 0, "wall_s": 165.5, "nvidia_smi_max_mib": 12264, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.2 GB)", "torch_peaks": "9.937 GiB, peak reserved 11.629 GiB, budget 12.00 GiB"}
+{"tag": "opt_smoke", "rc": 0, "wall_s": 88.5, "nvidia_smi_max_mib": 9178, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)", "torch_peaks": "8.303 GiB, peak reserved 8.615 GiB, budget 12.00 GiB"}
+{"tag": "optsame_smoke", "rc": 0, "wall_s": 90.9, "nvidia_smi_max_mib": 4738, "auto": "", "torch_peaks": "4.060 GiB, peak reserved 4.279 GiB, budget 12.00 GiB"}
+{"tag": "orig_walking_sitting", "rc": 0, "wall_s": 184.6, "nvidia_smi_max_mib": 12264, "auto": "hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.2 GB)", "torch_peaks": "9.937 GiB, peak reserved 11.629 GiB, budget 12.00 GiB"}
+{"tag": "opt_walking_sitting", "rc": 0, "wall_s": 99.0, "nvidia_smi_max_mib": 9178, "auto": "hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)", "torch_peaks": "8.303 GiB, peak reserved 8.615 GiB, budget 12.00 GiB"}
+{"tag": "optsame_walking_sitting", "rc": 0, "wall_s": 104.4, "nvidia_smi_max_mib": 4738, "auto": "", "torch_peaks": "4.060 GiB, peak reserved 4.279 GiB, budget 12.00 GiB"}
+{"tag": "orig_tos04_5h", "rc": 0, "wall_s": 591.0, "nvidia_smi_max_mib": 11618, "auto": "hann_chunk=8, hann_stride=4, low_vram=True (estimated peak 8.8 GB)", "torch_peaks": "8.922 GiB, peak reserved 11.000 GiB, budget 12.00 GiB"}
+{"tag": "opt_tos04_5h", "rc": 0, "wall_s": 350.9, "nvidia_smi_max_mib": 11554, "auto": "hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 9.7 GB)", "torch_peaks": "9.652 GiB, peak reserved 10.938 GiB, budget 12.00 GiB"}
+{"tag": "optsame_tos04_5h", "rc": 0, "wall_s": 323.6, "nvidia_smi_max_mib": 4098, "auto": "", "torch_peaks": "2.664 GiB, peak reserved 3.656 GiB, budget 12.00 GiB"}

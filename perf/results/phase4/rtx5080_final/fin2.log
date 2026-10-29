@@ -1,0 +1,12 @@
+warmup rc=0 wall=27.5s smi=8878MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB) | 7.808 GiB, peak reserved 8.322 GiB, budget 12.00 GiB
+orig_hair_detail rc=0 wall=66.4s smi=12264MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.2 GB) | 9.937 GiB, peak reserved 11.629 GiB, budget 12.00 GiB
+opt_hair_detail rc=0 wall=31.8s smi=9178MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB) | 8.303 GiB, peak reserved 8.615 GiB, budget 12.00 GiB
+fast_hair_detail rc=0 wall=28.9s smi=9178MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB) | 8.303 GiB, peak reserved 8.615 GiB, budget 12.00 GiB
+orig_motion_blur rc=0 wall=43.5s smi=12332MiB | hann_chunk=80, hann_stride=40, low_vram=True (estimated peak 9.5 GB) | 10.260 GiB, peak reserved 11.697 GiB, budget 12.00 GiB
+opt_motion_blur rc=0 wall=21.3s smi=8878MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB) | 7.808 GiB, peak reserved 8.322 GiB, budget 12.00 GiB
+fast_motion_blur rc=0 wall=19.8s smi=8878MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB) | 7.808 GiB, peak reserved 8.322 GiB, budget 12.00 GiB
+orig_tos04_5h rc=0 wall=620.1s smi=11618MiB | hann_chunk=8, hann_stride=4, low_vram=True (estimated peak 8.8 GB) | 8.922 GiB, peak reserved 11.000 GiB, budget 12.00 GiB
+optsame_tos04_5h rc=0 wall=290.9s smi=4098MiB |  | 2.664 GiB, peak reserved 3.656 GiB, budget 12.00 GiB
+fastsame_tos04_5h rc=0 wall=270.4s smi=4098MiB |  | 2.664 GiB, peak reserved 3.656 GiB, budget 12.00 GiB
+fast_tos04_5h rc=0 wall=294.9s smi=11554MiB | hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 9.7 GB) | 9.652 GiB, peak reserved 10.938 GiB, budget 12.00 GiB
+final done

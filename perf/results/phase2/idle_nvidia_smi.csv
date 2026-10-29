@@ -1,0 +1,2 @@
+name, driver_version, memory.used [MiB], memory.free [MiB], clocks.current.sm [MHz], temperature.gpu, power.limit [W]
+NVIDIA GeForce RTX 3060, 595.71.05, 1 MiB, 11911 MiB, 210 MHz, 44, 170.00 W

@@ -1,0 +1,3 @@
+[05:46:24] sdpa: 6 unavailable combos
+[05:47:07] timing --low_vram orig rc=1 wall 42.7 s
+[05:47:31] timing --low_vram opt rc=1 wall 24.3 s

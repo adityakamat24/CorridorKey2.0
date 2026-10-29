@@ -1,0 +1,8 @@
+torch 2.9.1+cu128, NVIDIA GeForce RTX 5080, numpy 1.26.4
+png8             display mismatches          0  model mismatches          0
+png16            display mismatches          0  model mismatches          0
+png16 odd size   display mismatches          0  model mismatches          0
+half linear      display mismatches          0  model mismatches          0
+half display     display mismatches          0  model mismatches          0
+float linear +   display mismatches         85  model mismatches        693  e.g. [('model', 4.467490725801326e-05, 0.000675201416015625, 0.00067138671875), ('model', 0.00019491730199661106, 0.0029449462890625, 0.0029296875), ('display', 0.003798983059823513, 0.04833984375, 0.048583984375), ('model', 0.0012483083410188556, 0.0186767578125, 0.018798828125)]
+float linear -   display mismatches          0  model mismatches        693  e.g. [('model', -4.467490725801326e-05, -0.000675201416015625, -0.00067138671875), ('model', -0.00019491730199661106, -0.0029449462890625, -0.0029296875), ('model', -0.0012483083410188556, -0.0186767578125, -0.018798828125), ('model', -0.010225806385278702, -0.12890625, -0.1279296875)]

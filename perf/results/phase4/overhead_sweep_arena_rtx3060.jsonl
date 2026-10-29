@@ -1,0 +1,6 @@
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "lowvram", "window": 8, "frames": 48, "estimate_gib": 1.5004172093023256, "returncode": 0, "peak_allocated_gib": 2.148, "peak_reserved_gib": 2.266, "wall_s": 82.4}
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "lowvram", "window": 24, "frames": 48, "estimate_gib": 2.761262325581395, "returncode": 0, "peak_allocated_gib": 2.855, "peak_reserved_gib": 3.076, "wall_s": 85.1}
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "lowvram", "window": 48, "frames": 48, "estimate_gib": 4.652513953488373, "returncode": 0, "peak_allocated_gib": 4.841, "peak_reserved_gib": 5.307, "wall_s": 86.4}
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "normal", "window": 8, "frames": 48, "estimate_gib": 3.8409093023255814, "returncode": 0, "peak_allocated_gib": 3.912, "peak_reserved_gib": 3.977, "wall_s": 80.6}
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "normal", "window": 24, "frames": 48, "estimate_gib": 6.832727906976745, "returncode": 0, "peak_allocated_gib": 7.054, "peak_reserved_gib": 7.123, "wall_s": 83.8}
+{"clip": "converge_1080", "megapixels": 2.21184, "mode": "normal", "window": 48, "frames": 48, "estimate_gib": 8.494878139534885, "returncode": 0, "peak_allocated_gib": 8.799, "peak_reserved_gib": 8.867, "wall_s": 84.0}

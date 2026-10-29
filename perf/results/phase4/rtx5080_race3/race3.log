@@ -1,0 +1,27 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[13:17:08] setup: setup done
+[13:18:44] tos frames: 120
+[13:19:48] ckd: ckd ready: 3.1G models
+[13:22:43] 1080p ref vs stage2_with_stage1: 96 files in ref, 96 in cand: 96 identical, 0 differ, 0 on one side only
+[13:22:44] 4K ref vs stage2_with_stage1:    16 files in ref, 16 in cand: 16 identical, 0 differ, 0 on one side only
+  stage 2 alongside stage 1 (needs ~2.9 GB of 15.1 GB)
+  stage 2 alongside stage 1 (needs ~5.8 GB of 15.1 GB)
+[13:23:06] warmup rc=0 wall=20.8s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[13:23:28] ckd_warmup rc=0 wall=21.8s smi=9303MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)
+[13:27:40] ckd_tos rc=0 wall=252.0s smi=7609MiB | hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 8.3 GB)
+[13:32:39] opt84L_tos rc=0 wall=298.6s smi=4105MiB | 
+[13:38:16] opt84S_tos rc=0 wall=336.8s smi=4131MiB | 
+[13:43:54] fast84S_tos rc=0 wall=337.9s smi=4131MiB | 
+[13:47:56] ckd2_tos rc=0 wall=241.9s smi=7609MiB | hann_chunk=4, hann_stride=2, low_vram=True (estimated peak 8.3 GB)
+[13:53:18] fast84L_tos rc=0 wall=322.2s smi=4105MiB | 
+[13:53:49] ckd_hair_detail rc=0 wall=30.0s smi=9303MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)
+[13:54:21] opt_hair_detail rc=0 wall=31.5s smi=9185MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[13:54:56] opt48L_hair_detail rc=0 wall=35.5s smi=4745MiB | 
+[13:55:31] opt48S_hair_detail rc=0 wall=34.2s smi=5349MiB | 
+[13:55:58] fast_hair_detail rc=0 wall=27.8s smi=9185MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 9.7 GB)
+[13:56:21] ckd_motion_blur rc=0 wall=21.6s smi=9303MiB | hann_chunk=48, hann_stride=24, low_vram=True (estimated peak 9.6 GB)
+[13:56:41] opt_motion_blur rc=0 wall=20.5s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[13:57:07] opt48L_motion_blur rc=0 wall=25.4s smi=4745MiB | 
+[13:57:31] opt48S_motion_blur rc=0 wall=24.5s smi=5349MiB | 
+[13:57:51] fast_motion_blur rc=0 wall=19.5s smi=8885MiB | hann_chunk=80, hann_stride=40, low_vram=False (estimated peak 7.0 GB)
+[13:57:51] race3 done

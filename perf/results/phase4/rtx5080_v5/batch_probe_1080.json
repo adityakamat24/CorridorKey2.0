@@ -1,0 +1,27 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "shape_hw": [
+    1152,
+    1920
+  ],
+  "rows": [
+    {
+      "batch": 1,
+      "ms_per_frame": 125.08746155072004,
+      "bitwise_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "batch": 2,
+      "ms_per_frame": 137.0444831554778,
+      "bitwise_equal": false,
+      "max_abs_diff": 0.01171875
+    },
+    {
+      "batch": 4,
+      "ms_per_frame": 134.47020360035822,
+      "bitwise_equal": false,
+      "max_abs_diff": 0.015625
+    }
+  ]
+}

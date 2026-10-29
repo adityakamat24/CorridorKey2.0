@@ -1,0 +1,10 @@
+laptop_check.sh: line 8: 31130 Segmentation fault      $PY infer.py $A --output_dir $OUT/def --temp_dir $OUT/tmp > $OUT/logs/def.log 2>&1
+[19:34:12] default rc=139
+[19:36:18] new rc=0
+[19:36:19] hair_1080 8/4 carry hint on, default vs --optimized --gpu_prep --async_baton: 0 files in ref, 96 in cand: 0 identical, 0 differ, 96 on one side only
+[19:36:20] ValueError: hair_1080: 0 golden vs 48 candidate alpha frames
+[19:38:39] converge_1080 old: hann_chunk=40, hann_stride=20 | [laptop] ok; peak allocated 4.492 GiB, peak reserved 4.629 GiB, wall 123.9 s
+[19:40:54] converge_1080 new: hann_chunk=40, hann_stride=20 | [laptop] ok; peak allocated 4.491 GiB, peak reserved 4.629 GiB, wall 120.5 s
+[19:43:16] converge_1080 new2: hann_chunk=40, hann_stride=20 | [laptop] ok; peak allocated 4.491 GiB, peak reserved 4.629 GiB, wall 126.7 s
+[19:45:25] converge_1080 old2: hann_chunk=40, hann_stride=20 | [laptop] ok; peak allocated 4.492 GiB, peak reserved 4.629 GiB, wall 114.3 s
+[19:45:25] laptop check done

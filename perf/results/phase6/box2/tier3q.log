@@ -1,0 +1,9 @@
+[old cpu 8/4] prepass 11.95 s, prepass peak allocated 1.61 / reserved 1.75 GiB; run peak allocated 2.66 / reserved 2.91 GiB
+[old gpu 8/4] prepass 6.15 s, prepass peak allocated 2.06 / reserved 2.30 GiB; run peak allocated 2.66 / reserved 3.54 GiB
+[new cpu 8/4] prepass 11.24 s, prepass peak allocated 1.51 / reserved 1.64 GiB; run peak allocated 2.66 / reserved 3.29 GiB
+[new gpu 8/4] prepass 6.32 s, prepass peak allocated 1.51 / reserved 1.66 GiB; run peak allocated 2.66 / reserved 3.66 GiB
+[old cpu 4/2] prepass 11.95 s, prepass peak allocated 1.61 / reserved 1.75 GiB; run peak allocated 2.66 / reserved 2.84 GiB
+[old gpu 4/2] prepass 6.46 s, prepass peak allocated 1.86 / reserved 2.09 GiB; run peak allocated 2.66 / reserved 2.84 GiB
+[new cpu 4/2] prepass 11.43 s, prepass peak allocated 1.46 / reserved 1.60 GiB; run peak allocated 2.66 / reserved 2.76 GiB
+[new gpu 4/2] prepass 6.40 s, prepass peak allocated 1.47 / reserved 1.60 GiB; run peak allocated 2.66 / reserved 2.76 GiB
+[04:07:53] tier3q done

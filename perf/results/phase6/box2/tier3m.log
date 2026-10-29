@@ -1,0 +1,18 @@
+[01:22:23] probe rc=0
+    torch 2.9.1+cu128, NVIDIA GeForce RTX 5080, numpy 1.26.4
+    png8             display mismatches          0  model mismatches          0
+    png8 odd size    display mismatches          0  model mismatches          0
+    half linear      display mismatches          0  model mismatches          0
+    half display     display mismatches          0  model mismatches          0
+[01:22:24] ToS RGB half: True | f32 clip RGB half: False
+[01:24:23] tos_f32 default rc=0
+[01:25:37] tos_f32 new rc=0
+[01:25:38] tos_f32 default vs --optimized --gpu_prep --async_baton: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[01:27:22] 04_5h default rc=0
+[01:28:34] 04_5h new rc=0
+[01:28:36] 04_5h default vs --optimized --gpu_prep --async_baton: 32 files in ref, 32 in cand: 32 identical, 0 differ, 0 on one side only
+[prep cpu] total 85.59 s, prepass 11.75 s, prepass peak 2.12 GiB, run peak 3.08 GiB
+[prep gpu] total 80.41 s, prepass 6.49 s, prepass peak 2.35 GiB, run peak 3.08 GiB
+[prep cpu2] total 85.78 s, prepass 11.72 s, prepass peak 2.08 GiB, run peak 3.08 GiB
+[prep gpu2] total 80.47 s, prepass 6.42 s, prepass peak 2.39 GiB, run peak 3.08 GiB
+[01:34:37] tier3m done

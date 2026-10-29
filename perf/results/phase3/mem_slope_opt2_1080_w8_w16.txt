@@ -1,0 +1,27 @@
+peak A 2.116 GiB, peak B 3.256 GiB, delta 1.140 GiB = 145.9 MiB/frame
+ MiB/frame     A MiB     B MiB  site
+     -60.0     480.0       0.0  blocks.py:322 forward
+      33.8       0.0     270.0  blocks.py:2221 forward
+      33.8       0.0     270.0  blocks.py:3058 forward
+      33.8       0.0     270.0  blocks.py:2241 forward
+      33.8       0.0     270.0  blocks.py:2240 forward
+     -16.9     135.0       0.0  stage1.py:629 _swin3d_run_lean
+      16.9       0.0     135.0  blocks.py:2238 forward
+      16.9     135.0     270.0  blocks.py:90 forward
+     -16.9     135.0       0.0  blocks.py:319 forward
+      16.9       0.0     135.0  blocks.py:2222 forward
+      16.9       0.0     135.0  blocks.py:2219 forward
+     -16.9     135.0       0.0  blocks.py:3008 _local_mix_frames
+      16.9       0.0     135.0  blocks.py:2203 forward
+      12.7     101.2     202.5  runtime.py:618 hann_stage1_stream
+       8.4      67.5     135.0  blocks.py:3282 forward
+       5.6       0.0      45.0  blocks.py:968 forward
+       4.2      33.8      67.5  runtime.py:619 hann_stage1_stream
+       2.4      19.0      38.0  runtime.py:636 hann_stage1_stream
+       1.9       0.0      15.0  rope.py:93 apply_rotary
+      -1.6      12.7       0.0  blocks.py:3199 forward
+       1.6      12.7      25.3  runtime.py:634 hann_stage1_stream
+       0.8       6.3      12.7  runtime.py:640 hann_stage1_stream
+       0.5       0.0       4.2  blocks.py:996 grid
+       0.5       0.0       4.2  blocks.py:3501 forward
+       0.0       0.0       0.4  rope.py:243 get_cos_sin

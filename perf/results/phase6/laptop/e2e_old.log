@@ -1,0 +1,15 @@
+[laptop] NVIDIA GeForce RTX 3060 Laptop GPU: 5.01 GiB free of 6.00 GiB at start
+Loading CorridorKey v2 runtime weights: D:\corridor key\CorridorKey2.0\weights\corridorkey_v2.safetensors
+[RVM] loaded D:\corridor key\CorridorKey2.0\vfms\rvm\pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from D:\corridor key\CorridorKey2.0\weights\foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+  probed 48 frames from test_clips/converge_1080 @ 1920x1152 (native 1920x1080, fps 30.00, exr_linear=False, pad=(0, 0, 36, 36))
+  Auto VRAM: 5.0 GB available at 1920x1152 -> hann_chunk=40, hann_stride=20, low_vram=True (estimated peak 4.0 GB)
+    RVM continuous prepass: T=48, chunk=8, input=480x288, grid=30x18
+    frozen VFM prepass: T=48, grid=30x18, chunk=4
+  Activation arena: 3.6 GB reserved as one block
+    Hann stage1: chunk=40, stride=20, windows=2, baton_grid=120x72
+      window 1/2 [0:40]
+      window 2/2 [8:48]
+  wrote 2 output video(s) for converge_1080 (48 frames @ 1920x1080)
+[laptop] ok; peak allocated 4.492 GiB, peak reserved 4.629 GiB, wall 123.9 s

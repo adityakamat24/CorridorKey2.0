@@ -1,0 +1,35 @@
+Loading CorridorKey v2 runtime weights: /root/ck/weights/corridorkey_v2.safetensors
+[RVM] loaded /root/ck/vfms/rvm/pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from /root/ck/weights/foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+  probed 24 frames from /root/tos/04_5h @ 4096x2176 (native 4096x2160, fps 24.00, exr_linear=True, pad=(0, 0, 8, 8))
+    RVM continuous prepass: T=24, chunk=8, input=1024x544, grid=64x34
+    frozen VFM prepass: T=24, grid=64x34, chunk=4
+    Hann stage1: chunk=8, stride=4, windows=5, baton_grid=256x136
+      window 1/5 [0:8]
+      window 2/5 [4:12]
+      window 3/5 [8:16]
+      window 4/5 [12:20]
+      window 5/5 [16:24]
+  wrote 2 output video(s) for 04_5h (24 frames @ 4096x2160)
+[bench] run 1/2 (warmup): 70.01s, peak reserved 4.77 GiB
+  probed 24 frames from /root/tos/04_5h @ 4096x2176 (native 4096x2160, fps 24.00, exr_linear=True, pad=(0, 0, 8, 8))
+    RVM continuous prepass: T=24, chunk=8, input=1024x544, grid=64x34
+    frozen VFM prepass: T=24, grid=64x34, chunk=4
+    Hann stage1: chunk=8, stride=4, windows=5, baton_grid=256x136
+      window 1/5 [0:8]
+      window 2/5 [4:12]
+      window 3/5 [8:16]
+      window 4/5 [12:20]
+      window 5/5 [16:24]
+  wrote 2 output video(s) for 04_5h (24 frames @ 4096x2160)
+[bench] run 2/2: 68.08s, peak reserved 4.84 GiB
+  probed 24 frames from /root/tos/04_5h @ 4096x2176 (native 4096x2160, fps 24.00, exr_linear=True, pad=(0, 0, 8, 8))
+[bench] median total 68.08s; peak reserved 4.84 GiB (allocated 2.67) in stage1; table estimate 8.790615765237021
+  setup                  0.78s  peak alloc   1.13  reserved   1.16 GiB  sm 187.0
+  prepass               11.22s  peak alloc   2.33  reserved   2.99 GiB  sm 2835
+  after_prepass          0.49s  peak alloc   1.13  reserved   1.34 GiB  sm 2827.0
+  stage1                17.65s  peak alloc   2.59  reserved   4.84 GiB  sm 2805
+  after_stage1           0.00s  peak alloc   0.89  reserved   1.09 GiB  sm None
+  stage2                18.49s  peak alloc   2.67  reserved   3.03 GiB  sm 2805.0
+  encode_tail           19.45s  peak alloc   0.39  reserved   3.03 GiB  sm 2610

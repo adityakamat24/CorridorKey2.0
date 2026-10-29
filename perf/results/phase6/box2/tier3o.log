@@ -1,0 +1,6 @@
+[02:43:22] opt84 rc=0 {"tag": "opt84", "rc": 0, "wall_s": 307.0} | peak reserved 2.914 GiB
+[02:47:41] new84 rc=0 {"tag": "new84", "rc": 0, "wall_s": 259.3} | peak reserved 3.637 GiB
+[02:52:42] opt42 rc=0 {"tag": "opt42", "rc": 0, "wall_s": 300.5} | peak reserved 2.842 GiB
+[02:56:47] new42 rc=0 {"tag": "new42", "rc": 0, "wall_s": 244.9} | peak reserved 2.842 GiB
+[03:02:02] newauto rc=0 {"tag": "newauto", "rc": 0, "wall_s": 315.5} | peak reserved 11.855 GiB
+[03:02:02] tier3o done

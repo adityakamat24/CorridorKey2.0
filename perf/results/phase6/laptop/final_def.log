@@ -1,0 +1,20 @@
+Loading CorridorKey v2 runtime weights: D:\corridor key\CorridorKey2.0\weights\corridorkey_v2.safetensors
+[RVM] loaded D:\corridor key\CorridorKey2.0\vfms\rvm\pretrain_rvm_small16_256_204031069.npz (309 tensors)
+[FrozenFoundations] loaded stats from D:\corridor key\CorridorKey2.0\weights\foundation_stats.safetensors
+  loaded weights; omitted frozen foundation tensors=982
+  probed 48 frames from test_clips/hair_1080 @ 1920x1152 (native 1920x1080, fps 30.00, exr_linear=False, pad=(0, 0, 36, 36))
+    RVM continuous prepass: T=48, chunk=8, input=480x288, grid=30x18
+    frozen VFM prepass: T=48, grid=30x18, chunk=4
+    Hann stage1: chunk=8, stride=4, windows=11, baton_grid=120x72
+      window 1/11 [0:8]
+      window 2/11 [4:12]
+      window 3/11 [8:16]
+      window 4/11 [12:20]
+      window 5/11 [16:24]
+      window 6/11 [20:28]
+      window 7/11 [24:32]
+      window 8/11 [28:36]
+      window 9/11 [32:40]
+      window 10/11 [36:44]
+      window 11/11 [40:48]
+  wrote 2 output video(s) for hair_1080 (48 frames @ 1920x1080)

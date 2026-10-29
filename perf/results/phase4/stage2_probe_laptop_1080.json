@@ -1,0 +1,86 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "input": "test_clips\\converge200_1080",
+  "shape_hw": [
+    1152,
+    1920
+  ],
+  "output_hw": [
+    1080,
+    1920
+  ],
+  "frames": 12,
+  "rounds": 4,
+  "outputs": [
+    "alpha",
+    "fg"
+  ],
+  "rows": [
+    {
+      "variant": "default",
+      "ms_per_frame_median": 969.4347541666655,
+      "ms_per_frame": [
+        962.2048333333169,
+        999.7521666666671,
+        961.7200666666577,
+        976.664675000014
+      ],
+      "speedup": 1.0,
+      "same_bytes_as_first": true
+    },
+    {
+      "variant": "pinned_io",
+      "ms_per_frame_median": 941.9555916666695,
+      "ms_per_frame": [
+        945.6918416666819,
+        979.9454249999826,
+        933.2274750000048,
+        938.2193416666572
+      ],
+      "speedup": 1.029172460722246,
+      "same_bytes_as_first": true
+    },
+    {
+      "variant": "graph",
+      "ms_per_frame_median": 963.7643208333202,
+      "ms_per_frame": [
+        957.0502333333101,
+        970.4784083333303,
+        982.0112250000269,
+        952.7487166666333
+      ],
+      "speedup": 1.0058836306872643,
+      "same_bytes_as_first": true
+    },
+    {
+      "variant": "graph+pinned_io",
+      "ms_per_frame_median": 930.8557291666755,
+      "ms_per_frame": [
+        931.7555416666892,
+        953.7269833333161,
+        929.9559166666617,
+        926.9349666666736
+      ],
+      "speedup": 1.0414446877117325,
+      "same_bytes_as_first": true
+    }
+  ],
+  "digests": {
+    "default": {
+      "alpha": "3f31ab38c91d9aed35a3c6f5b10cbce6ea802c1610f7b26a56887d14f1dd47c0",
+      "fg": "007ae56b6a11f6ec8326a54fd0a3d02a75048fa8958db312da4887735efa2513"
+    },
+    "pinned_io": {
+      "alpha": "3f31ab38c91d9aed35a3c6f5b10cbce6ea802c1610f7b26a56887d14f1dd47c0",
+      "fg": "007ae56b6a11f6ec8326a54fd0a3d02a75048fa8958db312da4887735efa2513"
+    },
+    "graph": {
+      "alpha": "3f31ab38c91d9aed35a3c6f5b10cbce6ea802c1610f7b26a56887d14f1dd47c0",
+      "fg": "007ae56b6a11f6ec8326a54fd0a3d02a75048fa8958db312da4887735efa2513"
+    },
+    "graph+pinned_io": {
+      "alpha": "3f31ab38c91d9aed35a3c6f5b10cbce6ea802c1610f7b26a56887d14f1dd47c0",
+      "fg": "007ae56b6a11f6ec8326a54fd0a3d02a75048fa8958db312da4887735efa2513"
+    }
+  }
+}
